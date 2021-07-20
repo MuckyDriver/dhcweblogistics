@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>DHCWeblogistics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <!-- CSS + JS Files -->
+        <link rel="stylesheet" type="text/css" href="./css/index.css">
+        <link rel="icon" href="./images/circle-cropped.png"> 
+    </head>
+    <body>
+        <header>
+            <img src="./images/DHCWeblogistics.png">
+            <img onclick="ToggleDropDown()" id="menudropdownbtn" src="./images/icons/dropdownMenu.png">
+            <div class="menuDropdown" id="menuDropDown">
+                <a href="" class="active">Home</a><br><a href=""><b>Buy</b> / Donate</a><br><a href="">© Policy</a><br>
+                <hr class="L1">
+                <a href="">🦉 Twitter</a><br><a href="">💬 Discord</a><br><a href="">🎬 Youtube</a>
+            </div>
+        </header>
+        <div class="page" id="pageOne">
+            <div class="section-top">
+                <h1>Welcome to DHCWeblogistics!</h1>
+                <p>
+                    The place where the best designed websites out there! <br>
+                    In this website I will give information on how you can order a website! At this moment in time I am doing this for training purposes and I do only have
+                    limited experience using HTML, CSS and JavaScript.
+                </p>
+            </div>
+            <div class="section-page-content-grid">
+                <div class="section-in-content" id="a-left">
+                    <img class="gridIcon" src="images/icons/skills_0101XA.png">
+                    <span class="u">My Skill Level:</span><br><br>
+                    My current skill level in developing website designs and code. <br>
+                    I would say I have an intermediate amount of experience of using <span>HTML and CSS</span> and very familiar with the basics. <br>
+                    I have a small amount of experience in <span>JavaScript</span>, understanding basic functions, variables and more. <br>
+                    As well as JavaScript I have touched on <span>React</span> to give it a go and how it felt, I must say I do understand it a little but I have not
+                    put lots of time into it.
+                </div>
+                <div class="section-in-content" id="b-right">
+                    <img class="gridIcon" src="images/icons/icon_price.png">
+                    <span class="u">Pricing:</span><br><br>
+                    <span>Current Price:</span> £18.00 p/pg (per page)<br>
+                    <span>Details:</span> All Commissions may have additional fees depending what services the client chooses to have. 
+                    As this is mainly focusing for educational purposes / training purposes the prices are calculated from how many pages are being made.
+                    <br><br>
+                    <span>Static or Dynamic?</span><br>Static Pages, at this moment in time I do not have enough knowledge on dynamic webpages. However, I am looking into learning more
+                    about them; so in the future I can make them for people to order.
+                    <br><br>
+                    <div id="view-more-pricing" style="display: none;">
+                        <span>Website Types:</span><br>I am up to making any type of website as long as it works within a static website. Some types of websites could be informative, awareness,
+                        poster, leaflet, about you, about your company, advertisement or a portfolio. Anything like that would be fine to me :D!
+                        <br><br>
+                        <span>Additional Prices:</span><br>First of all these additional prices may not apply to you, it all depends what you want and how you want it to be made. At This
+                        moment in time the only additional price is for people who choose their website to be created with <span>React</span>. The Additional price amount is not come to mind
+                        but it won't be more than £6.00 extra per page!<br><br>
+                    </div>
+                    <a class="a-link-website clickable" id="pricing-more-btn" onclick="ViewMorePricing()">More Info</a>
+                </div>
+                <div class="section-in-content" id="c-bottom">
+                    <img class="gridIcon" src="images/icons/checklist.png">
+                    <span class="u">Examples of my work:</span><br><br>
+                    <div class="website-list-item"><span class="next-style-number">1</span><a class="a-link-website" href="https://www.muckydriver.net">Mucky Driver Website (www.muckydriver.net)</a></div><br>
+                    <div class="website-list-item"><span class="next-style-number">2</span><a class="a-link-website" href="https://197765.github.io">Custom College Gateway (197765.github.io)</a></div><br>
+                    <div class="website-list-item"><span class="next-style-number">3</span><a class="a-link-website" href="https://rblxessentialservice.github.io/">ROBLOX Essential Service (unfinished)</a></div><br>
+                    <div id="more-website-list" style="display: none;">
+                        <div class="website-list-item"><span class="next-style-number">4</span><a class="a-link-website" download="" href="files/coronavirus_website_2020.zip">CoronaVirus Concept Website (Download .ZIP)</a></div>
+                    </div>
+                    <a class="a-link-website clickable" id="list-more-btn" onclick="ShowMoreWebsiteList()">Show More</a>
+                </div>
+                <div class="section-in-content" id="d-bottom">
+                    <span class="u">Packages:</span><br><br>
+                    <span>Basic:</span> This package includes: No react.js, Limit 
+                </div>
+            </div>
+            <p class="section-footer-bottom"> This website is still under development! </p>
+        </div>
+    </body>
+    <script src="js/toggle_dropdown_menu.js"></script>
+</html>
