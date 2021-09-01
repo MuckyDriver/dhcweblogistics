@@ -51,6 +51,9 @@ h1 {
     margin-block-end: 0;
 }
 
+#board-board:hover {
+    transform: translateY(-1);
+}
 #notice-board #click-close {
     width: 25px;
     float: right;
