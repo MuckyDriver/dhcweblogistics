@@ -54,4 +54,9 @@ h1 {
 #notice-board #click-close {
     width: 25px;
     float: right;
+    cursor: pointer;
+}
+
+#notice-board #click-close:hover { 
+    opacity: 0.75;
 }
