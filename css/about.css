@@ -22,4 +22,13 @@ h1 {
     color: white;
     border-radius: .7rem;
     padding: 10px;
+    display: flex;
+}
+
+#notice-board h3 {
+    margin-block-start: 0;
+}
+
+#notice-board p {
+    margin-inline-end: 0;
 }
