@@ -22,7 +22,7 @@ h1 {
     color: white;
     border-radius: .7rem;
     padding: 10px;
-    display: flex;
+    display: inline-block;
 }
 
 #notice-board h3 {
