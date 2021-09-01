@@ -40,8 +40,7 @@ h1 {
     color: white;
     border-radius: .7rem;
     padding: 10px;
-    display: block;
-    width: 300px;
+    display: inline-block;
 }
 
 #notice-board h3 {
