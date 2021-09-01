@@ -52,7 +52,7 @@ h1 {
     margin-block-end: 0;
 }
 
-#board-board:hover {
+#notice-board:hover {
     transform: scale(1);
 }
 
