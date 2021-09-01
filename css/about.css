@@ -3,9 +3,11 @@ body {
     margin-left: auto; margin-right: auto;
     padding: 20px; 
     background-color: rgb(215,215,215);
-    font-family: 'Open-Sans', sans-serif;
+    font-family: Calibri;
 }
 
 h1 {
-
+    padding: 10px;
+    background-color: white;
+    text-align: center;
 }
