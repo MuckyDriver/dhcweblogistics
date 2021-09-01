@@ -41,7 +41,7 @@ h1 {
     border-radius: .7rem;
     padding: 10px;
     display: block;
-    max-width: 300px;
+    width: 300px;
 }
 
 #notice-board h3 {
