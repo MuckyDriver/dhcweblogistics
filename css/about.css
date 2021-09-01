@@ -52,7 +52,7 @@ h1 {
 }
 
 #board-board:hover {
-    transform: translateY(-1);
+    transform: scale(1);
 }
 #notice-board #click-close {
     width: 25px;
