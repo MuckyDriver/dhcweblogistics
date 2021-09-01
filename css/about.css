@@ -17,6 +17,7 @@ h1 {
     padding: 10px; 
     background-color: white;
     border-radius: .7rem;
+    display: inline-block;
 }
 
 #about-this {
