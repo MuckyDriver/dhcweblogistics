@@ -45,11 +45,3 @@ h1 {
 #notice-board h3 { margin-block-start: 0; }
 #notice-board p { margin-block-end: 0; }
 #notice-board:hover { box-shadow: 0 0 0.5rem rgba(0,0,0,0.4); }
-
-#notice-board #click-close {
-    width: 20px;
-    float: right;
-    cursor: pointer;
-}
-
-#notice-board #click-close:hover { opacity: 0.75; }
