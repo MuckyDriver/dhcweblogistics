@@ -40,7 +40,8 @@ h1 {
     color: white;
     border-radius: .7rem;
     padding: 10px;
-    display: inline-block;
+    display: block;
+    max-width: 300px;
 }
 
 #notice-board h3 {
@@ -54,6 +55,7 @@ h1 {
 #board-board:hover {
     transform: scale(1);
 }
+
 #notice-board #click-close {
     width: 25px;
     float: right;
