@@ -16,3 +16,10 @@ h1 {
     padding: 10px; 
     background-color: white;
 }
+
+#notice-board {
+    background-color: tomato;
+    color: white;
+    border-radius: .7rem;
+    padding: 10px;
+}
