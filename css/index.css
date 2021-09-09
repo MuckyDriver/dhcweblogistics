@@ -1,6 +1,6 @@
 /* Main */
 
-html {background-color: rgb(28,28,28);}
+html {background-color: rgb(28,28,28); color: white;}
 
 /* Scrollbar */
 ::-webkit-scrollbar {background-color: rgb(28,28,28); width: 10px; padding-right: 20px;}
