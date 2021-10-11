@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="author" content="DHCGamer1055">
+        <meta name="description" content="DHCWeblogistics is static website covering all websites made by DHCGamer1055 throught 2021-Present. (C) Common Law Copyright">
+        <link rel="icon" type="image/svg" href="img/icon.svg">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/dropper.css">
+    </head>
+    <body>
+        <div class="topbit"></div>
+        <div class="loader"></div>
+        <div class="mobile-menu" id="mobileMenu">
+            <em>Click the hamburger button again to close!</em>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="#order">Order</a>
+                <a href="contact.html">Contact Us</a>
+                <hr><a href="web-projects.html">Websites</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="tpp.html">Policy</a>
+                <hr><a href="new.html">⭐ New features</a>
+                <a href="news-blog.html" active>📰 News</a>
+            </div>
+            <em style="text-align: center; background-color: transparent;">&copy;&nbsp;2022</em>
+        </div>
+        <header>
+            <img src="img/header-icon.svg" alt="Header Website Icon">
+            <nav>
+                <button title="Mobile Menu" class="nav-hamburger" id="toggleMenu"><img src="icons8.com/menu.png"/></button>
+                <div class="nav-links">
+                    <a href="index.html">Home</a>
+                    <a href="#order">Order</a>
+                    <a href="contact.html">Contact Us</a>
+                    <div class="dropdown">
+                        <a disabled class="dropbtn">More</a>
+                        <div class="dropdown-content"><a class="links" href="web-projects.html">Websites</a><a class="links" href="gallery.html">Gallery</a><a class="links" href="tpp.html">Policy (TPP)</a></div>
+                    </div>
+                    <div class="dropdown">
+                        <a disabled class="dropbtn">What's new?</a>
+                        <div class="dropdown-content"><a class="links" href="new.html">⭐ New features</a><a class="links" active href="news-blog.html">📰 News</a></div>
+                    </div>
+                </div>
+                <button class="nav-order" id="quickorder-btn" drop-item="clickable">Quote Website<div dropper="no-bold" right limitless>Quick Order Service</div></button>
+            </nav>
+        </header>
+        <div page>
+            <div class="notice"><div class="icon"><img src="icons8.com/info.png" alt="information Symbol"/></div><div>Website Under Construction!</div></div>
+            <div class="news-channel">
+                <div class="title"><img src="icons8.com/newspaper.png"><h2>Website Startup</h2>
+                    <br><img class="open-window" id="news-page" title="Open article in new window" src="icons8.com/external-link.png"/>
+                </div>
+                <div class="content">
+                    <details>
+                        <summary>View Update Details</summary>
+                        <div>
+                            DHCGamer1055 is happy to announce that DHCWeblogistics's new website is ready and rocking! <br>
+                            <a href="new.html">View the new features!</a>
+                        </div>
+                    </details>
+                    <em class="author">Author: DHCGamer1055</em>
+                </div>
+            </div>
+            <div class="news-channel" type="warning" id="policy-1">
+                <div class="title"><img inverted src="icons8.com/privacy-policy.png"/><h2>Policy Update</h2>
+                    <img class="open-window" id="policy-help" title="I don't understand" src="icons8.com/help.png"/>
+                    <img class="open-window" id="policy-close" src="https://img.icons8.com/material-rounded/100/000000/checkmark--v1.png"/>
+                </div>
+                <div class="content">
+                    <h1 class="c-heading"><img src="icons8.com/privacy-policy.png"> Policy</h1><hr>
+                    <h3 class="c-sub-heading">As of: 10/2021</h3><p class="c-par">Under review...</p>
+                    <em class="author">Author: DHCGamer1055</em>
+                </div>
+            </div>
+            <a href="https://icons8.com?dhcweblogistcs" target="_blank" credit>This website uses icons8.com for images and icons!</a>
+        </div>
+        <script src="js/mobile-menu.js"></script>
+        <script async src="js/email-client.js"></script>
+        <script src="js/news-app.js"></script>
+    </body>
+</html>

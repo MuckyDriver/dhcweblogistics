@@ -1,13 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
         <title>DHCWeblogistics</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <link rel="stylesheet" type="text/css" href="./css/index.css">
-        <link rel="icon" href="./images/circle-cropped.png"> 
+        <meta name="author" content="DHCGamer1055">
+        <meta name="description" content="DHCWeblogistics is static website covering all websites made by DHCGamer1055 throught 2021-Present. (C) Common Law Copyright">
+        <link rel="icon" type="image/svg" href="img/icon.svg">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/dropper.css">
     </head>
     <body>
-        <span class="dead">Notice</span> Website Closed, all about-website pages still exist.
+        <div class="topbit"></div>
+        <div class="loader"></div>
+        <div class="mobile-menu" id="mobileMenu">
+            <em>Click the hamburger button again to close!</em>
+            <div class="nav-links">
+                <a active>Home</a>
+                <a href="#order">Order</a>
+                <a href="contact.html">Contact Us</a>
+                <hr><a href="web-projects.html">Websites</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="tpp.html">Policy</a>
+                <hr><a href="new.html">⭐ New features</a>
+                <a href="news-blog.html">📰 News</a>
+            </div>
+            <em style="text-align: center; background-color: transparent;">&copy;&nbsp;2022</em>
+        </div>
+        <header>
+            <img src="img/header-icon.svg" alt="Header Website Icon">
+            <nav>
+                <button title="Mobile Menu" class="nav-hamburger" id="toggleMenu"><img src="icons8.com/menu.png"/></button>
+                <div class="nav-links">
+                    <a active>Home</a>
+                    <a href="#order">Order</a>
+                    <a href="contact.html">Contact Us</a>
+                    <div class="dropdown">
+                        <a disabled class="dropbtn">More</a>
+                        <div class="dropdown-content"><a class="links" href="web-projects.html">Websites</a><a class="links" href="gallery.html">Gallery</a><a class="links" href="tpp.html">Policy (TPP)</a></div>
+                    </div>
+                    <div class="dropdown">
+                        <a disabled class="dropbtn">What's new?</a>
+                        <div class="dropdown-content"><a class="links" href="new.html">⭐ New features</a><a class="links" href="news-blog.html">📰 News</a></div>
+                    </div>
+                </div>
+                <button class="nav-order" id="quickorder-btn" drop-item="clickable">Quote Website<div dropper="no-bold" right limitless>Quick Order Service</div></button>
+            </nav>
+        </header>
+        <div page>
+            <div class="notice"><div class="icon"><img src="icons8.com/info.png" alt="information Symbol"/></div><div>Website Under Construction!</div></div>
+            <div class="grid" dhc-gapped>
+                <div><span dhc-heading>DHCWeblogistics brand new website!</span>
+                    <p>DHCWeblogistics' new website gives an user experience like no other. Allowing you to make a quick design for me to investigate into with my 
+                        Quick Order Service! More features such as; View Websites to have a look at my previous projects I have completed or needing to complete in my freetime. Furthermore 
+                        a gallery of various grand pieces I have made which can give insight on what I can do as a service.<br><br>
+                        Explore the website to discover more, enjoy!
+                    </p>
+                </div>
+                <div><span dhc-heading>What DHCWeblogistics can provide:</span>
+                    <table dhc-table>
+                        <tr><th>Feature</th><th>Description</th></tr>
+                        <tr>
+                            <td>Quote Website</td>
+                            <td>You can quote a quick website design from the form inputs, this will send me an email to refer you back!</td>
+                        </tr>                            
+                        <tr>
+                            <td>View Websites</td>
+                            <td>All websites which I have made in my own time will be uploaded to the "Websites" page where you can view about them.</td>
+                        </tr>
+                        <tr>
+                            <td>Fixed Prices</td>
+                            <td>The Plans which are explained below will never change unless a discount is running during the month or occasion. 
+                                No need to worry about your quote changing for updates or something quick to be made! Prices start from £16 per hour for my Standard Plan.
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div dhc-content dimmed dhc-gapped>
+                <div><span dhc-heading>What to expect from me (My Skills)</span>
+                    <p>Currently, my skills go around an intermediate amount of knowledge in HTML and CSS. I have a basic understanding of JavaScript including; Functions, Ids, 
+                    Variables, Constants, Responsive web designing and more! To discover more about my skills visit my <a link-a href="gallery.html">gallery</a>!</p>
+                </div>
+                <div><span dhc-heading>Website Details</span>
+                   <p>
+                       <span dhc-subheading>Dynamic or Static?</span><br>
+                       All the websites I make will only be in static form, anything like information pages, posters, tutorials, advertisments are fine for me to make as long as it does not includes
+                       any dynamic part of the website. In the near future I hope to be able to make dynamic pages using SQL, PHP and more!<br><br>
+                       <span dhc-subheading>Payments</span><br>
+                       After your quote is successful and you accept it, I will then start making the website from what designs you wanted the website to have. I will be calculating the price from how much hours of work
+                       I have put into the websites. Payment will be <b>only</b> accepted via PayPal!<br><br>
+                       <span dhc-subheading>How long does it take?</span><br>
+                       This all depends on how much you want to me created; the amount of pages and the amount of designs you want to add on each page. A 16 page website will take from 1-2 weeks depending on my
+                       schedule from other projects going at the same time. If the website you quoted does not get finished by <b>2 weeks</b> then I will respond to you either with the current build or ask you 
+                       for a extra week to get it done.
+                   </p>
+                </div>
+            </div>
+            <div class="grid">
+                <div><span dhc-heading>Pricing and Plans</span>
+                    <table dhc-table>
+                        <tr><th></th><th>Plan</th><th>About</th><th>Price / Offers</th></tr>
+                        <tr><td>✔️</td><td>Single Page (Limited Time Offer)</td><td>Includes; 1 page limit, basic html css javascript.</td><td price>£9.99/hr</td></tr>
+                        <tr><td>✔️</td><td>Standard</td><td>Standard includes; 16 page limit, basic html css javascript.</td><td price>£16/hr</td></tr>
+                        <tr><td>✖️</td><td>Unlimited</td><td>Unlimited includes; No page limit, intermediate html css javascript.</td> <td price="un-available">£24/hr</td></tr>              
+                    </table>
+                </div>
+                <div><span dhc-heading>Plans Explained</span>
+                    <p>Depending on your needs and what you want the website to be, you need to decide on what plan it will categorize in. If you are going for a website with no more than 1 page
+                    the "Single Page" plan would work for you! If your needs goes above 1 page then the cheapest option for you would be the "Standard" plan which can have up to 16 pages.</p>
+                    <p style="padding: 10px; background-color: rgb(221, 221, 221);"><b>Key:</b><br>✔️ Means the plan is available!<br>✖️ Not Available<br>❌ Dis-Continued / Never available!</p>
+                </div>
+            </div>
+            <a href="https://icons8.com" target="_blank" credit>This website uses icons8.com for images and icons!</a>
+        </div>
+        <script src="js/mobile-menu.js"></script>
+        <script async src="js/email-client.js"></script>
+        
     </body>
 </html>
