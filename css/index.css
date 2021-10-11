@@ -453,3 +453,12 @@ div.news-channel[type="warning"] .title { background-color: orangered; }
 .news-channel .content .c-par{ padding-left: 40px; margin-block-start: 0; margin-block-end: 0; }
 .news-channel .content hr {  margin-left: 40px; color: lightgray; }
 img[icon-text] { margin-right: 0.5rem; height: 22px; vertical-align: middle; margin-top: 0; }
+
+/* Page not found */
+
+div.page-not-found {
+    padding: 2rem;
+    text-align: center;
+    background-color: rgba(255,0,0,0.5);
+    border: solid 1px darkred;
+}
