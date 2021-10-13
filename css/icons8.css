@@ -9,4 +9,4 @@ div[inter-section-div] a { text-decoration: none; display: block; padding: 5px; 
 div[inter-section-div] a[in-border] { border: rgb(233, 233, 233) solid 2px; top: 25px; position: sticky; z-index: +2; background-color: white; float:right; }
 div[inter-section-div] a:hover { background-color: rgb(233, 233, 233); }
 hr[inter-line-hr] { border-color: white; }
-@media (max-width: 500px) { a:not(a[in-border]) { font-size: small;}}
+@media (max-width: 500px) { div[inter-section-div] a { font-size: small;}}
