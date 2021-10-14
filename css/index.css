@@ -458,8 +458,6 @@ img[icon-text] { margin-right: 0.5rem; height: 22px; vertical-align: middle; mar
 
 div.page-not-found {
     padding: 2rem;
-    font-size: x-large;
-    text-align: center;
-    background-color: rgba(255,0,0,0.5);
+    background-color: rgba(255,0,0);
     color: white;
 }
