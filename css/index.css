@@ -457,7 +457,8 @@ img[icon-text] { margin-right: 0.5rem; height: 22px; vertical-align: middle; mar
 /* Page not found */
 
 div.page-not-found {
-    padding: 2rem;
+    margin: 10px;
+    padding: 15px;
     background-color: rgba(255,0,0);
     color: white;
 }
