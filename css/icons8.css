@@ -8,8 +8,8 @@ div[inter-section-div] a {
     display: block; 
     padding: 5px; 
     border-radius: 10px; 
-    color: rgb(50,50,50);
-    transition: box-shadow 0.1s ease-in-out;
+    color: rgb(70,70,70);
+    transition: box-shadow 0.1s ease-in-out, color 0.5s ease-in-out;
 }
 div[inter-section-div] a[in-border] { border: rgb(233, 233, 233) solid 2px; top: 25px; position: sticky; z-index: +2; background-color: white; float:right; }
 div[inter-section-div] a:hover { box-shadow: 0 2px 0.33rem rgba(0,0,0,0.25); color: seagreen;}
