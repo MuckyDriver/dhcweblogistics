@@ -3,8 +3,7 @@ img[img-credit="nil"] { opacity: 0.7 }
 span[img-link] { vertical-align: middle; margin-left: 25px;}
 span[img-link="no-gap"] { margin-left: 5px;}
 div[inter-section-div] { padding: 25px; }
-div[inter-section-div] a { text-decoration: none; display: block; padding: 5px; border-radius: 10px; transition: box-shadow 0.25s ease-in-out;}
+div[inter-section-div] a { text-decoration: none; display: block; padding: 5px; border-radius: 10px; transition: box-shadow 0.1s ease-in-out;}
 div[inter-section-div] a[in-border] { border: rgb(233, 233, 233) solid 2px; top: 25px; position: sticky; z-index: +2; background-color: white; float:right; }
 div[inter-section-div] a:hover { box-shadow: 0 2px 0.33rem rgba(0,0,0,0.25) }
 hr[inter-line-hr] { border-color: white; }
-@media (max-width: 500px) { div[inter-section-div] a { font-size: small;}}
