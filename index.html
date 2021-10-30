@@ -1,53 +1,142 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>DHCWeblogistics</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <meta name="viewport" content= "width=device-width, initial-scale=1.0">
+        <link href="img/icon.svg" rel="icon" type="image/svg">
+        <link href="css/index.css" rel="stylesheet" type="text/css">
+        <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+        <meta name="description" content="DHCWeblogistics...">
         <meta name="author" content="DHCGamer1055">
-        <meta name="description" content="DHCWeblogistics is static website covering all websites made by DHCGamer1055 through 2021-Present. (C) Common Law Copyright">
-        <link rel="icon" type="image/svg" href="img/icon.svg">
-        <link rel="stylesheet" type="text/css" href="css/index.css">
-        <link rel="stylesheet" type="text/css" href="css/dropper.css">
-        <link rel="stylesheet" type="text/css" href="css/icons8.css">
     </head>
     <body>
-        <div class="topbit"></div>
-        <div class="loader"></div>
-        <div class="mobile-menu" id="mobileMenu">
-            <em>Click the hamburger button again to close!</em>
-            <div class="nav-links">
-                <a active>Home</a>
+        <div class="expanded-nav" id="expanded-nav">
+            <div>
+                <a class="link" href="https://devforum.roblox.com/u/dhcgamer1055/summary" target="_blank"><img src="img/icons/roblox-studio.png"></a>
+                <a class="link" href="https://twitter.com/Claasgreeneye" target="_blank"><img src="img/icons/twitter.png"></a>
+                <a class="link" href="https://discord.gg/CyWjHMK" target="_blank"><img src="img/icons/discord-bubble.png"></a>
+                <i>Credit to <a href="https://icons8.com/icons" target="_blank">Icons8</a> for icons/images used in this website!</i>
             </div>
-            <em style="text-align: center; background-color: transparent;">&copy;&nbsp;2021</em>
         </div>
-        <header>
-            <img src="img/header-icon.svg" alt="Header Website Icon">
-            <nav>
-                <button title="Mobile Menu" class="nav-hamburger" id="toggleMenu"><img src="icons8.com/menu.png"/></button>
-                <div class="nav-links">
-                    <a active>Home</a>
-                    <a disabled>Coming Soon</a>
+        <div class="mobile-menu" id="mobile-menu">
+            <em>Click the hamburger button to close the menu!</em>
+            <a active>Home</a><a href="order">Order<span>New</span></a><hr>
+            <details class="button"><summary disabled>More</summary>
+                <div><a href="gallery">Gallery</a><a href="website-viewer">Websites<span>New</span></a><a href="tpp">Policy (TPP)</a></div>
+            </details>
+            <details class="button"><summary disabled>What's new?</summary>
+                <div><a href="features">⭐ New Features</a><a href="news-blog">📰 News<span>New</span></a></div>
+            </details><hr>
+            <div class="grid-locked">
+                <a title="Discord Server" href="https://discord.gg/CyWjHMK" target="_blank"><img src="img/icons/discord-bubble.png"></a>
+                <a title="Twitter Profile" href="https://twitter.com/Claasgreeneye" target="_blank"><img src="img/icons/twitter.png"></a>
+                <a title="Devforum Account" href="https://devforum.roblox.com/u/dhcgamer1055/summary" target="_blank"><img src="img/icons/roblox-studio.png"></a>
+            </div>
+            <i>&copy;&nbsp;2021</i>
+            <i>Credit to <a href="https://icons8.com/icons" target="_blank">Icons8</a> for icons/images used in this website!</i>
+        </div>
+        <header id="header">
+            <div class="container">
+                <img src="img/header-icon.svg">
+                <div class="hamburger-container">
+                    <img class="hamburger" id="mobile-menu-toggle" src="img/icons/hamburger.png" title="Mobile Menu">
                 </div>
-                <button class="nav-order" id="" drop-item="clickable">Order Website<div dropper="no-bold" limitless>Coming soon!</div></button>
-            </nav>
-        </header>
-        <div page>
-            <div class="notice"><div class="icon"><img src="icons8.com/info.png" alt="information Symbol"/></div><div>Website Under Construction!</div></div>
-            <div inter-section-div style="padding: 10px;">
-                <h2 dhc-heading>Websites</h2>
-                All the websites made by DHCGamer1055 as of 2021:<br>
-                Last Updated: 13/10/2021<br><br>
-                <a href="https://muckydriver.net" target="_blank"><img img-credit src="https://muckydriver.net/images/favicon.png"/><span img-link>Mucky Driver Offical Website</span></a>
-                <hr inter-line-hr>
-                <a href="https://dhcweblogistics.net"><img img-credit src="https://dhcweblogistics.net/img/header-icon.svg"/><span img-link>DHCWeblogistics (this)</span></a>
-                <hr inter-line-hr>
-                <a href="downloads/coronavirus_website_2020.zip" download><img img-credit src="img/icon_download1.svg"/><span img-link>Coronavirus Concept Website (Download)</span></a>
-                <hr inter-line-hr>
+                <nav>
+                    <a active>Home</a>
+                    <a href="order">Order<span>New</span></a>
+                    <div class="dropdown">
+                        <a class="dropdown-btn" disabled>More</a>
+                        <div class="dropdown-content" left>
+                            <a href="gallery">Gallery</a><a href="website-viewer">Websites<span>New</span></a><a href="tpp">Policy (TPP)</a>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-btn" disabled>What's new?</a>
+                        <div class="dropdown-content" right>
+                            <a href="features">⭐ New Features</a><a href="news-blog">📰 News<span>New</span></a>
+                        </div>
+                    </div>
+                    <a title="Expand" id="expand-nav"><img src="img/icons/expand_arrow.png"></a>
+                </nav>
             </div>
-            <a href="https://icons8.com" target="_blank" credit>This website uses icons8.com for images and icons!</a>
+        </header>
+        <div class="page">
+            <div class="split-section">
+                <div>
+                    <span class="heading">DHCWeblogistics brand new website!</span>
+                    <p>DHCWeblogistics' new website gives an user experience like no other. Allowing you to make a quick design for me to investigate into with my Quick Order Service! 
+                    More features such as; View Websites to have a look at my previous projects I have completed or needing to complete in my freetime. 
+                    Furthermore a gallery of various grand pieces I have made which can give insight on what I can do as a service.
+                    <br><br>Explore the website to discover more, enjoy!</p>
+                </div>
+                <div>
+                    <span class="heading">What DHCWeblogistics can provide:</span>
+                    <table class="default-table">
+                        <tr><th>Features</th></tr>
+                        <tr><td>
+                            <b>Order Service: </b>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, laboriosam ex assumenda quod ipsa dolorem aperiam mollitia excepturi in harum.
+                            <br><br><b>Website Viewer: </b>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, molestias?
+                            <br><br><b>Fixed Prices: </b>
+                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Qui quaerat, veniam minima consequatur alias repellat!
+                        </td></tr>
+                    </table>
+                </div>
+            </div>
+            <div class="dimmed-section">
+                <span class="heading">What to expect from me (My Skills)</span>
+                <p>
+                    Currently, my skills go around an intermediate amount of knowledge in HTML and CSS. I have a basic understanding of JavaScript including; 
+                    Functions, Ids, Variables, Constants, Responsive web designing and more! To discover more about my skills visit my gallery!
+                </p>
+                <span class="heading">Website Details</span>
+                <p>
+                    <span class="sub-heading">Dynamic or Static?</span><br>
+                    All the websites I make will only be in static form, anything like information pages, posters, tutorials, advertisments are fine for me to make as long as it does not includes any dynamic part of the website. 
+                    In the near future I hope to be able to make dynamic pages using SQL, PHP and more!
+                    <br><br><span class="sub-heading">Payments</span><br>
+                    After your quote is successful and you accept it, I will then start making the website from what designs you wanted the website to have. 
+                    I will be calculating the price from how much hours of work I have put into the websites. Payment will be only accepted via PayPal!
+                    <br><br><span class="sub-heading">How long does it take?</span><br>
+                    This all depends on how much you want to me created; the amount of pages and the amount of designs you want to add on each page. A 16 page website will take from 1-2 weeks depending on my schedule from other projects going at the same time. 
+                    If the website you quoted does not get finished by 2 weeks then I will respond to you either with the current build or ask you for a extra week to get it done. 
+                </p>
+            </div>
+            <div class="split-section">
+                <div>
+                    <span class="heading">Pricing and Plans</span>
+                    <table class="plan-table">
+                        <tr><th></th><th>Plan</th><th>About</th><th>Price / Offers</th></tr>
+                        <tr><td>✔️</td><td>Single Page (Limited Time Offer</td>
+                            <td>Includes; 1 page limit, basic html css javascript.</td><td price>£9.99/hr</td>
+                        </tr>
+                        <tr><td>✔️</td><td>Standard Plan</td>
+                            <td>Standard includes; 16 page limit, basic html css javascript.</td><td price>£16/hr</td>
+                        </tr>
+                        <tr><td>✖️</td><td>Unlimited</td>
+                            <td>Unlimited includes; No page limit, intermediate html css javascript.</td><td price="un-available">£24/hr</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                    <span class="heading">Plans Explained</span>
+                    <p>Depending on your needs and what you want the website to be, you need to decide on what plan it will categorize in. 
+                    If you are going for a website with no more than 1 page the "Single Page" plan would work for you! 
+                    If your needs goes above 1 page then the cheapest option for you would be the "Standard" plan which can have up to 16 pages.</p>
+                    <p class="key"><b>Key:</b><br>✔️ Means the plan is available!<br>✖️ Not Available<br>❌ Dis-Continued / Never available!</p>
+                </div>
+            </div>
         </div>
-        <script src="js/mobile-menu.js"></script>
-        <script async src="js/email-client.js"></script>
+        <div class="under-construction"><div><img src="img/icons/warning.png"><span><b>Under Construction: </b>At this moment in time the website is in-complete!</span></div></div>
+        <footer id="footer">
+            <div class="container">
+                <div class="box"><b>External Links</b><div class="section"><a href="https://icons8.com/icons?redirect" target="_blank">Icons8</a></div></div>
+                <div class="box"><b>Contact Us</b><div class="section"><a href="https://forms.gle/kTPoMu6ur8oJzY1d9?redirect" target="_blank">Send Feedback (Google Forms)</a><br><a href="https://twitter.com/Claasgreeneye?redirect" target="_blank">Twitter</a></div></div>
+                <div class="box"><b>Services</b><div class="section"><p>The services used in the website are credited to their rightful owners. Services include; Github, VSCode.</p></div></div>
+            </div>
+        </footer>
+        <script src="js/index.js"></script>
     </body>
 </html>
