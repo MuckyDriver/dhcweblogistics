@@ -477,7 +477,7 @@ details.news-blog summary {
     background: rgb(245,245,245);
 }
 
-details.news-blog summary:hover { cursor: pointer; background-color: rgb(235,235,235);} 
+details.news-blog summary:hover { cursor: pointer; background-color: seagreen;} 
 
 details.news-blog summary div {
     padding: 10px 25px;
