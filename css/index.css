@@ -485,7 +485,7 @@ details.news-blog summary div {
 
 details.news-blog summary img {
     width: 100%;
-    padding: 5px;
+    padding: 15px;
 }
 
 @media (max-width: 900px) {
