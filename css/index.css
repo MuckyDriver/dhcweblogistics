@@ -485,7 +485,7 @@ details.news-blog summary div {
 
 details.news-blog summary img {
     width: 100%;
-    padding: 15px;
+    padding: 15px; filter: invert(1); background-color: seagreen;
 }
 
 @media (max-width: 900px) {
