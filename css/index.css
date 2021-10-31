@@ -463,6 +463,7 @@ div.page.news-container aside { padding: 10px;}
     background-color: rgb(235,235,235); border-radius: 7.5px;
 }
 
+details.news-blog { margin-bottom: 7.5px;} 
 details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); }
 
 details.news-blog summary {
@@ -473,7 +474,7 @@ details.news-blog summary {
 
 details.news-blog summary img { width: 100%; padding: 15px; background-color: seagreen; }
 details.news-blog[open] summary img { transform: rotate(180deg); }
-details.news-blog summary:hover { cursor: pointer;} 
+details.news-blog summary:hover { cursor: pointer; box-shadow: 0 0 0.33rem rgba(0,0,0,.25);} 
 
 details.news-blog summary div.title {
     padding: 10px 25px; margin: auto 0; display: block;
