@@ -452,8 +452,8 @@ div.page.news-container {
     grid-template-columns: auto 300px;
 }
 
-div.page.news-container .main { padding: 10px; background-color: rgb(245,245,245); }
-div.page.news-container aside {  background-color: rgb(235,235,235); }
+div.page.news-container .main { padding: 10px;}
+div.page.news-container aside {  background-color: rgb(235,235,235); border-radius: 7.5px;}
 
 .news-container aside :is(a, button) {
     display: block; 
