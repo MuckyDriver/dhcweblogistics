@@ -476,4 +476,7 @@ div.page.news-container aside { padding: 10px;}
     div.page.news-container {
         display: block;
     }
+    .news-container aside :is(a, button) {
+        display: inline-block;
+    }
 }
