@@ -484,11 +484,10 @@ details.news-blog summary div.title {
     display: block;
 }
 
-details.news-blog div { padding: 10px 25px; }
+details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); }
 
 details.news-blog summary img {
-    width: 100%; transition: transform 0.25s ease-in-out;
-    padding: 15px; background-color: seagreen;
+    width: 100%; padding: 15px; background-color: seagreen;
 }
 
 @media (max-width: 900px) {
