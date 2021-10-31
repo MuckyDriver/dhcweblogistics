@@ -465,6 +465,7 @@ div.page.news-container aside { padding: 10px;}
 .news-container aside :is(a, button):hover {
     color: white; background-color: seagreen;
 }
+details.news-blog[open] summary img { transform: rotate(180deg); }
 
 details.news-blog summary {
     display: grid;
@@ -474,8 +475,9 @@ details.news-blog summary {
 }
 
 details.news-blog summary div {
+    padding: 10px;
     margin: auto 0;
-    display: inline-block;
+    display: block;
 }
 
 details.news-blog summary img {
