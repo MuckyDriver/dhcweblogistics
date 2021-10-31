@@ -466,7 +466,7 @@ div.page.news-container aside { padding: 10px;}
     color: white; background-color: seagreen;
 }
 
-details.news-blog { border: seagreen 1px solid}
+details.news-blog { border: rgb(235,235,235) 1px solid}
 details.news-blog[open] summary img { transform: rotate(180deg); }
 
 details.news-blog summary { 
