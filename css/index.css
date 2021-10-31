@@ -474,6 +474,14 @@ details.news-blog summary {
     background: rgb(245,245,245);
 }
 
+details.news-blog summary div {
+    margin: auto 0;
+}
+
+details.news-blog summary img {
+    width: 100%;
+}
+
 @media (max-width: 900px) {
     div.page.news-container { grid-template-columns: auto 200px; }
 }
