@@ -463,3 +463,15 @@ div.page.news-container aside {  background-color: rgb(235,235,235); }
 .news-container aside :is(a, button):hover {
     color: white; background-color: seagreen;
 }
+
+@media (max-width: 900px) {
+    div.page.news-container {
+        grid-template-columns: auto 200px;
+    }
+}
+
+@media (max-width: 600px) {
+    div.page.news-container {
+        display: block;
+    }
+}
