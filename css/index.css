@@ -464,8 +464,7 @@ div.page.news-container aside { padding: 10px;}
 }
 
 details.news-blog { margin-bottom: 7.5px;} 
-details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); height: 0%; transition: height 0.25s ease-in-out; }
-details.news-blog[open] div { height: 100%; }
+details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); }
 
 details.news-blog summary {
     overflow: hidden; user-select: none;
