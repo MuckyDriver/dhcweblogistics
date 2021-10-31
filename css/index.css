@@ -437,3 +437,20 @@ img.wave-img {
 @media (max-height: 150px) { 
     header .container nav div.dropdown .dropdown-content { top: -10px; }
 }
+
+/*
+    FROM HERE IT IS PAGE SPECIFIC 
+
+    Includes: News Page, Website Viewer and more!
+
+*/
+
+/* News */
+
+div.page.news-container {
+    display: grid;
+    grid-template-columns: auto 300px;
+}
+
+div.page.news-container .main { padding: 10px; background-color: rgb(245,245,245); }
+div.page.news-container aside { padding: 10px; background-color: rgb(235,235,235); }
