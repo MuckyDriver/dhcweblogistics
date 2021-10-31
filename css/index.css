@@ -454,6 +454,7 @@ div.page.news-container {
 
 div.page.news-container .main { padding: 10px;}
 div.page.news-container aside { padding: 10px;}
+.news-container aside :is(a, button):hover { color: white; background-color: seagreen; }
 
 .news-container aside :is(a, button) {
     display: block; cursor: pointer; border: solid 1px seagreen;
@@ -462,38 +463,24 @@ div.page.news-container aside { padding: 10px;}
     background-color: rgb(235,235,235); border-radius: 7.5px;
 }
 
-.news-container aside :is(a, button):hover {
-    color: white; background-color: seagreen;
-}
-
-details.news-blog[open] summary img { transform: rotate(180deg); }
+details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); }
 
 details.news-blog summary {
-    user-select: none;
-    display: grid;
-    grid-template-columns: auto auto 50px;
-    height: 50px;
-    background: rgb(235,235,235);
+    overflow: hidden; user-select: none;
+    display: grid; grid-template-columns: auto auto 50px;
+    height: 50px; background: rgb(235,235,235);
 }
 
+details.news-blog summary img { width: 100%; padding: 15px; background-color: seagreen; }
+details.news-blog[open] summary img { transform: rotate(180deg); }
 details.news-blog summary:hover { cursor: pointer;} 
 
 details.news-blog summary div.title {
-    padding: 10px 25px;
-    margin: auto 0;
-    display: block;
+    padding: 10px 25px; margin: auto 0; display: block;
     background-color: rgb(235,235,235);
 }
 
-details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); }
-
-details.news-blog summary img {
-    width: 100%; padding: 15px; background-color: seagreen;
-}
-
-@media (max-width: 900px) {
-    div.page.news-container { grid-template-columns: auto 200px; }
-}
+@media (max-width: 900px) {  div.page.news-container { grid-template-columns: auto 200px; } }
 
 @media (max-width: 600px) {
     div.page.news-container { display: block; }
@@ -502,4 +489,12 @@ details.news-blog summary img {
 
 @media (max-width: 400px) {
     .news-container aside :is(a, button) { display: block; text-align: center; }
+    details.news-blog summary {
+        user-select: none;
+        display: grid;
+        grid-template-columns: auto 50px;
+        height: 50px;
+        background: rgb(235,235,235);
+    }
+    details.news-blog summary div.title.date { display: none; }
 }
