@@ -466,16 +466,18 @@ div.page.news-container aside { padding: 10px;}
     color: white; background-color: seagreen;
 }
 
-details.news-blog { border: rgb(235,235,235) 1px solid}
 details.news-blog[open] summary img { transform: rotate(180deg); }
 
 details.news-blog summary { 
+    border: rgb(235,235,235) 1px solid;
     user-select: none;
     display: grid;
     grid-template-columns: auto 50px;
     height: 50px;
     background: rgb(245,245,245);
 }
+
+details.news-blog summary:hover { cursor: pointer; background-color: rgb(235,235,235);} 
 
 details.news-blog summary div {
     padding: 10px 25px;
