@@ -453,4 +453,13 @@ div.page.news-container {
 }
 
 div.page.news-container .main { padding: 10px; background-color: rgb(245,245,245); }
-div.page.news-container aside { padding: 10px; background-color: rgb(235,235,235); }
+div.page.news-container aside {  background-color: rgb(235,235,235); }
+
+.news-container aside :is(a, button) {
+    display: block; 
+    padding: 10px;
+}
+
+.news-container aside :is(a, button):hover {
+    color: white; background-color: seagreen;
+}
