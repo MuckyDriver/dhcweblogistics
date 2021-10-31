@@ -480,3 +480,9 @@ div.page.news-container aside { padding: 10px;}
         display: inline-block;
     }
 }
+
+@media (max-width: 400px) {
+    .news-container aside :is(a, button) {
+        display: block; text-align: center;
+    }
+}
