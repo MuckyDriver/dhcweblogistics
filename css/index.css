@@ -456,7 +456,7 @@ div.page.news-container .main { padding: 10px;}
 div.page.news-container aside { padding: 10px;}
 
 .news-container aside :is(a, button) {
-    display: block; 
+    display: block; cursor: pointer; border: solid 1px seagreen;
     padding: 10px;
     margin-bottom: 5px;
     background-color: rgb(235,235,235); border-radius: 7.5px;
