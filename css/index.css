@@ -474,8 +474,9 @@ details.news-blog summary {
     background: rgb(245,245,245);
 }
 
-details.news-blog summary div {
+details.news-blog summary div a {
     margin: auto 0;
+    display: inline-block;
 }
 
 details.news-blog summary img {
