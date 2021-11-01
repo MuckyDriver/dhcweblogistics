@@ -468,7 +468,7 @@ details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); 
 
 details.news-blog summary {
     overflow: hidden; user-select: none;
-    display: grid; grid-template-columns: auto auto 50px;
+    display: grid; grid-template-columns: 50% auto 50px;
     height: 50px; background: rgb(235,235,235);
 }
 
