@@ -447,15 +447,11 @@ img.wave-img {
 
 /* News */
 
-div.page.news-container {
-    display: grid;
-    grid-template-columns: auto 300px;
-}
-
+div.page.news-container { display: grid; grid-template-columns: auto 300px; }
 div.page.news-container .main { padding: 10px;}
+
 div.page.news-container aside { padding: 10px;}
 .news-container aside :is(a, button):hover { color: white; background-color: seagreen; }
-
 .news-container aside :is(a, button) {
     display: block; cursor: pointer; border: solid 1px seagreen;
     padding: 10px;
@@ -465,7 +461,6 @@ div.page.news-container aside { padding: 10px;}
 
 details.news-blog { margin-bottom: 7.5px;} 
 details.news-blog div { padding: 10px 25px; background-color: rgb(245,245,245); }
-
 details.news-blog summary {
     overflow: hidden; user-select: none;
     display: grid; grid-template-columns: 50% auto 50px;
@@ -473,7 +468,7 @@ details.news-blog summary {
 }
 
 details.news-blog summary img { width: 100%; padding: 15px; background-color: seagreen; }
-details.news-blog[open] summary img { transform: rotate(180deg); }
+details.news-blog[open] summary img { transform: rotate(180deg); background-color: rgb(100,100,100); }
 details.news-blog summary:hover { cursor: pointer; box-shadow: 0px 0px 1px 1px seagreen inset; } 
 
 details.news-blog summary div.title {
@@ -483,7 +478,6 @@ details.news-blog summary div.title {
 }
 
 @media (max-width: 900px) {  div.page.news-container { grid-template-columns: auto 200px; } }
-
 @media (max-width: 600px) {
     div.page.news-container { display: block; }
     .news-container aside :is(a, button) { display: inline-block; }
