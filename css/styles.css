@@ -1,0 +1,64 @@
+/* Main */
+* { box-sizing: border-box; }
+
+body { 
+    margin: 0;
+    background-color: rgb(24,24,24);
+    color: white;
+}
+
+/* Header */
+
+header {
+    height: 50px;
+    background-color: rgb(36,36,36);
+    border-bottom: 1px solid rgb(48,48,48);
+    padding: 0px 25px; position: sticky; top: 0;
+    box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
+}
+
+header > div.container {
+    max-width: 1000px; margin: 0 auto;
+    display: grid; height: 100%;
+    grid-template-columns: 50px auto;
+}
+
+header div.container img { 
+    max-width: 100%; padding: 10%;
+}
+
+header div.container div { margin: auto 0; font-size: x-large; padding-left: 10px; color: rgb(156, 156, 156); }
+header div.container div span { font-size: medium; vertical-align: middle; }
+header div.container div a { color: gray; }
+
+
+/* Page */
+
+div.page {
+    max-width: 1050px;
+    margin: 0 auto; padding: 0 25px;
+}
+
+/* Text */
+h1, h2 { color: #4e9e46; }
+#claas {
+    background: white; color: red; padding: 0 5px; font-style: italic;
+}
+
+/* Page Stuff */
+div.page a {
+    color: gray; display: inline-block; padding: 5px; text-decoration: none;
+}
+
+div.page div.links { float: right; margin: 1rem 0; }
+
+div.page a:hover {
+    background-color: rgb(36,36,36);
+}
+
+/* Responsive Stuff */
+@media (max-width: 400px) {
+    header div.container { display: block; }
+    header div.container div { display: none; }
+    header div.container img { max-height: 100%; padding: 2.5px; margin: auto; display: block; }
+}
