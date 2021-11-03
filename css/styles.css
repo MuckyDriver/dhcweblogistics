@@ -29,11 +29,10 @@ header div.container img {
 
 header div.container div { margin: auto 0; font-size: x-large; padding-left: 10px; color: rgb(156, 156, 156); }
 header div.container div span { font-size: medium; vertical-align: middle; }
-header div.container div a { color: gray; }
+header div.container div a { color: gray; text-decoration: none; }
 
 
 /* Page */
-
 div.page {
     max-width: 1050px;
     margin: 0 auto; padding: 0 25px;
