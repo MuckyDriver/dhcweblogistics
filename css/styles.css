@@ -5,6 +5,8 @@ body {
     margin: 0;
     background-color: rgb(24,24,24);
     color: white;
+    font-family: Calibri;
+    min-width: 600px; overflow-x: hidden;
 }
 
 /* Header */
@@ -20,17 +22,49 @@ header {
 header > div.container {
     max-width: 1000px; margin: 0 auto;
     display: grid; height: 100%;
-    grid-template-columns: 50px auto;
+    grid-template-columns: 50px 325px auto;
 }
 
 header div.container img { 
     max-width: 100%; padding: 10%;
 }
 
-header div.container div { margin: auto 0; font-size: x-large; padding-left: 10px; color: rgb(156, 156, 156); }
-header div.container div span { font-size: medium; vertical-align: middle; }
-header div.container div a { color: gray; text-decoration: none; }
+header div.container div.heading { margin: auto 0; font-size: x-large; padding-left: 10px; color: rgb(156, 156, 156); }
+header div.container div.heading span { font-size: medium; vertical-align: middle; }
+header div.container div.heading a { color: gray; text-decoration: none; }
 
+/* header navigation */
+header nav {
+    margin: auto 0 auto auto;
+    white-space: nowrap;
+}
+
+header nav a, header nav div a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 7.5px;
+    cursor: pointer;
+}
+
+header nav a:hover {
+    color: #4e9e46;
+}
+
+header nav div.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+header nav div.dropdown div.dropdown-content {
+    display: none;
+    position: absolute; right: 0;
+    background-color: white; color: black;
+    padding: 10px; min-width: 150px;
+    border-radius: 5px; border-top-right-radius: 0px;
+}
+
+header nav div.dropdown:hover div.dropdown-content { display: block; }
+header nav div.dropdown:hover a.btn { background-color: white; border-radius: 5px 5px 0 0; color: #4e9e46; }
 
 /* Page */
 div.page {
