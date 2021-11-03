@@ -61,10 +61,13 @@ header nav div.dropdown div.dropdown-content {
     background-color: white; color: black;
     padding: 10px; min-width: 150px;
     border-radius: 5px; border-top-right-radius: 0px;
+    max-height: calc(100vh - 50px); overflow-y: auto;
 }
 
 header nav div.dropdown:hover div.dropdown-content { display: block; }
 header nav div.dropdown:hover a.btn { background-color: white; border-radius: 5px 5px 0 0; color: #4e9e46; }
+
+header nav div.dropdown div.dropdown-content a { display: block;}
 
 /* Page */
 div.page {
