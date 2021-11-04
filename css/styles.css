@@ -43,6 +43,8 @@ div.details.grey {
     text-align: end;
 }
 
+div.details.upper { margin-top: 1rem; }
+
 div.notice {
     padding: 10px; background-color: black; color: white;
     text-align: center;
