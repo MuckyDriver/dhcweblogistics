@@ -5,96 +5,66 @@ body {
     margin: 0;
     background-color: rgb(24,24,24);
     color: white;
-    font-family: Calibri;
-    min-width: 600px; overflow-x: hidden;
+    font-family: Calibri; overflow-x: hidden;
 }
 
 /* Header */
-
 header {
     height: 50px;
-    background-color: rgb(36,36,36);
-    border-bottom: 1px solid rgb(48,48,48);
+    background-color: rgba(24,24,24,0.9);
     padding: 0px 25px; position: sticky; top: 0;
-    box-shadow: 0 0 0.5rem rgba(0,0,0,0.5);
 }
 
 header > div.container {
-    max-width: 1000px; margin: 0 auto;
     display: grid; height: 100%;
-    grid-template-columns: 50px 325px auto;
+    grid-template-columns: 50px auto auto;
+}
+
+header div.container nav { margin: auto 0 auto 0; }
+header div.container nav a {
+    display: inline-block; 
+    font-size: large; font-family: 'Roboto Condensed', sans-serif; 
 }
 
 header div.container img { 
-    max-width: 100%; padding: 10%;
+    max-width: 100%; vertical-align: middle; padding: 15%;
+    animation: turning 4s infinite ease; animation-timing-function: linear;
+ }
+
+header div.container nav.navigation { margin: auto 0px auto auto }
+header nav.navigation a { text-decoration: none; color: white; padding: 5px; margin: 0 5px }
+header nav.navigation a:hover { color: #87cc0f; cursor: pointer; }
+
+/* Content */
+div.details { padding: 0 20%; }
+
+div.details.grey {
+    background-color: #353535;
+    text-align: end;
 }
 
-header div.container div.heading { margin: auto 0; font-size: x-large; padding-left: 10px; color: rgb(156, 156, 156); }
-header div.container div.heading span { font-size: medium; vertical-align: middle; }
-header div.container div.heading a { color: gray; text-decoration: none; }
-
-/* header navigation */
-header nav {
-    margin: auto 0 auto auto;
-    white-space: nowrap;
+div.notice {
+    padding: 10px; background-color: black; color: white;
+    text-align: center;
 }
 
-header nav a, header nav div a {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7.5px;
-    cursor: pointer;
+/* Settings */
+img[offset] { transform: translateY(5px);} 
+a[active] { background-color: black; border: solid 1px #87cc0f }
+
+/* Text Designs */
+h1 { margin-block-start: 0; }
+p { margin-block-end: 0;}
+h1.design { border-bottom: 4px solid #87cc0f; display: inline-block; padding: 0 5px }
+
+/* Animations */
+
+@keyframes turning {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(360deg);}
 }
 
-header nav a:hover {
-    color: #4e9e46;
-}
-
-header nav div.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-header nav div.dropdown div.dropdown-content {
-    display: none;
-    position: absolute; right: 0;
-    background-color: white; color: black;
-    padding: 10px; min-width: 150px;
-    border-radius: 5px; border-top-right-radius: 0px;
-    max-height: calc(100vh - 50px); overflow-y: auto;
-}
-
-header nav div.dropdown:hover div.dropdown-content { display: block; }
-header nav div.dropdown:hover a.btn { background-color: white; border-radius: 5px 5px 0 0; color: #4e9e46; }
-
-header nav div.dropdown div.dropdown-content a { display: block;}
-
-/* Page */
-div.page {
-    max-width: 1050px;
-    margin: 0 auto; padding: 0 25px;
-}
-
-/* Text */
-h1, h2 { color: #4e9e46; }
-#claas {
-    background: white; color: red; padding: 0 5px; font-style: italic;
-}
-
-/* Page Stuff */
-div.page a {
-    color: gray; display: inline-block; padding: 5px; text-decoration: none;
-}
-
-div.page div.links { float: right; margin: 1rem 0; }
-
-div.page a:hover {
-    background-color: rgb(36,36,36);
-}
-
-/* Responsive Stuff */
-@media (max-width: 400px) {
-    header div.container { display: block; }
-    header div.container div { display: none; }
-    header div.container img { max-height: 100%; padding: 2.5px; margin: auto; display: block; }
+/* Responsive Web Designing */
+@media (max-width: 500px) {
+    div.details { padding: 0 10%; }
 }
