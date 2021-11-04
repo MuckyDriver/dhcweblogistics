@@ -12,7 +12,7 @@ body {
 header {
     height: 50px;
     background-color: rgba(24,24,24,0.9);
-    padding: 0px 25px; position: sticky; top: 0;
+    padding: 0px 25px; position: sticky; top: 0; z-index: 100;
 }
 
 header > div.container {
