@@ -53,7 +53,6 @@ div.notice {
 /* Settings */
 img[offset] { transform: translateY(5px);} 
 a[active] { background-color: black; border: solid 1px #87cc0f }
-a[disabled] { opacity: 0.5; }
 
 /* Text Designs */
 h1 { margin-block-start: 0; }
