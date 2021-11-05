@@ -32,8 +32,9 @@ header div.container img {
  }
 
 header div.container nav.navigation { margin: auto 0px auto auto }
-header nav.navigation a { text-decoration: none; color: white; padding: 5px; margin: 0 5px }
+header nav.navigation a { text-decoration: none; color: white; padding: 5px; margin: 0 5px; }
 header nav.navigation a:hover { color: #87cc0f; cursor: pointer; }
+
 /* Content */
 div.details { padding: 0 20%; }
 
