@@ -64,16 +64,17 @@ div.project-container {
     display: inline-block;
     max-width: 400px; max-height: 400px;
     overflow-y: auto; overflow-x: hidden;
-    background: black; border: 1px solid #87cc0f;
+    background: black; border: 1px solid white;
     margin: 0 10px 10px 0px;
 }
 
-div.project-container:hover { border-color: gray; cursor: pointer; }
+div.project-container:hover { border-color: #87cc0f; cursor: pointer;}
 
 div.project-container .main {
     display: grid; grid-template-columns: 50px auto;
     color: white; text-decoration: none;
 }
+div.project-container .main:hover { color: #87cc0f }
 
 div.project-container .main img { width: 100%; padding: 10%; }
 div.project-container .main p { padding: 0 10px; }
@@ -87,4 +88,8 @@ div.project-container .main p { padding: 0 10px; }
 /* Responsive Web Designing */
 @media (max-width: 500px) {
     div.details { padding: 0 10%; }
+}
+
+@media (max-width: 1000px) {
+    div.project-container { display: block; max-width: none; }
 }
