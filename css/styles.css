@@ -28,7 +28,7 @@ header div.container nav a {
 
 header div.container img { 
     max-width: 100%; vertical-align: middle; padding: 15%;
-    animation: turning 4s infinite ease; animation-timing-function: linear;
+    animation: turning 4s infinite; animation-timing-function: linear;
  }
 
 header div.container nav.navigation { margin: auto 0px auto auto }
