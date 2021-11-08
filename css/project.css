@@ -13,3 +13,8 @@ div.number-output {
     text-align: center;
     font-family: monospace; font-size: xx-large;
 }
+
+div.min-max-input {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
