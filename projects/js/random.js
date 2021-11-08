@@ -4,6 +4,6 @@ const dice = document.getElementById("number-dice");
 dice.onclick = function() {
     const min_input = document.getElementById("num-min-input");
     const max_input = document.getElementById("num-max-input");
-    var number = Math.floor((Math.random() * max_input.value) + min_input.value);
+    var number = Math.floor((Math.random() * max_input.value) + min_input.value) + 1;
     output.innerHTML = number;
 }
