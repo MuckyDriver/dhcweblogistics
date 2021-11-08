@@ -15,7 +15,7 @@ div.project-random-container button {
 }
 
 div.project-random-container button:hover {
-    background-color: rgb(50,50,50);
+    background-color: rgb(24,24,24); margin-top: 0.5em;
 }
 
 div.number-output {
