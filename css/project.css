@@ -9,7 +9,13 @@ div.project-random-container {
 
 div.project-random-container button {
     display: block; background-color: rgb(32,32,32);
-    padding: 10px; font-size: large;
+    padding: 10px; font-size: large; color: white;
+    border: solid 1px rgb(50,50,50); width: 100%;
+    cursor: pointer;
+}
+
+div.project-random-container button:hover {
+    background-color: rgb(50,50,50);
 }
 
 div.number-output {
