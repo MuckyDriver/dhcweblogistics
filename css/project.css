@@ -7,6 +7,11 @@ div.project-random-container {
     color: white;
 }
 
+div.project-random-container button {
+    display: block; background-color: rgb(32,32,32);
+    padding: 10px; font-size: large;
+}
+
 div.number-output {
     padding: 10px;
     background-color: rgb(32,32,32);
@@ -24,3 +29,4 @@ div.min-max-input input {
     display: block; width: 100%; padding: 5px; border: none;
     background-color: rgb(32,32,32); color: white;
 }
+
