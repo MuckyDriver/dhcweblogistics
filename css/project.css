@@ -4,4 +4,12 @@ div.project-random-container {
     background-color: rgb(40,40,40);
     padding: 5px; max-width: 400px;
     border: solid 1px rgb(50,50,50);
+    color: white;
+}
+
+div.number-ouput {
+    padding: 10px;
+    background-color: rgb(32,32,32);
+    text-align: center;
+    font-family: monospace;
 }
