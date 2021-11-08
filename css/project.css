@@ -11,11 +11,11 @@ div.project-random-container button {
     display: block; background-color: rgb(32,32,32);
     padding: 10px; font-size: large; color: white;
     border: solid 1px rgb(50,50,50); width: 100%;
-    cursor: pointer;
+    cursor: pointer; margin-top: 0.5em;
 }
 
 div.project-random-container button:hover {
-    background-color: rgb(24,24,24); margin-top: 0.5em;
+    background-color: rgb(24,24,24);
 }
 
 div.number-output {
