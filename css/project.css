@@ -34,3 +34,8 @@ input#num-input {
 input#num-input:focus {
     border-bottom-color: grey; background-color: rgb(24,24,24);
 }
+
+/* Text */
+h1.no-margin {
+    margin-block-end: 0.5em; margin-block-start: 1em;
+}
