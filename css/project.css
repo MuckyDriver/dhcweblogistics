@@ -19,8 +19,8 @@ div.project-random-container button:hover {
 }
 
 div.number-output {
-    padding: 10px;
-    background-color: rgb(32,32,32);
+    padding: 10px; 
+    background-color: rgb(32,32,32); border: 1px solid rgb(50,50,50);
     text-align: center;
     font-family: monospace; font-size: xx-large;
 }
