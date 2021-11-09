@@ -29,7 +29,10 @@ input#num-input {
     outline: none; color: white;
 }
 
-input#num-input:focus { border-bottom-color: grey; background-color: rgb(24,24,24); }
+input#num-input:focus { 
+    border-bottom-color: grey; background-color: rgb(24,24,24); 
+    font-size: x-large; transition: font-size 0.25s ease-in-out;
+}
 
 /* Text */
 :is(h1, h2, h3, h4).no-margin {
