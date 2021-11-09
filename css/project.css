@@ -28,6 +28,7 @@ div.number-output {
 input#num-input {
     border: none; border-bottom: #87cc0f 1px solid;
     padding: 10px; width: 100%; background-color: rgb(32,32,32);
+    outline: none; color: white;
 }
 
 input#num-input:focus {
