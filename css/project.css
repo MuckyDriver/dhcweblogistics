@@ -14,9 +14,7 @@ div.project-random-container button {
     cursor: pointer; margin-top: 0.5em;
 }
 
-div.project-random-container button:hover {
-    background-color: rgb(24,24,24);
-}
+div.project-random-container button:hover { background-color: rgb(24,24,24); }
 
 div.number-output {
     padding: 10px; 
@@ -31,9 +29,7 @@ input#num-input {
     outline: none; color: white;
 }
 
-input#num-input:focus {
-    border-bottom-color: grey; background-color: rgb(24,24,24);
-}
+input#num-input:focus { border-bottom-color: grey; background-color: rgb(24,24,24); }
 
 /* Text */
 :is(h1, h2, h3, h4).no-margin {
