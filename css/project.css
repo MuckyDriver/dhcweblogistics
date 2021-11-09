@@ -21,8 +21,8 @@ div.project-random-container button:hover {
 div.number-output {
     padding: 10px; 
     background-color: rgb(32,32,32); border: 1px solid rgb(50,50,50);
-    text-align: center; letter-spacing: 4px;
-    font-family: monospace; font-size: xx-large;
+    text-align: center;
+    font-family: 'Courier New'; font-size: xx-large;
 }
 
 input#num-input {
