@@ -36,6 +36,6 @@ input#num-input:focus {
 }
 
 /* Text */
-h1.no-margin {
+:is(h1, h2, h3, h4).no-margin {
     margin-block-end: 0.5em; margin-block-start: 1em;
 }
