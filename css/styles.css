@@ -64,7 +64,7 @@ div.project-container {
     display: inline-block;
     max-width: 400px; max-height: 400px;
     overflow-y: auto; overflow-x: hidden;
-    background: black;
+    background: black; border: solid rgb(48,48,48) 1px;
     margin: 0 10px 10px 0px;
 }
 
