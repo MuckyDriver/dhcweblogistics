@@ -92,4 +92,5 @@ div.project-container .main p { padding: 0 10px; }
 
 @media (max-width: 1000px) {
     div.project-container { display: block; max-width: none; }
+    div.project-container .main p { text-align: end; }
 }
