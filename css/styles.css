@@ -64,11 +64,11 @@ div.project-container {
     display: inline-block;
     max-width: 400px; max-height: 400px;
     overflow-y: auto; overflow-x: hidden;
-    background: black; border: 1px solid transparent;
+    background: black;
     margin: 0 10px 10px 0px;
 }
 
-div.project-container:hover { border-color: #87cc0f; cursor: pointer;}
+div.project-container:hover { cursor: pointer;}
 
 div.project-container .main {
     display: grid; grid-template-columns: 50px auto;
