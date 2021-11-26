@@ -108,8 +108,9 @@ div.gaming-container a {
 }
 
 div.gaming-container a span {
-    padding: 5px;
-    margin-left: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-left: 10px;
     background-color: rgb(72,72,72);
 }
 
