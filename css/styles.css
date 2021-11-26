@@ -98,11 +98,17 @@ div.gaming-container {
 }
 
 div.gaming-container a {
+    color: white; text-decoration: none;
     padding: 10px 15px;
     border-radius: 7.5px;
     box-shadow: black 0 0 1rem;
     background-color: rgb(64,64,64);
-    margin: 1rem; display: inline-block;
+    margin: 0.25rem; display: inline-block;
+    border: 1px solid transparent;
+}
+
+div.gaming-container a:hover {
+    border-color: #87cc0f;
 }
 
 /* Animations */
