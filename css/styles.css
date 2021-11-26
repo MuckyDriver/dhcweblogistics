@@ -83,7 +83,7 @@ div.project-container .main p { padding: 0 10px; }
 
 div.gaming-header {
     display: grid;
-    grid-template-columns: auto 100px;
+    grid-template-columns: auto 50px;
     background: white;
     padding: 10px 50px;
     letter-spacing: 3px; 
@@ -95,7 +95,7 @@ div.gaming-header {
     font-family: 'Gemunu Libre', sans-serif;
 }
 
-div.gaming-header img { width: 100%; border-radius: 50px;}
+div.gaming-header img { width: 100%; border-radius: 50px; background: lightblue; }
 div.gaming-header span { padding: 33px 0; } 
 
 div.gaming-container {
