@@ -90,7 +90,7 @@ div.gaming-header {
     background-position: center right;
     background-size: 100%;
     background-repeat: no-repeat;
-    backdrop-filter: blur(5px);
+    border-top: solid 2px #87cc0f;
 }
 
 /* Animations */
