@@ -93,6 +93,16 @@ div.gaming-header {
     font-family: 'Gemunu Libre', sans-serif;
 }
 
+div.gaming-container {
+    padding: 20px;
+}
+
+div.gaming-container a {
+    padding: 10px;
+    border-radius: 7.5rem;
+    box-shadow: black 0 0 1rem;
+}
+
 /* Animations */
 @keyframes turning {
     0% { transform: rotate(0deg);}
