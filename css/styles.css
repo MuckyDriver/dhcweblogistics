@@ -115,9 +115,8 @@ div.gaming-container a span {
     border-radius: 7.5px;
 }
 
-div.gaming-container a:hover {
-    border-color: #87cc0f;
-}
+div.gaming-container a:hover { border-color: #87cc0f; }
+div.gaming-container a:hover span { color: #87cc0f; }
 
 /* Animations */
 @keyframes turning {
