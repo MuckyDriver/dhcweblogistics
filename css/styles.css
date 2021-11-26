@@ -83,7 +83,7 @@ div.project-container .main p { padding: 0 10px; }
 
 div.gaming-header {
     display: grid;
-    grid-template-columns: auto 50px 50px;
+    grid-template-columns: auto 50px 10px 50px;
     background: white;
     padding: 10px 50px;
     letter-spacing: 3px; 
