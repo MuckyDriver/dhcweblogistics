@@ -93,6 +93,8 @@ div.gaming-header {
     font-family: 'Gemunu Libre', sans-serif;
 }
 
+div.gaming-header img { height: 100%; float: right;}
+
 div.gaming-container {
     padding: 20px;
 }
