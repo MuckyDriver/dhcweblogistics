@@ -107,6 +107,12 @@ div.gaming-container a {
     border: 1px solid transparent;
 }
 
+div.gaming-container a span {
+    padding: 5px;
+    margin-left: 5px;
+    background-color: rgb(72,72,72);
+}
+
 div.gaming-container a:hover {
     border-color: #87cc0f;
 }
