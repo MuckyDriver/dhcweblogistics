@@ -99,8 +99,9 @@ div.gaming-container {
 
 div.gaming-container a {
     padding: 10px;
-    border-radius: 7.5rem;
+    border-radius: 7.5px;
     box-shadow: black 0 0 1rem;
+    background-color: rgb(48,48,48);
 }
 
 /* Animations */
