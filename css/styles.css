@@ -86,8 +86,7 @@ div.gaming-header {
     padding: 50px; 
     color: black;
     font-size: xx-large;
-    background-image: url(https://muckydriver.net/images/videoThumbnail.JPG);
-    background: linear-gradient(to left, rgba(0,0,0,0) 20%, rgba(255,255,255,1));
+    background: linear-gradient(to left, rgba(0,0,0,0) 20%, rgba(255,255,255,1)), url(https://muckydriver.net/images/videoThumbnail.JPG);
 }
 
 /* Animations */
