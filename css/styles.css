@@ -118,6 +118,12 @@ div.gaming-container a span {
 div.gaming-container a:hover { border-color: #87cc0f; }
 div.gaming-container a:hover span { color: #87cc0f; }
 
+@media only screen and (max-width: 600px) {
+    div.gaming-container a { 
+        display: block;
+    }
+}
+
 /* Animations */
 @keyframes turning {
     0% { transform: rotate(0deg);}
