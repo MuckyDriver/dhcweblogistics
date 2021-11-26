@@ -85,7 +85,7 @@ div.gaming-header {
     display: grid;
     grid-template-columns: auto 100px;
     background: white;
-    padding: 50px;
+    padding: 10px 50px;
     letter-spacing: 3px; 
     color: black;
     font-size: xx-large;
@@ -95,7 +95,8 @@ div.gaming-header {
     font-family: 'Gemunu Libre', sans-serif;
 }
 
-div.gaming-header img { height: 100%; float: right;}
+div.gaming-header img { width: 100%; border-radius: 50px;}
+div.gaming-header span { padding: 33px 0; } 
 
 div.gaming-container {
     padding: 20px;
