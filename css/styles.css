@@ -99,7 +99,7 @@ div.gaming-container {
 
 div.gaming-container a {
     color: white; text-decoration: none;
-    padding: 10px 15px; padding-right: 5px;
+    padding: 10px 15px; padding-left: 5px;
     border-radius: 7.5px;
     box-shadow: black 0 0 1rem;
     background-color: rgb(64,64,64);
