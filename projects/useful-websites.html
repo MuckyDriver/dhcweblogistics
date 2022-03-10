@@ -7,6 +7,7 @@
         <link href="/img/icon.svg" rel="icon" type="image/svg">
         <link href="../css/styles.css" rel="stylesheet" type="text/css">
         <link href="../css/project.css" rel="stylesheet" type="text/css">
+        <link href="../css/code.css" rel="stylesheet" type="text/css">
         <meta name="description" content="DHCGamer1055...">
         <meta name="author" content="DHCGamer1055">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
@@ -68,6 +69,20 @@
             <h3 class="design anchor" id="#">Other</h3>
             <div class="resource-links">
                 <a href="https://windy.com">Windy</a>
+            </div>
+            <div class="code">
+                <span class="begin">const</span> input = document.<span class="func">getElementById</span>(<span class="str">search</span>);<br>
+                <span class="begin">const</span> btn = document.<span class="func">getElementById</span>(<span class="str">search_btn</span>);<br><br>
+                btn.<span class="func">onclick</span> = <span class="begin">function</span>() {
+                    <div class="indent">
+                        <span class="begin">let</span> anchor = document.<span class="func">getElementById</span>(input.value.<span class="func">toLowerCase</span>());<br>
+                        <span class="state">if</span> (anchor) {
+                            <div class="indent">
+                                window.<span class="func">scrollTo</span>(<span class="num">0</span>, anchor.offsetTop - <span class="num">40</span>)
+                            </div>
+                        }
+                    </div>
+                }
             </div>
         </div>
         <img offset src="/img/svg/wave2.svg">

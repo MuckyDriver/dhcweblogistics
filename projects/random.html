@@ -7,6 +7,7 @@
         <link href="/img/icon.svg" rel="icon" type="image/svg">
         <link href="/css/styles.css" rel="stylesheet" type="text/css">
         <link href="/css/project.css" rel="stylesheet" type="text/css">
+        <link href="../css/code.css" rel="stylesheet" type="text/css">
         <meta name="description" content="DHCGamer1055...">
         <meta name="author" content="DHCGamer1055">
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet"> 
@@ -24,6 +25,16 @@
                 <div class="number-output" id="num-output">∴</div>
                 <div><h4 class="no-margin">Integer Limit</h4><input id="num-input" type="number"></div>
                 <button id="number-dice">Dice!</button>
+            </div>
+            <div class="code">
+                <span class="begin">const</span> output = document.<span class="func">getElementById</span>(<span class="str">num-output</span>);<br>
+                <span class="begin">const</span> dice = document.<span class="func">getElementById</span>(<span class="str">number-dice</span>);<br>
+                <span class="begin">const</span> input = document.<span class="func">getElementById</span>(<span class="str">num-input</span>);<br><br>
+                dice.<span class="func">onclick</span> = <span class="begin">function</span>() {
+                    <div class="indent">
+                        output.innerHTML = Math.<span class="func">floor</span>((Math.<span class="func">random</span>() * input.value) + <span class="num">1</span>);
+                    </div>
+                }
             </div>
         </div>
         <img offset src="/img/svg/wave2.svg">
