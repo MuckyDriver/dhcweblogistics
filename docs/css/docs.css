@@ -167,6 +167,8 @@ div.code #global {
 div.code #num { color: rgb(181, 206, 168) }
 div.code #string { color: rgb(206, 145, 120) }
 
+div.code #com { color: rgb(100,100,100)}
+
 /* Media */
 @media (max-width: 800px) {
     div.sidebar { display: none; }
