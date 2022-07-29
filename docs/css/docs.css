@@ -1,8 +1,5 @@
 * { box-sizing: border-box; }
-
-html {
-    scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
     background-color: rgb(0,0,0);
@@ -12,12 +9,8 @@ body {
 
 div.sidebar {
     display: grid;
-    grid-template-areas: 
-        'title'
-        'anchor'
-    ;
     grid-template-rows: 50px auto;
-    overflow-y: auto; overflow-x: hidden;
+    overflow-x: hidden;
     background-color: rgb(40,40,40);
     position: fixed;
     height: 100%;
@@ -28,13 +21,8 @@ div.sidebar {
 }
 
 /* div > sidebar > ... */
-div.sidebar div {
-    padding: 10px;
-}
-
-div.sidebar div.title {
-    border-bottom: 1px solid #3498db;
-}
+div.sidebar div {  padding: 10px; }
+div.sidebar div.title { border-bottom: 1px solid #3498db; }
 
 div.sidebar div.title img {
     width: 30px;
@@ -57,22 +45,16 @@ details.group summary {
     cursor: pointer;
 }
 
-details.group[open] summary img {
-    transform: rotate(90deg);
-}
+details.group[open] summary img { transform: rotate(90deg); }
 
 details.group summary img {
     width: 30px; padding: 5px;
     vertical-align: middle;
 }
 
-details.group summary span {
-    vertical-align: middle;
-}
+details.group summary span { vertical-align: middle; }
 
-details.group div {
-    padding-left: 20px;
-}
+details.group div { padding-left: 20px; }
 
 /* Group Details */
 details.group div a {
@@ -97,9 +79,7 @@ details.group div a span img {
     vertical-align: middle;
 }
 
-details.group div a span {
-    display: inline;
-}
+details.group div a span { display: inline; }
 
 /* div > docs > ... */
 div.docs {
@@ -116,9 +96,7 @@ div.docs :is(h2, h3, h4, h5, h6) {
     margin-bottom: 10px;
 }
 
-div.docs h3.heading {
-    margin-top: 5px;
-}
+div.docs h3.heading { margin-top: 5px; }
 
 div.docs p {
     font-weight: lighter;
@@ -177,36 +155,21 @@ div.code #lua {
     font-weight: bold;
 }
 
-div.code #function {
-    color: rgb(220, 220, 170)
-}
-
-div.code #local {
-    color: rgb(156, 220, 254)
-}
-
-div.code #indent {
-    padding-left: 35px;
-}
+div.code #function { color: rgb(220, 220, 170) }
+div.code #local { color: rgb(156, 220, 254) }
+div.code #indent { padding-left: 35px; }
 
 div.code #global {
     color: rgb(90, 164, 255);
     font-weight: bold;
 }
 
-div.code #num {
-    color: rgb(181, 206, 168)
-}
-
-div.code #string {
-    color: rgb(206, 145, 120)
-}
+div.code #num { color: rgb(181, 206, 168) }
+div.code #string { color: rgb(206, 145, 120) }
 
 /* Media */
 @media (max-width: 800px) {
-    div.sidebar {
-        display: none;
-    }
+    div.sidebar { display: none; }
 
     div.docs {
         margin-left: 0;
@@ -215,9 +178,7 @@ div.code #string {
 }
 
 @media (max-width: 600px) {
-    div.code {
-        font-size: 80%;
-    }
+    div.code { font-size: 80%; }
 }
 
 @media (max-width: 450px) {
