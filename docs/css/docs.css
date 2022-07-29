@@ -2,9 +2,10 @@
 html { scroll-behavior: smooth; }
 
 body {
-    background-color: rgb(0,0,0);
     height: 100vh;
     margin: 0%;
+    background: url('../img/docsbackground.png');
+    background-color: rgb(0,0,0);
 }
 
 div.sidebar {
@@ -118,6 +119,7 @@ div.docs a.link {
 }
 
 div.docs div.section {
+    background-color: black;
     margin-bottom: 10px; margin-top: 20px;
     padding: 10px;
     border: solid 2px #3498db;
