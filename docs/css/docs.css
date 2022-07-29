@@ -59,6 +59,8 @@ details.group div { padding-left: 20px; }
 /* Group Details */
 details.group div a {
     cursor: pointer;
+    text-decoration: none;
+    color: white;
     font-size: 90%;
     display: block;
     padding: 5px 10px;
