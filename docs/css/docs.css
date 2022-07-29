@@ -167,7 +167,7 @@ div.code {
     background-color: rgb(40,40,40);
     border-radius: 8px;
     display: inline-block;
-    font-family: 'Courier New';
+    font-family: 'Source Code Pro', monospace;
     margin: 10px;
     border: dashed 1px rgb(160,160,160)
 }
@@ -200,4 +200,31 @@ div.code #num {
 
 div.code #string {
     color: rgb(206, 145, 120)
+}
+
+/* Media */
+@media (max-width: 800px) {
+    div.sidebar {
+        display: none;
+    }
+
+    div.docs {
+        margin-left: 0;
+        padding: 5%;
+    }
+}
+
+@media (max-width: 600px) {
+    div.code {
+        font-size: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    div.code {
+        position: relative;
+        width: calc(100% - 20px);
+        padding-left: 10px;
+        overflow: scroll;
+    }
 }
