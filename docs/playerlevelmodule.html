@@ -20,8 +20,8 @@
                 <details class="group" open>
                     <summary><img src="img/group_icon.png"><span>Getting Started</span></summary>
                     <div>
-                        <a id="anchor-install"><span><img src="img/tutorial.png">Install</span></a>
-                        <a id="anchor-about"><span><img src="img/tutorial.png">About</span></a>
+                        <a id="install"><span><img src="img/tutorial.png">Install</span></a>
+                        <a id="about"><span><img src="img/tutorial.png">About</span></a>
                     </div>
                 </details>
                 <details class="group" open>
@@ -52,34 +52,34 @@
         </div>
         <div class="docs" id="docs">
             <h2>Getting Started<img src="img/point.png"></h2>
-            <div class="section"><h3 class="header anchor-install">Install</h3>
+            <div class="section"><h3 class="header js-install">Install</h3>
                 <p>To get this module just <a href="downloads/LevellingSystemModule.rbxm" class="link" download="">click here</a> to get the download file (.rbxm)<br>
                     Next, you can copy this .rbxm file into a roblox place which you are working on. Furthermore, move it to "ReplicatedStorage".
                 </p>
             </div>
-            <div class="section"><h3 class="header anchor-about">About</h3>
+            <div class="section"><h3 class="header js-about">About</h3>
                 <p>This module was created to make a player levelling system a really easy thing to do. Using this module you can update and change how the player levels up.</p>
             </div> 
             <br><br>
             <h2>Properties<img src="img/point.png"></h2>
-            <div class="section"><h3 class="header level">Level</h3>
+            <div class="section"><h3 class="header js-level">Level</h3>
                 <p>Level is the current level number assigned to the player.</p>
             </div>
-            <div class="section"><h3 class="header xp">XP</h3>
+            <div class="section"><h3 class="header js-xp">XP</h3>
                 <p>XP is the current XP amount assigned to the player.</p>
             </div>
-            <div class="section"><h3 class="header multi">Multi</h3>
+            <div class="section"><h3 class="header js-multi">Multi</h3>
                 <p>Mulii/Multiplier property is a number which is used for the multiplication factor of the assigned player levelling up speed.
                     The bigger the multiplier the harder each level is. Multi can be taken the same as starting point. E.g. 100 Multi = 100 XP to complete Level 1,
                     it will increase from there.
                 </p>
             </div>
-            <div class="section"><h3 class="header client">Client</h3>
+            <div class="section"><h3 class="header js-client">Client</h3>
                 <p><span id="tag">Read Only</span>Client property is the assigned Player Object.</p>
             </div>
             <br><br>
             <h2>Functions<img src="img/point.png"></h2>
-            <div class="section yellow"><h3 class="header new">new</h3>
+            <div class="section yellow"><h3 class="header js-new">new</h3>
                 <p>Function {.new} will create a new class for the player. This function will create your player level assigned to the player.</p>
                 <div class="code">
                     <span id="lua">local</span> Levels = <span id="global">require</span>(Module)<br><br>
@@ -88,13 +88,13 @@
                     <span id="lua">end</span>)
                 </div>
             </div>
-            <div class="section purple"><h3 class="header update">Update</h3>
+            <div class="section purple"><h3 class="header js-update">Update</h3>
                 <p>Function {:Update} is to add a new amount of experience to the player. Example below adds 1000 xp to the players level!</p>
                 <div class="code">
                     PlayerLevel:<span id="function">Update</span>(<span id="num">1000</span>)
                 </div>
             </div>
-            <div class="section purple"><h3 class="header atmaxlevel">AtMaxLevel</h3>
+            <div class="section purple"><h3 class="header js-atmaxlevel">AtMaxLevel</h3>
                 <p>Function {:AtMaxLevel} is to check if the current level is the max level. If so it will stop the player from levelling up any further.</p>
                 <div class="code">
                     <span id="lua">if</span> PlayerLevel:<span id="function">AtMaxLevel</span>()<span id="lua"> then</span>
@@ -102,7 +102,7 @@
                     <span id="lua">end</span>
                 </div>
             </div>
-            <div class="section purple"><h3 class="header setmaxlevel">SetMaxLevel</h3>
+            <div class="section purple"><h3 class="header js-setmaxlevel">SetMaxLevel</h3>
                 <p>Function {:SetMaxLevel} to set a custom max level. Max level means that the {:AtMaxLevel} function will be able to check against it to see if you 
                     have reached max level yet.
                 </p>
@@ -110,7 +110,7 @@
                     PlayerLevel:<span id="function">SetMaxLevel</span>(<span id="num">100</span>)
                 </div>
             </div>
-            <div class="section purple"><h3 class="header overrideC">OverrideCurrentLevel</h3>
+            <div class="section purple"><h3 class="header js-overrideC">OverrideCurrentLevel</h3>
                 <p>To override your current level you can use the function {:OverrideCurrentLevel}. However, do not use this if you want the XP to be like it was before.
                     For any stored data please use {:OverrideXPAmount} since it will update the players level from what the xp amount is.
                 </p>
@@ -118,7 +118,7 @@
                     PlayerLevel:<span id="function">OverrideCurrentLevel</span>(<span id="num">15</span>)
                 </div>
             </div>
-            <div class="section purple"><h3 class="header overrideX">OverrideXPAmount</h3>
+            <div class="section purple"><h3 class="header js-overrideX">OverrideXPAmount</h3>
                 <p>To override the current xp amount you can use the function {:OverrideXPAmount}. Unlike {:OverrideCurrentLevel} this will change the xp amount. 
                     Also, using this function will return back to original place in the progress of the level the player is currently in.
                 </p>
@@ -126,12 +126,12 @@
                     PlayerLevel:<span id="function">OverrideXPAmount</span>(<span id="num">25000</span>)
                 </div>
             </div>
-            <div class="section purple"><h3 class="header getxp">GetXPNeededForNextLevel</h3>
+            <div class="section purple"><h3 class="header js-getxp">GetXPNeededForNextLevel</h3>
                 <p>This function will return the needed xp you need to level up to the next level. This function is mainly used in the backend part of the module, this is used when you
                     update the player xp amount.
                 </p>
             </div>
-            <div class="section purple"><h3 class="header createleaderboard">CreateLeaderboard</h3>
+            <div class="section purple"><h3 class="header js-createleaderboard">CreateLeaderboard</h3>
                 <p>{:CreateLeaderboard} function will create leaderstats using the player level values. You can choose to have it dynamic or not - dynamic will update 
                     automatically.
                 </p>
@@ -141,7 +141,7 @@
                     PlayerLevel:<span id="function">CreateLeaderboard</span>(Auto, Interval)
                 </div>
             </div>
-            <div class="section grey"><h3 class="header progress">ProgressInLevel</h3>
+            <div class="section grey"><h3 class="header js-progress">ProgressInLevel</h3>
                 <p>This function would return a decimal percentage of how far the player is through their current level. This function can be used to 
                     create progress bars on using a local script.
                 </p>
@@ -149,7 +149,7 @@
                     <span id="lua">local</span> Progress: number = Levels.<span id="function">ProgressInLevel</span>(PlayerLevel)
                 </div>
             </div>
-            <div class="section grey"><h3 class="header getplayer">GetPlayerLevel</h3>
+            <div class="section grey"><h3 class="header js-getplayer">GetPlayerLevel</h3>
                 <p>{:GetPlayerLevel} will return the passed player created player level data. This can only work if the player has already been created.</p>
                 <div class="code">
                     Players.<span id="local">PlayerRemoving</span>:<span id="function">Connect</span>(<span id="lua">function</span>(Player: Player)
