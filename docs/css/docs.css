@@ -55,7 +55,6 @@ details.group summary img {
 }
 
 details.group summary span { vertical-align: middle; }
-
 details.group div { padding-left: 20px; }
 
 /* Group Details */
@@ -70,11 +69,6 @@ details.group div a {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
-}
-
-div.sidebar.big details.group div a {
-    display: inline-block;
-    width: auto;
 }
 
 details.group div a:hover {
@@ -107,6 +101,23 @@ div.docs :is(h2, h3, h4, h5, h6) {
 
 div.docs h3.heading { margin-top: 5px; }
 
+div.docs h2 { cursor: default; }
+
+div.docs h2 img {
+    width: 35px;
+    padding: 5px;
+    margin-left: 5px;
+    vertical-align: middle;
+    position: relative;
+    top: -3px;
+    opacity: 0;
+    transition: opacity 0.15s ease-in-out;
+}
+
+div.docs h2:hover img {
+    opacity: 1;
+}
+
 div.docs p {
     font-weight: lighter;
     padding: 10px 10px;
@@ -121,12 +132,11 @@ div.docs a.link {
 
 div.docs div.section {
     background-color: black;
-    margin-bottom: 10px; margin-top: 20px;
+    margin-bottom: 10px; margin-top: 25px;
     padding: 10px;
     border: solid 2px #3498db;
-    border-radius: 5px;
     position: relative;
-    display: block;
+    border-radius: 5px;
     max-width: 1000px;
     line-height: 1.5;
 }
@@ -142,12 +152,19 @@ div.docs div.section .header {
     background: black;
     padding: 0px 10px;
     color: #3498db;
-    left: 10px;
 }
 
 div.docs div.section.purple .header { color: #9b59b6 }
 div.docs div.section.yellow .header { color: #f1c40f }
 div.docs div.section.grey .header { color: #95a5a6 }
+
+div.docs div.section #tag {
+    background-color: rgb(40,40,40);
+    display: inline-block;
+    padding: 2px 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
 
 /* Code */
 div.code {
