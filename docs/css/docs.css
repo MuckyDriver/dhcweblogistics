@@ -114,7 +114,7 @@ div.docs h2 img {
     transition: opacity 0.15s ease-in-out;
 }
 
-div.docs h2:hover img {
+div.docs div.section:hover h2 > img {
     opacity: 1;
 }
 
