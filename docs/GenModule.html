@@ -53,7 +53,7 @@
                 <div class="code">
                     <span id="lua">local </span>GenModule = <span id="global">require</span>(Module)
                 </div>
-            </div><br>
+            </div>
             <div class="section"><h3 class="header about">About</h3>
                 <p>This module was made for people who want to generate random strings, letters, symbols, filter words, scramble words and more!</p>
             </div><br><br>
@@ -63,37 +63,37 @@
                 <div class="code">
                     <span id="lua">local</span> RandomString = GenModule.<span id="function">RandomString</span>(<span id="num">8</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header randomCaps">RandomCaps</h3>
                 <p><b>RandomCaps</b> function creates a random string of caps from A-Z. This is similar to the RandomString function however uses caps instead.</p>
                 <div class="code">
                     <span id="lua">local</span> RandomCaps = GenModule.<span id="function">RandomCaps</span>(<span id="num">8</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header randomLet">RandomLetters</h3>
                 <p><b>RandomLetters</b> function creates a random string of letters only. This function will ignore numbers which are used in the RandomString function.</p>
                 <div class="code">
                     <span id="lua">local</span> RandomLetters = GenModule.<span id="function">RandomLetters</span>(<span id="num">8</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header randomLow">RandomLow</h3>
                 <p><b>RandomLow</b> function creates a string of random lowercase letters using a given length.</p>
                 <div class="code">
                     <span id="lua">local</span> RandomLow = GenModule.<span id="function">RandomLow</span>(<span id="num">8</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header randomSymb">RandomSymbols</h3>
                 <p><b>RandomSymbols</b> function creates a string of random symbols using a given length.</p>
                 <div class="code">
                     <span id="lua">local</span> RandomSymbols = GenModule.<span id="function">RandomSymbols</span>(<span id="num">8</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header randomCustom">Custom</h3>
                 <p><b>Custom</b> function will create a random string using letters which was given plus the given length as well.</p>
                 <div class="code">
                     <span id="lua">local</span> CustomString = GenModule.<span id="function">Custom</span>(<span id="num">8</span>, <span id="string">"HELLO"</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header randomCut">Cut</h3>
                 <p><b>Cut</b> function will cut trim out a piece of text/string from to points. E.g. Start would be the start char and End would be the last char. Between
                     These two points it will remove it and leave the rest.
@@ -102,7 +102,7 @@
                     <span id="lua">local</span> String = <span id="string">"Hello World"</span><br>
                     GenModule.<span id="function">Cut</span>(String, <span id="num">4</span>, <span id="num">6</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header brokenString">BrokenString</h3>
                 <p><b>BrokenString</b> function will break up a string making it impossible to know what it was before, there is no way to revert it back to normal. 
                     This function will replace and put new characters in its place where the orginal string does not exist but a new broken one.
@@ -111,13 +111,13 @@
                     <span id="lua">local</span> String = <span id="string">"Hello my name is John!"</span><br>
                     GenModule.<span id="function">BrokenString</span>(String)<span id="com"> -- Example Result: ihesmmo  ma</span>
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header randomFilter">Filter</h3>
                 <p><b>Filter</b> function will return the passed string into hashtags or a custom method.</p>
                 <div class="code">
                     GenModule.<span id="function">Filter</span>(<span id="string">"String"</span>, <span id="string">"*"</span>)
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header scrambleLet">ScrambleLetters</h3>
                 <p><b>ScrambleLetters</b> function will scramble up the given string to something else. You can unscramble this as well using another function by passing through the 
                     scrambled letters/words string.
@@ -125,7 +125,7 @@
                 <div class="code">
                     GenModule.<span id="function">ScrambleLetters</span>(<span id="string">"I'm scrambled for time!"</span>)<span id="com"> -- d!b am mrsico'rfeel Itm</span>
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header scrambleWord">ScrambleWords</h3>
                 <p><b>ScrambleWords</b> function will scramble up the given string to something else. On the other hand this function will move the words around instead of all the 
                     letters/chars around.
@@ -133,7 +133,7 @@
                 <div class="code">
                     GenModule.<span id="function">ScrambleWords</span>(<span id="string">"I'm scrambled for time!"</span>)<span id="com"> -- I'm for time! scrambled</span>
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header unScramble">UnScramble</h3>
                 <p><b>UnScramble</b> function will revert the scrambled string back to its orignal form. </p>
                 <div class="code">
@@ -142,14 +142,14 @@
                 <div class="code">
                     GenModule.<span id="function">UnScramble</span>(<span id="string">"d!b am mrsico'rfeel Itm"</span>)<span id="com"> -- I'm scrambled for time!</span>
                 </div>
-            </div><br>
+            </div>
             <div class="section grey"><h3 class="header removeChar">RemoveCharInString</h3>
                 <p><b>RemoveCharInString</b> function will remove a given character away from the string. E.g Apple -> p -> Ale </p>
                 <div class="code">
                     GenModule.<span id="function">RemoveCharInString</span>(<span id="string">"Have a good day!"</span>, <span id="string">"a"</span>)
                     <span id="com"> -- Hve good dy!</span>
                 </div>
-            </div><br>
+            </div>
         </div>
     </body>
     <script src="js/index.js"></script>
