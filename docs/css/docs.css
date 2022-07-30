@@ -101,7 +101,7 @@ div.docs :is(h2, h3, h4, h5, h6) {
 
 div.docs h3.heading { margin-top: 5px; }
 
-div.docs h2 { cursor: default; }
+div.docs h2 { cursor: default; display: inline-block; }
 
 div.docs h2 img {
     width: 35px;
@@ -114,7 +114,7 @@ div.docs h2 img {
     transition: opacity 0.15s ease-in-out;
 }
 
-div.docs div.section:hover h2 img {
+div.docs h2:hover img {
     opacity: 1;
 }
 
