@@ -7,7 +7,7 @@ for (let i = 0; i < buttons.length; i++) {
     let btn = buttons[i]
 
     btn.onclick = function() {
-        let section = docsArea.getElementsByClassName(btn.id)[0]
+        let section = docsArea.getElementsByClassName("js-" + btn.id)[0]
 
         if (section) {
             window.scrollTo(0, section.parentElement.offsetTop - 20)
