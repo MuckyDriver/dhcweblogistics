@@ -58,7 +58,9 @@
                 </p>
             </div>
             <div class="section"><h3 class="header js-about">About</h3>
-                <p>This module was created to make a player levelling system a really easy thing to do. Using this module you can update and change how the player levels up.</p>
+                <p>This module was created to allow users to make a player levelling system with ease. Using this OOP Module you can easily track and control players 
+                    levels, xp and more!
+                </p>
             </div> 
             <br><br>
             <h2>Properties<img src="img/point.png"></h2>
@@ -69,9 +71,10 @@
                 <p>XP is the current XP amount assigned to the player.</p>
             </div>
             <div class="section"><h3 class="header js-multi">Multi</h3>
-                <p>Mulii/Multiplier property is a number which is used for the multiplication factor of the assigned player levelling up speed.
-                    The bigger the multiplier the harder each level is. Multi can be taken the same as starting point. E.g. 100 Multi = 100 XP to complete Level 1,
-                    it will increase from there.
+                <p>The Multi property is used as a multiplier for the base amount of xp for each level. For example:
+                    <br><br>
+                    <code>500:Multi * (1: Level ^ 2: Square Root) = 500 XP to complete level 1</code><br>
+                    <code>500:Multi * (5: Level ^ 2: Square Root) = 12500 XP to complete level 5</code>
                 </p>
             </div>
             <div class="section"><h3 class="header js-client">Client</h3>
@@ -80,7 +83,7 @@
             <br><br>
             <h2>Functions<img src="img/point.png"></h2>
             <div class="section yellow"><h3 class="header js-new">new</h3>
-                <p>Function {.new} will create a new class for the player. This function will create your player level assigned to the player.</p>
+                <p>Function <b>new</b> will create a new class for the player. This function will create your player level assigned to the player.</p>
                 <div class="code">
                     <span id="lua">local</span> Levels = <span id="global">require</span>(Module)<br><br>
                     Players.<span id="local">PlayerAdded</span>:<span id="function">Connect</span>(<span id="lua">function</span>(Player: Player)
@@ -89,13 +92,13 @@
                 </div>
             </div>
             <div class="section purple"><h3 class="header js-update">Update</h3>
-                <p>Function {:Update} is to add a new amount of experience to the player. Example below adds 1000 xp to the players level!</p>
+                <p>Function <b>Update</b> is used to increase the amount of xp. Example below adds 1000 xp to the players level!</p>
                 <div class="code">
                     PlayerLevel:<span id="function">Update</span>(<span id="num">1000</span>)
                 </div>
             </div>
             <div class="section purple"><h3 class="header js-atmaxlevel">AtMaxLevel</h3>
-                <p>Function {:AtMaxLevel} is to check if the current level is the max level. If so it will stop the player from levelling up any further.</p>
+                <p>Function <b>AtMaxLevel</b> is to check if the current level is at max level. If so it will stop the player from levelling up any further.</p>
                 <div class="code">
                     <span id="lua">if</span> PlayerLevel:<span id="function">AtMaxLevel</span>()<span id="lua"> then</span>
                     <div id="indent"><span id="global">print</span>(<span id="string">"Reached max level!"</span>)</div>
@@ -103,7 +106,7 @@
                 </div>
             </div>
             <div class="section purple"><h3 class="header js-setmaxlevel">SetMaxLevel</h3>
-                <p>Function {:SetMaxLevel} to set a custom max level. Max level means that the {:AtMaxLevel} function will be able to check against it to see if you 
+                <p>Function <b>SetMaxLevel</b> to set a custom max level. Max level means that the {:AtMaxLevel} function will be able to check against it to see if you 
                     have reached max level yet.
                 </p>
                 <div class="code">
@@ -111,7 +114,7 @@
                 </div>
             </div>
             <div class="section purple"><h3 class="header js-overrideC">OverrideCurrentLevel</h3>
-                <p>To override your current level you can use the function {:OverrideCurrentLevel}. However, do not use this if you want the XP to be like it was before.
+                <p>To override your current level you can use the function <b>OverrideCurrentLevel</b>. However, do not use this if you want the XP to be like it was before.
                     For any stored data please use {:OverrideXPAmount} since it will update the players level from what the xp amount is.
                 </p>
                 <div class="code">
@@ -119,8 +122,8 @@
                 </div>
             </div>
             <div class="section purple"><h3 class="header js-overrideX">OverrideXPAmount</h3>
-                <p>To override the current xp amount you can use the function {:OverrideXPAmount}. Unlike {:OverrideCurrentLevel} this will change the xp amount. 
-                    Also, using this function will return back to original place in the progress of the level the player is currently in.
+                <p>To override the current xp amount you can use the function <b>OverrideXPAmount</b>. 
+                    Using this function will return back to original place in the progress of the level the player is currently in.
                 </p>
                 <div class="code">
                     PlayerLevel:<span id="function">OverrideXPAmount</span>(<span id="num">25000</span>)
@@ -132,7 +135,7 @@
                 </p>
             </div>
             <div class="section purple"><h3 class="header js-createleaderboard">CreateLeaderboard</h3>
-                <p>{:CreateLeaderboard} function will create leaderstats using the player level values. You can choose to have it dynamic or not - dynamic will update 
+                <p><b>CreateLeaderboard</b> function will create leaderstats using the player level values. You can choose to have it dynamic or not - dynamic will update 
                     automatically.
                 </p>
                 <div class="code">
@@ -150,7 +153,7 @@
                 </div>
             </div>
             <div class="section grey"><h3 class="header js-getplayer">GetPlayerLevel</h3>
-                <p>{:GetPlayerLevel} will return the passed player created player level data. This can only work if the player has already been created.</p>
+                <p><b>GetPlayerLevel</b> will return the passed player created player level data. This can only work if the player has already been created.</p>
                 <div class="code">
                     Players.<span id="local">PlayerRemoving</span>:<span id="function">Connect</span>(<span id="lua">function</span>(Player: Player)
                     <div id="indent">
