@@ -37,6 +37,7 @@ div.sidebar div.title img {
 div.sidebar div.anchor {
     margin-top: 20px;
     font-weight: lighter;
+    overflow-y: auto;
 }
 
 /* Group */
