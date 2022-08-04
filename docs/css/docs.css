@@ -204,8 +204,8 @@ div.mobile-title {
     grid-template-columns: auto 50px;
     background-color: rgb(40,40,40);
     padding: 10px;
-    position: sticky;
-    top: 0;
+    position: fixed;
+    width: 100%;
     z-index: 11;
 }
 
@@ -233,6 +233,7 @@ div.mobile-title img:hover {
     div.docs {
         margin-left: 0;
         padding: 5%;
+        padding-top: 90px;
     }
 
     div.mobile-title {
