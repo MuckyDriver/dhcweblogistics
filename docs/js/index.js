@@ -14,3 +14,28 @@ for (let i = 0; i < buttons.length; i++) {
         }
     }
 }
+
+/* Mobile Sidebar Button */
+const MobileSidebarButton = document.getElementById('mobile-sidebar-btn')
+const Sidebar = document.getElementById('sidebar')
+
+let SidebarToggle = false
+
+MobileSidebarButton.onclick = function() {
+    if (SidebarToggle == false) {
+        SidebarToggle = true
+        Sidebar.style.display = 'grid'
+    } else {
+        SidebarToggle = false
+        Sidebar.style.display = 'none'
+    }
+}
+
+/* Mobile Sidebar Check */
+window.onresize = function() { 
+    if (window.innerWidth > 800 && SidebarToggle == false) {
+        Sidebar.style.display = 'grid'
+    } else if (window.innerWidth < 800 && SidebarToggle == false) {
+        Sidebar.style.display = 'none'
+    }
+}
