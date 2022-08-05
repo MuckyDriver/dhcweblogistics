@@ -1,7 +1,9 @@
 /* Main */
-* { box-sizing: border-box; }
+* { box-sizing: border-box; user-select: none; cursor: default; }
 
 body { 
+    background-image: url('../img/svg/background1.svg');
+    background-attachment: fixed;
     margin: 0; 
     font-family: 'Rubik';
     display: grid;
@@ -16,6 +18,11 @@ body div.info {
     align-self: center;
     flex-direction: column;
     max-width: 800px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.25);
+    color: rgb(40,40,40)
 }
 
 body div.info img {
@@ -32,7 +39,7 @@ body b {
     position: fixed;
     bottom: 0; left: 0;
     z-index: -10;
-    filter: brightness(0) opacity(0.1);
+    filter: brightness(4.5);
 }
 
 /* Webpage */
