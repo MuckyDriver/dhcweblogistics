@@ -21,6 +21,12 @@ div.sidebar {
     font-family: 'Rubik';
     width: 300px;
     z-index: 10;
+    transform: translateX(0%);
+    transition: transform 0.2s ease-in-out;
+}
+
+div.sidebar.closed {
+    transform: translateX(-300px);
 }
 
 /* div > sidebar > ... */
@@ -229,7 +235,6 @@ div.mobile-title img:hover {
 
 /* Media */
 @media (max-width: 800px) {
-    div.sidebar { display: none; }
     div.sidebar.ignore { display: block; }
 
     div.docs {
@@ -241,10 +246,6 @@ div.mobile-title img:hover {
     div.mobile-title {
         display: grid;
     }
-}
-
-@media (min-width: 800px) {
-    div.sidebar { display: grid; }
 }
 
 @media (max-width: 600px) {

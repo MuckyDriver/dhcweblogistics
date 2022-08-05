@@ -24,18 +24,18 @@ let SidebarToggle = false
 MobileSidebarButton.onclick = function() {
     if (SidebarToggle == false) {
         SidebarToggle = true
-        Sidebar.style.display = 'grid'
+        Sidebar.classList.remove('closed')
     } else {
         SidebarToggle = false
-        Sidebar.style.display = 'none'
+        Sidebar.classList.add('closed')
     }
 }
 
 /* Mobile Sidebar Check */
 window.onresize = function() { 
     if (window.innerWidth > 800 && SidebarToggle == false) {
-        Sidebar.style.display = 'grid'
+        Sidebar.classList.remove('closed')
     } else if (window.innerWidth < 800 && SidebarToggle == false) {
-        Sidebar.style.display = 'none'
+        Sidebar.classList.add('closed')
     }
 }
