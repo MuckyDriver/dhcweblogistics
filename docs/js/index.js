@@ -17,7 +17,7 @@ for (let i = 0; i < buttons.length; i++) {
 /* Mobile Sidebar Button */
 const MobileSidebarButton = document.getElementById('mobile-sidebar-btn')
 const Sidebar = document.getElementById('sidebar')
-let SidebarToggle: Boolean = false
+let SidebarToggle = false
 
 MobileSidebarButton.onclick = function() {
     if (SidebarToggle == false) {
