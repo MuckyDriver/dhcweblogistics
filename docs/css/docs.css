@@ -207,6 +207,7 @@ div.mobile-title {
     position: fixed;
     width: 100%;
     z-index: 11;
+    border-bottom: #3498db 1px solid;
 }
 
 div.mobile-title div {
@@ -219,10 +220,11 @@ div.mobile-title div {
 div.mobile-title img {
     width: 40px; padding: 5px;
     cursor: pointer;
+    border-radius: 100%;
 }
 
 div.mobile-title img:hover {
-    opacity: 0.75;
+    background-color: rgb(70,70,70);
 }
 
 /* Media */
