@@ -27,12 +27,12 @@ if (window.innerWidth < 800 && SidebarToggle == false) {
 
 MobileSidebarButton.onclick = function() {
     if (SidebarToggle == false) {
-        SidebarToggle = true
         Sidebar.classList.remove('closed')
     } else {
-        SidebarToggle = false
         Sidebar.classList.add('closed')
     }
+
+    SidebarToggle != SidebarToggle
 }
 
 /* Mobile Sidebar Check */
