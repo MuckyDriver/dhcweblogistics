@@ -235,7 +235,7 @@ div.mobile-title img:hover {
 
 /* Media */
 @media (max-width: 800px) {
-    div.sidebar.ignore { display: block; }
+    div.sidebar.ignore { display: grid; }
 
     div.docs {
         margin-left: 0;
