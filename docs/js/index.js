@@ -21,6 +21,10 @@ const Sidebar = document.getElementById('sidebar')
 
 let SidebarToggle = false
 
+if (window.innerWidth < 800 && SidebarToggle == false) {
+    Sidebar.classList.add('closed')
+}
+
 MobileSidebarButton.onclick = function() {
     if (SidebarToggle == false) {
         SidebarToggle = true
