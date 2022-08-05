@@ -9,7 +9,7 @@ body {
     margin: 0; 
     font-family: 'Rubik';
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     padding: 20px;
     text-align: center;
 }
