@@ -49,6 +49,13 @@
                         <a id="getplayer"><span><img src="img/function2.png">GetPlayerLevel</span></a>
                     </div>
                 </details>
+                <details class="group" open>
+                    <summary><img src="img/group_icon.png"><span>Remote Events</span></summary>
+                    <div>
+                        <a id="updated"><span><img src="img/event.png">Updated</span></a>
+                        <a id="reachedmaxlevel"><span><img src="img/event.png">ReachedMaxLevel</span></a>
+                    </div>
+                </details>
             </div>
         </div>
         <div class="mobile-title">
@@ -68,6 +75,7 @@
                 </p>
             </div> 
             <br><br>
+
             <h2>Properties<img src="img/point.png"></h2>
             <div class="section"><h3 class="header js-level">Level</h3>
                 <p>Level is the current level number assigned to the player.</p>
@@ -86,6 +94,7 @@
                 <p><span id="tag">Read Only</span>Client property is the assigned Player Object.</p>
             </div>
             <br><br>
+
             <h2>Functions<img src="img/point.png"></h2>
             <div class="section yellow"><h3 class="header js-new">new</h3>
                 <p>Function <b>new</b> will create a new class for the player. This function will create your player level assigned to the player.</p>
@@ -164,6 +173,38 @@
                     <div id="indent">
                         <span id="lua">local</span> PlayerLevel = Levels.<span id="function">GetPlayerLevel</span>(Player)<br>
                         <span id="global">print</span>(<span id="string">"Finished on level:"</span>, PlayerLevel.<span id="local">Level</span>)
+                    </div>
+                    <span id="lua">end</span>)
+                </div>
+            </div><br><br>
+
+            <h2>Remote Events<img src="img/point.png"></h2>
+            <div class="section yellow"><h3 class="header js-updated">Updated</h3>
+                <p><b>Updated</b> remote event will be fired from the server when the player level data is updated. A local script can handle the fired event 
+                    to use the sent data for creating ui elements. e.g. Player level progress bar which updates as you collect xp through out the game, letting the 
+                    player know what level they are on and so on.
+                </p>
+                <div class="code">
+                    <span id="lua">local</span> Updated = Events.<span id="local">Updated</span>.<span id="local">OnClientEvent</span> :: RBXScriptSignal<br>
+                </div>
+                <div class="code">
+                    Updated:<span id="function">Connect</span>(<span id="lua">function</span>(PlayerLevel)<br>
+                    <div id="indent">
+                        <span id="com">-- PlayerLevel.Level, PlayerLevel.XP, PlayerLevel.XPNeeded</span><br>
+                        <span id="lua">local</span> Percent = <span id="global">math.clamp</span>(Levels.<span id="function">ProgressInLevel</span>(PlayerLevel), <span id="num">0</span>, <span id="num">1</span>)
+                    </div>
+                    <span id="lua">end</span>)
+                </div>
+            </div>
+            <div class="section yellow"><h3 class="header js-reachedmaxlevel">ReachedMaxLevel</h3>
+                <p><b>ReachedMaxLevel</b> remote event will be fired from the server when the player has reached max level.
+                <div class="code">
+                    <span id="lua">local</span> ReachedMaxLevel = Events.<span id="local">ReachedMaxLevel</span>.<span id="local">OnClientEvent</span> :: RBXScriptSignal
+                </div>
+                <div class="code">
+                    ReachedMaxLevel:<span id="function">Connect</span>(<span id="lua">function</span>(Level)<br>
+                    <div id="indent">
+                        <span id="global">print</span>(<span id="string">"Reached max level:"</span>, Level)
                     </div>
                     <span id="lua">end</span>)
                 </div>
