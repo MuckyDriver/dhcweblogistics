@@ -6,146 +6,37 @@ html {
 }
 
 body { 
-    margin: 0;  min-width: 500px;
-    background-color: rgb(24,24,24);
-    color: white;
-    font-family: Calibri; overflow-x: hidden;
-}
-
-/* Header */
-header {
-    height: 50px;
-    background-color: rgba(24,24,24,0.9);
-    padding: 0px 25px; position: sticky; top: 0; z-index: 100;
-}
-
-header > div.container {
-    display: grid; height: 100%;
-    grid-template-columns: 50px auto auto;
-}
-
-header div.container nav { margin: auto 0 auto 0; }
-header div.container nav a {
-    display: inline-block; 
-    font-size: large; font-family: 'Roboto Condensed', sans-serif; 
-}
-
-header div.container img { 
-    max-width: 100%; vertical-align: middle; padding: 15%;
-    animation: turning 4s infinite; animation-timing-function: linear;
- }
-
-header div.container nav.navigation { margin: auto 0px auto auto }
-header nav.navigation a { text-decoration: none; color: white; padding: 5px; margin: 0 5px; }
-header nav.navigation a:hover { color: #87cc0f; cursor: pointer; }
-
-/* Content */
-div.details { padding: 0 20%; }
-
-div.details.grey {
-    background-color: #353535;
-    text-align: end;
-}
-
-div.details.upper { margin-top: 1rem; }
-
-div.notice {
-    padding: 10px; background-color: black; color: white;
+    margin: 0; 
+    font-family: 'Rubik';
+    display: grid;
+    height: 100vh;
+    padding: 20px;
     text-align: center;
 }
 
-/* Settings */
-img[offset] { transform: translateY(5px);} 
-a[active] { background-color: black; border: solid 1px #87cc0f }
-
-/* Text Designs */
-h1 { margin-block-start: 0; }
-p { margin-block-end: 0;}
-:is(h1, h2, h3).design { border-bottom: 4px solid #87cc0f; display: inline-block; padding: 0 5px }
-
-/* Projects */
-div.project-container {
-    display: inline-block;
-    max-width: 400px; max-height: 400px;
-    overflow-y: auto; overflow-x: hidden;
-    background: black; border: solid rgb(48,48,48) 1px;
-    margin: 0 10px 10px 0px;
+body div.info {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    flex-direction: column;
+    max-width: 800px;
 }
 
-div.project-container:hover { cursor: pointer;}
-
-div.project-container .main {
-    display: grid; grid-template-columns: 50px auto;
-    color: white; text-decoration: none;
-}
-div.project-container .main:hover { color: #87cc0f }
-
-div.project-container .main img { width: 100%; padding: 10%; }
-div.project-container .main p { padding: 0 10px; }
-
-/* Gaming */
-
-div.gaming-header {
-    display: grid;
-    grid-template-columns: auto 50px;
-    background: white;
-    padding: 10px 50px;
-    letter-spacing: 3px; 
-    color: black;
-    font-size: xx-large;
-    background: linear-gradient(to left, rgba(0,0,0,0) 20%, rgba(255,255,255,1)), url(https://muckydriver.net/images/videoThumbnail.JPG);
-    background-position: center right; background-size: 100%; background-repeat: no-repeat;
-    border-top: solid 2px #87cc0f;
-    font-family: 'Gemunu Libre', sans-serif;
+body div.info img {
+    width: 50px;
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
 }
 
-div.gaming-header img { width: 100%; border-radius: 50px; background: rgba(0,0,0,0.25); margin: auto; box-shadow: 0 0 1rem rgba(0,0,0,0.5);}
-div.gaming-header span { padding: 33px 0; } 
-
-div.gaming-container {
-    padding: 20px;
+body b {
+    margin-bottom: 10px;
 }
 
-div.gaming-container a {
-    color: white; text-decoration: none;
-    padding: 10px 15px; padding-left: 5px;
-    border-radius: 7.5px;
-    box-shadow: black 0 0 1rem;
-    background-color: rgb(64,64,64);
-    margin: 0.25rem; display: inline-block;
-    border: 1px solid transparent;
-}
-
-div.gaming-container a span {
-    padding: 5px 10px;
-    font-weight: bold;
-    margin-right: 10px;
-    background-color: rgb(100,100,100);
-    border-radius: 7.5px;
-}
-
-div.gaming-container a:hover { border-color: #87cc0f; }
-div.gaming-container a:hover span { color: #87cc0f; }
-
-@media only screen and (max-width: 600px) {
-    div.gaming-container a { 
-        display: block;
-        margin-bottom: 1rem;
-    }
-}
-
-/* Animations */
-@keyframes turning {
-    0% { transform: rotate(0deg);}
-    100% { transform: rotate(360deg);}
-}
-
-/* Responsive Web Designing */
-@media (max-width: 500px) {
-    div.details { padding: 0 10%; }
-}
-
-@media (max-width: 1000px) {
-    div.project-container { display: block; max-width: none; }
-    div.project-container .main p { text-align: end; }
+.background {
+    position: fixed;
+    width: 100%;
+    bottom: 0; left: 0;
+    z-index: -10;
+    filter: brightness(0) opacity(0.1);
 }
