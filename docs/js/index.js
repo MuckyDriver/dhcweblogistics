@@ -32,7 +32,7 @@ MobileSidebarButton.onclick = function() {
         Sidebar.classList.add('closed')
     }
 
-    SidebarToggle != SidebarToggle
+    SidebarToggle = !SidebarToggle
 }
 
 /* Mobile Sidebar Check */
