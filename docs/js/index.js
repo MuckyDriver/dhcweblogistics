@@ -1,6 +1,5 @@
 const docsArea = document.getElementById('docs')
 const anchor = document.getElementById('anchor')
-
 let buttons = anchor.getElementsByTagName('a')
 
 for (let i = 0; i < buttons.length; i++) {
@@ -18,12 +17,7 @@ for (let i = 0; i < buttons.length; i++) {
 /* Mobile Sidebar Button */
 const MobileSidebarButton = document.getElementById('mobile-sidebar-btn')
 const Sidebar = document.getElementById('sidebar')
-
-let SidebarToggle = false
-
-if (window.innerWidth < 800 && SidebarToggle == false) {
-    Sidebar.classList.add('closed')
-}
+let SidebarToggle: Boolean = false
 
 MobileSidebarButton.onclick = function() {
     if (SidebarToggle == false) {
@@ -36,6 +30,10 @@ MobileSidebarButton.onclick = function() {
 }
 
 /* Mobile Sidebar Check */
+if (window.innerWidth < 800 && SidebarToggle == false) {
+    Sidebar.classList.add('closed')
+}
+
 window.onresize = function() { 
     if (window.innerWidth > 800 && SidebarToggle == false) {
         Sidebar.classList.remove('closed')
