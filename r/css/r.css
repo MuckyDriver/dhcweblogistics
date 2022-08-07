@@ -15,11 +15,6 @@ body.index img {
     top: -2px;
     margin-right: 10px;
     transition: filter ease-in-out 0.2s;
-    filter: grayscale(1) brightness(1.5);
-}
-
-body.index img:hover {
-    filter: grayscale(0) brightness(1);
 }
 
 body.index span {
