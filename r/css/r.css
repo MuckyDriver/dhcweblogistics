@@ -7,3 +7,25 @@ body.index {
     align-items: center;
     min-height: 100vh;
 }
+
+body.index img {
+    vertical-align: middle;
+    width: 25px;
+    position: relative;
+    top: -2px;
+    margin-right: 10px;
+    transition: filter ease-in-out 0.2s;
+    filter: grayscale(1) brightness(1.5);
+}
+
+body.index img:hover {
+    filter: grayscale(0) brightness(1);
+}
+
+body.index span {
+    display: block;
+    padding: 10%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
