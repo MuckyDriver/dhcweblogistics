@@ -271,23 +271,3 @@ div.mobile-title img:hover {
 }
 
 /* Tutorial Stuff */
-img#example {
-    width: 100%;
-    border: 2px dashed #3498db; 
-    border-radius: 5px;
-}
-
-img#examplesmall {
-    width: 100%;
-    max-width: 500px;
-    border: 2px dashed #3498db; 
-    border-radius: 5px;
-}
-
-img#examplehalf {
-    width: calc(50% - 5px);
-    aspect-ratio: 1/0.65;
-    vertical-align: middle;
-    border: 2px dashed #3498db; 
-    border-radius: 5px;
-}
