@@ -4,10 +4,8 @@ let searchPar = window.location.search.split('?')[1]
 file.src = 'directories/' + searchPar
 
 if (file.src) {
-    var metaTagEmbed = document.createElement('meta')
-    metaTagEmbed.content = file.src + "#a"
-    metaTagEmbed.setAttribute('property', 'og:image');
-    document.head.prepend(metaTagEmbed)
+    var metaTagEmbed = document.getElementsByTagName('head')[0].getElementsByTagName('meta')[0]
+    if (metaTagEmbed) { metaTagEmbed.content = file.src + "#a" }
 
     file.style.maxHeight = '100vh';
     file.style.maxWidth = '100%';
