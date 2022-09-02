@@ -5,9 +5,9 @@ file.src = 'directories/' + searchPar
 
 if (file.src) {
     var metaTagEmbed = document.createElement('meta')
-    metaTagEmbed.content = file.src
+    metaTagEmbed.content = file.src + "#a"
     metaTagEmbed.setAttribute('property', 'og:image');
-    document.head.insertBefore(metaTagEmbed, document.head.firstChild)
+    document.head.prepend(metaTagEmbed)
 
     file.style.maxHeight = '100vh';
     file.style.maxWidth = '100%';
