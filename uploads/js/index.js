@@ -1,11 +1,16 @@
 let file = new Image();
 let searchPar = window.location.search.split('?')[1]
+let newLinkForIco = document.createElement('link')
+    
+newLinkForIco.type = 'image/png'
+newLinkForIco.rel = 'icon'
+document.head.prepend(newLinkForIco)
 
+// Link + File 
 file.src = 'directories/' + searchPar
 
 if (file.src) {
-    let metaTagEmbed = document.getElementsByTagName('head')[0].getElementsByTagName('meta')[0]
-    if (metaTagEmbed) { metaTagEmbed.content = file.src + "#a" }
+    newLinkForIco.href = file.src
 
     file.style.maxHeight = '100vh';
     file.style.maxWidth = '100%';
