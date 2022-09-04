@@ -9,16 +9,11 @@ document.head.prepend(newLinkForIco)
 // Link + File 
 file.src = 'directories/' + searchPar
 
-if (file.src) {
+if (file) {
     newLinkForIco.href = file.src
 
-    file.style.maxHeight = '100vh';
-    file.style.maxWidth = '100%';
-    file.style.transform = 'translateY(-50%) translateX(-50%)';
-    file.style.position = 'fixed'
-    file.style.top = '50%';
-    file.style.left = '50%';
-    file.alt = searchPar
+    file.classList.add('dataImage')
+    file.alt = 'Could not load image: ' + searchPar
 
     document.body.appendChild(file)
     document.title = searchPar
