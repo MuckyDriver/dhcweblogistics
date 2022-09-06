@@ -10,19 +10,14 @@ document.head.prepend(newLinkForIco)
 // Link + File 
 if (file && isLink != 'link') {
     file.src = 'directories/' + searchPar
-    file.classList.add('dataImage')
-    file.alt = 'Could not load image: ' + searchPar
-
-    document.body.appendChild(file)
     document.title = searchPar
     newLinkForIco.href = file.src
-
 } else {
     file.src = searchPar.split('&')[1]
-    file.classList.add('dataImage')
-    file.alt = 'Could not load image: ' + searchPar
-
-    document.body.appendChild(file)
     document.title = 'Linked Image'
     newLinkForIco.href = file.src
 }
+
+file.classList.add('dataImage')
+file.alt = 'Could not load image: ' + searchPar
+document.body.appendChild(file)
