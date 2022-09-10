@@ -75,3 +75,16 @@ window.onload = function() { load_pages() }
 
 /* Load a game */
 const loading_games_div = document.getElementById('loading_games_div')
+const viewButtonList = document.getElementsByClassName('play')
+
+for (let i = 0; i <  viewButtonList.length; i++) {
+    const viewButton = viewButtonList[i]
+    let id = viewButton.id.split("=")[2]
+
+    viewButton.onclick = function() {
+        let url = '../games/' + id + '.json'
+        let gameData = await fetch(url)
+
+        console.log(await gameData.json())
+    }
+ }
