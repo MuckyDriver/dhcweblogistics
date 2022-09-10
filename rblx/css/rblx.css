@@ -10,6 +10,7 @@ div.game_loader {
     z-index: 1000;
     min-height: 100vh;
     width: 100%;
+    backdrop-filter: blur(6px);
 }
 
 div.game_loader span.games_loading {
@@ -19,7 +20,7 @@ div.game_loader span.games_loading {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: rgba(255,255,255, 0.05);
+    background-color: rgba(50, 50, 50);
 }
 
 div.game_loader span.games_loading img {
@@ -186,4 +187,15 @@ div.content_page div.games div.games_grid div.game div.about span.heading {
     font-size: 125%;
     margin-bottom: 15px;
     font-weight: normal;
+}
+
+div.content_page div.games div.games_grid div.game div.about span.heading img {
+    width: 32px; margin-right: 8px; margin-bottom: 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+
+div.content_page div.games div.games_grid div.game div.about img.thumbnail {
+    width: 100%;
+    margin-bottom: 10px;
 }
