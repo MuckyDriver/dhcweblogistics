@@ -81,7 +81,7 @@ for (let i = 0; i <  viewButtonList.length; i++) {
     const viewButton = viewButtonList[i]
     let id = viewButton.id.split("=")[2]
 
-    viewButton.onclick = function() {
+    viewButton.onclick = async function() {
         let url = '../games/' + id + '.json'
         let gameData = await fetch(url)
 
