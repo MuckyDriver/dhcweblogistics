@@ -81,10 +81,12 @@ for (let i = 0; i <  viewButtonList.length; i++) {
     const viewButton = viewButtonList[i]
     let id = viewButton.id.split("=")[1]
 
-    viewButton.onclick = async function() {
-        let url = './games/' + id + '.json'
-        let gameData = await fetch(url)
-
-        console.log(await gameData.json())
+    if (id) {
+        viewButton.onclick = async function() {
+            let url = './games/' + id + '.json'
+            let gameData = await fetch(url)
+    
+            console.log(await gameData.json())
+        }
     }
  }
