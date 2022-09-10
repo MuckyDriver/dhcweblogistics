@@ -79,7 +79,7 @@ const viewButtonList = document.getElementsByClassName('play')
 
 for (let i = 0; i <  viewButtonList.length; i++) {
     const viewButton = viewButtonList[i]
-    let id = viewButton.id.split("=")[2]
+    let id = viewButton.id.split("=")[1]
 
     viewButton.onclick = async function() {
         let url = '../games/' + id + '.json'
