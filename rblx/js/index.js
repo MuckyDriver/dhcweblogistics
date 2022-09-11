@@ -109,13 +109,13 @@ for (let i = 0; i <  viewButtonList.length; i++) {
             elements.description.innerText = gameData['description']
             elements.lastUpdated.innerText = 'Last Updated: ' + gameData['pagelastupdated']
 
-            elements.rating.getElementsByTagName('span')[1].innerText = gameData['rating']
-            elements.awards.getElementsByTagName('span')[1].innerText = gameData['awards']
-            elements.faves.getElementsByTagName('span')[1].innerText = gameData['favorites']
+            elements.rating.getElementsByTagName('span')[0].innerText = gameData['rating']
+            elements.awards.getElementsByTagName('span')[0].innerText = gameData['awards']
+            elements.faves.getElementsByTagName('span')[0].innerText = gameData['favorites']
 
-            elements.visits.getElementsByTagName('span')[1].innerText = gameData['visits']
-            elements.author.getElementsByTagName('span')[1].innerText = gameData['author']
-            elements.buildingTime.getElementsByTagName('span')[1].innerText = gameData['buildingtime']
+            elements.visits.getElementsByTagName('span')[0].innerText = gameData['visits']
+            elements.author.getElementsByTagName('span')[0].innerText = gameData['author']
+            elements.buildingTime.getElementsByTagName('span')[0].innerText = gameData['buildingtime']
 
             game_viewer.style.display = 'block'
         }
