@@ -76,6 +76,23 @@ window.onload = function() { load_pages() }
 /* Load a game */
 const loading_games_div = document.getElementById('loading_games_div')
 const viewButtonList = document.getElementsByClassName('play')
+const game_viewer = document.getElementById('gameViewer')
+
+let elements = {
+    thumbnail = document.getElementById('thumbnail'),
+    title = document.getElementById('title'),
+    description = document.getElementById('thumbnail'),
+
+    rating = document.getElementById('rating'),
+    awards = document.getElementById('awards'),
+    faves = document.getElementById('favourites'),
+
+    visits = document.getElementById('visits'),
+    author = document.getElementById('title'),
+    buildingTime = document.getElementById('buildingtime'),
+
+    lastUpdated = document.getElementById('lastUpdated')
+}
 
 for (let i = 0; i <  viewButtonList.length; i++) {
     const viewButton = viewButtonList[i]
@@ -85,8 +102,22 @@ for (let i = 0; i <  viewButtonList.length; i++) {
         viewButton.onclick = async function() {
             let url = './games/' + id + '.json'
             let gameData = await (await fetch(url)).json()
-    
-            console.log(gameData['title'])
+
+            elements.thumbnail.style.backgroundSize = 'cover'
+            elements.thumbnail.style.backgroundImage = 'url("' + gameData['imgThumbnailUrl'] + '")'
+            elements.title.innerText = gameData['title']
+            elements.description.innerText = gameData['description']
+            elements.lastUpdated.innerText = 'Last Updated: ' + gameData['pagelastupdated']
+
+            elements.rating.getElementsByTagName('span')[1].innerText = gameData['rating']
+            elements.awards.getElementsByTagName('span')[1].innerText = gameData['awards']
+            elements.faves.getElementsByTagName('span')[1].innerText = gameData['favorites']
+
+            elements.visits.getElementsByTagName('span')[1].innerText = gameData['visits']
+            elements.author.getElementsByTagName('span')[1].innerText = gameData['author']
+            elements.buildingTime.getElementsByTagName('span')[1].innerText = gameData['buildingtime']
+
+            game_viewer.style.display = 'block'
         }
     }
  }

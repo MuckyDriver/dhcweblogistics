@@ -199,3 +199,93 @@ div.content_page div.games div.games_grid div.game div.about img.thumbnail {
     width: 100%;
     margin-bottom: 10px;
 }
+
+/* Game Viewer */
+div.content_page div.game_viewer {
+    display: none;
+    position: fixed; z-index: 500;
+    left: 50%; transform: translateX(-50%);
+    width: calc(100% - 50px); max-width: 1200px;
+}
+
+div.game_viewer div.viewer {
+    overflow-y: auto; overflow-x: hidden;
+    border: rgba(255,255,255, 0.1) solid 1px;
+    background-color: rgb(15, 15, 15);
+    width: 100%; height: calc(100vh - 100px);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+}
+
+div.game_viewer div.viewer .thumbnail {
+    display: block; overflow: hidden;
+    background-image: url('../img/games_loader.gif');
+    background-position: center;
+    background-size: 50px;
+    background-color: rgb(45, 45, 45);
+    background-repeat: no-repeat;
+    height: 200px;
+}
+
+div.game_viewer div.viewer #close_viewer {
+    position: absolute; z-index: 6;
+    right: 0; top: 0;
+    padding: 5px; height: 45px;
+    background-color: rgba(15, 15, 15, 0.5);
+    cursor: pointer;
+    transition: background-color 0.15s ease-in-out;
+}
+
+div.game_viewer div.viewer #close_viewer:hover {
+    background-color: rgba(15, 15, 15, 1)
+}
+
+div.game_viewer div.viewer #close_viewer img {
+    width: 35px;
+}
+
+div.game_viewer div.viewer div.viewer_details {
+    padding: 25px;
+}
+
+div.game_viewer div.viewer div.viewer_details #title {
+    color: #87cc0f; margin-bottom: 8px; font-size: 120%;
+    display: block;
+}
+
+div.game_viewer div.viewer div.viewer_details #description {
+    font-weight: lighter; 
+    display: block; margin-bottom: 24px;
+}
+
+/* Game Viewer > Panels */
+div.game_viewer div.viewer div.viewer_details .panel {
+    display: grid;
+    width: 100%; padding: 10px; margin-bottom: 10px;
+    background-color: rgba(255,255,255, 0.1);
+    grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
+}
+
+@media (max-width: 500px) {
+    div.game_viewer div.viewer div.viewer_details .panel {
+        grid-template-columns: auto;
+    }
+}
+
+div.game_viewer div.viewer div.viewer_details .panel div {
+    padding: 5px; overflow: hidden;
+    white-space: nowrap; text-overflow: "...";
+}
+
+div.game_viewer div.viewer div.viewer_details .panel div img {
+    width: 36px; margin-right: 8px; vertical-align: middle;
+    padding: 5px; top: -1px; position: relative;
+}
+
+div.game_viewer div.viewer div.viewer_details .panel div span {
+    vertical-align: middle;
+}
+
+div.game_viewer div.viewer div.viewer_details .lastUpdated {
+    display: block; color:rgb(100, 100, 100);
+    text-align: end; padding: 5px;
+}
