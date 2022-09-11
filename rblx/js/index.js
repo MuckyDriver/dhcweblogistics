@@ -82,7 +82,7 @@ const close_viewer = document.getElementById('close_viewer')
 let elements = {
     thumbnail: document.getElementById('thumbnail'),
     title: document.getElementById('title'),
-    description: document.getElementById('thumbnail'),
+    description: document.getElementById('description'),
     rating: document.getElementById('rating'),
     awards: document.getElementById('awards'),
     faves: document.getElementById('favourites'),
