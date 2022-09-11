@@ -77,21 +77,23 @@ window.onload = function() { load_pages() }
 const loading_games_div = document.getElementById('loading_games_div')
 const viewButtonList = document.getElementsByClassName('play')
 const game_viewer = document.getElementById('gameViewer')
+const close_viewer = document.getElementById('close_viewer')
 
 let elements = {
     thumbnail: document.getElementById('thumbnail'),
     title: document.getElementById('title'),
     description: document.getElementById('thumbnail'),
-
     rating: document.getElementById('rating'),
     awards: document.getElementById('awards'),
     faves: document.getElementById('favourites'),
-
     visits: document.getElementById('visits'),
-    author: document.getElementById('title'),
+    author: document.getElementById('author'),
     buildingTime: document.getElementById('buildingtime'),
-
     lastUpdated: document.getElementById('lastUpdated')
+}
+
+close_viewer.onclick = function() {
+    game_viewer.style.display = 'none'
 }
 
 for (let i = 0; i <  viewButtonList.length; i++) {
@@ -102,6 +104,8 @@ for (let i = 0; i <  viewButtonList.length; i++) {
         viewButton.onclick = async function() {
             let url = './games/' + id + '.json'
             let gameData = await (await fetch(url)).json()
+
+            loading_games_div.style.display = 'flex'
 
             elements.thumbnail.style.backgroundSize = 'cover'
             elements.thumbnail.style.backgroundImage = 'url("' + gameData['imgThumbnailUrl'] + '")'
@@ -118,6 +122,7 @@ for (let i = 0; i <  viewButtonList.length; i++) {
             elements.buildingTime.getElementsByTagName('span')[0].innerText = gameData['buildingtime']
 
             game_viewer.style.display = 'block'
+            loading_games_div.style.display = 'none'
         }
     }
  }
