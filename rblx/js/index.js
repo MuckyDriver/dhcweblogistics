@@ -79,19 +79,19 @@ const viewButtonList = document.getElementsByClassName('play')
 const game_viewer = document.getElementById('gameViewer')
 
 let elements = {
-    thumbnail = document.getElementById('thumbnail'),
-    title = document.getElementById('title'),
-    description = document.getElementById('thumbnail'),
+    thumbnail: document.getElementById('thumbnail'),
+    title: document.getElementById('title'),
+    description: document.getElementById('thumbnail'),
 
-    rating = document.getElementById('rating'),
-    awards = document.getElementById('awards'),
-    faves = document.getElementById('favourites'),
+    rating: document.getElementById('rating'),
+    awards: document.getElementById('awards'),
+    faves: document.getElementById('favourites'),
 
-    visits = document.getElementById('visits'),
-    author = document.getElementById('title'),
-    buildingTime = document.getElementById('buildingtime'),
+    visits: document.getElementById('visits'),
+    author: document.getElementById('title'),
+    buildingTime: document.getElementById('buildingtime'),
 
-    lastUpdated = document.getElementById('lastUpdated')
+    lastUpdated: document.getElementById('lastUpdated')
 }
 
 for (let i = 0; i <  viewButtonList.length; i++) {
