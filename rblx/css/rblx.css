@@ -253,7 +253,7 @@ div.game_viewer div.viewer div.viewer_details #title {
 }
 
 div.game_viewer div.viewer div.viewer_details #description {
-    font-weight: lighter; 
+    font-weight: lighter; line-height: 1.5em;
     display: block; margin-bottom: 24px;
 }
 
