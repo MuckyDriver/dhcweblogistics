@@ -278,7 +278,7 @@ div.game_viewer div.viewer div.viewer_details .panel {
 
 div.game_viewer div.viewer div.viewer_details .panel div {
     padding: 5px; overflow: hidden;
-    white-space: nowrap; text-overflow: "...";
+    white-space: nowrap; text-overflow: ellipsis;
 }
 
 div.game_viewer div.viewer div.viewer_details .panel div img {
