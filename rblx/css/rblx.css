@@ -20,7 +20,7 @@ div.game_loader span.games_loading {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    background-color: rgba(50, 50, 50);
+    background-color: rgba(8, 8, 8);
 }
 
 div.game_loader span.games_loading img {
@@ -213,7 +213,7 @@ div.content_page div.game_viewer {
 
 div.game_viewer div.viewer {
     overflow-y: auto; overflow-x: hidden;
-    background-color: rgba(15, 15, 15, 0.4);
+    background-color: rgba(15, 15, 15, 0.7);
     width: 100%; height: calc(100vh - 100px);
     backdrop-filter: blur(50px);
     border-radius: 8px;
