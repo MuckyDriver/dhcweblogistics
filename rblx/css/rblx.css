@@ -3,6 +3,7 @@ body {
     margin: 0; 
     background-color: rgb(15, 15, 15); 
     user-select: none;
+    overflow-y: scroll;
 }
 
 /* Game loader */
@@ -105,6 +106,17 @@ header.content_header div.menu_area a span {
         display: none;
     }
 }
+
+/* Footer */
+footer {
+    width: 100%; padding: 16px; text-align: center;
+    font-family: 'Rubik';
+    border-top: rgba(255, 255, 255, 0.1) 1px solid;
+    margin-top: 16px;
+}
+
+footer a { text-decoration: none; }
+footer a:hover { opacity: 0.8; }
 
 /* Content Page */
 div.content_page {
