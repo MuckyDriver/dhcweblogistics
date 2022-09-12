@@ -102,10 +102,10 @@ for (let i = 0; i <  viewButtonList.length; i++) {
 
     if (id) {
         viewButton.onclick = async function() {
+            loading_games_div.style.display = 'flex'
+            
             let url = './games/' + id + '.json'
             let gameData = await (await fetch(url)).json()
-
-            loading_games_div.style.display = 'flex'
 
             elements.thumbnail.style.backgroundSize = 'cover'
             elements.thumbnail.style.backgroundImage = 'url("' + gameData['imgThumbnailUrl'] + '")'

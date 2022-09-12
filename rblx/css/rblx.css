@@ -206,13 +206,17 @@ div.content_page div.game_viewer {
     position: fixed; z-index: 500;
     left: 50%; transform: translateX(-50%);
     width: calc(100% - 25px); max-width: 1200px;
-    border: rgba(255,255,255, 0.1) solid 1px;
+    border: rgb(255, 255, 255, 0.2) solid 1px;
+    border-radius: 8px;
 }
+
 
 div.game_viewer div.viewer {
     overflow-y: auto; overflow-x: hidden;
-    background-color: rgb(15, 15, 15);
+    background-color: rgba(15, 15, 15, 0.4);
     width: 100%; height: calc(100vh - 100px);
+    backdrop-filter: blur(50px);
+    border-radius: 8px;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
 }
 
@@ -232,6 +236,7 @@ div.game_viewer div.viewer #close_viewer {
     padding: 5px; height: 45px;
     background-color: rgba(15, 15, 15, 0.5);
     cursor: pointer;
+    border-bottom-left-radius: 8px;
     transition: background-color 0.15s ease-in-out;
 }
 
@@ -286,6 +291,6 @@ div.game_viewer div.viewer div.viewer_details .panel div span {
 }
 
 div.game_viewer div.viewer div.viewer_details .lastUpdated {
-    display: block; color:rgb(100, 100, 100);
+    display: block; color: rgba(255, 255, 255, 0.4);
     text-align: end; padding: 5px;
 }
