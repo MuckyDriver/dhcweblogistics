@@ -94,7 +94,6 @@ let elements = {
 
 close_viewer.onclick = function() {
     game_viewer.style.display = 'none'
-    document.body.style.overflowY = 'auto'
 }
 
 for (let i = 0; i <  viewButtonList.length; i++) {
@@ -104,7 +103,6 @@ for (let i = 0; i <  viewButtonList.length; i++) {
     if (id) {
         viewButton.onclick = async function() {
             loading_games_div.style.display = 'flex'
-            document.body.style.overflowY = 'hidden'
 
             let url = './games/' + id + '.json'
             let gameData = await (await fetch(url)).json()
