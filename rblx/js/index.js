@@ -14,43 +14,49 @@ let styles = {
 }
 
 /* Load Content & Page */
+function adaptToPage(Idref, menuItem, pageToOpen, ignoreThis, imagery) {
+    if (Idref == pageToOpen) {
+        menuItem.classList.add('active')
+        menuItem.getElementsByTagName('img')[0].src = imagery.activated
+    } else if (Idref == ignoreThis) {
+        menuItem.getElementsByTagName('img')[0].src = imagery.off
+        menuItem.classList.remove('active')
+    } else { menuItem.classList.remove('active') }
+}
+
+function toggleContent(contentOpen, contentsToClose) {
+    styles[contentOpen].display = 'block';
+
+    for (let i = 0; i < contentsToClose.length; i++) {
+        styles[contentsToClose[i]].display = 'none'
+    }
+}
+
 let load_pages = function() {
     let window_data = window.location.hash.split('#')[1]
 
     if (window_data == 'games') {
-        styles.games.display = 'block'; styles.muckydriver.display = 'none'; styles.socials.display = 'none'; 
+        toggleContent('games', ['socials', 'muckydriver'])
         document.title = "Claasgreeneye's Games"
 
         for (let i = 0; i <  menuItems.length; i++) {
             let menuItem = menuItems[i] 
             let Idref = menuItem.id.split('_')[1]
 
-            if (Idref == 'games') {
-                menuItem.classList.add('active')
-                menuItem.getElementsByTagName('img')[0].src = 'img/icons/roblox_active.png'
-            } else if (Idref == 'socials') {
-                menuItem.getElementsByTagName('img')[0].src = 'img/icons/connect_white.png'
-                menuItem.classList.remove('active')
-            } else { menuItem.classList.remove('active') }
+            adaptToPage(Idref, menuItem, 'games', 'socials', {activated: 'img/icons/roblox_active.png', off: 'img/icons/connect_white.png'})
         } 
     } else if (window_data == 'socials') {
-        styles.games.display = 'none'; styles.muckydriver.display = 'none'; styles.socials.display = 'block'; 
+        toggleContent('socials', ['games', 'muckydriver'])
         document.title = "Claasgreeneye's Socials"
 
         for (let i = 0; i <  menuItems.length; i++) {
             let menuItem = menuItems[i] 
             let Idref = menuItem.id.split('_')[1]
 
-            if (Idref == 'socials') {
-                menuItem.classList.add('active')
-                menuItem.getElementsByTagName('img')[0].src = 'img/icons/connect_active.png'
-            } else if (Idref == 'games') {
-                menuItem.getElementsByTagName('img')[0].src = 'img/icons/roblox_white.png'
-                menuItem.classList.remove('active')
-            } else { menuItem.classList.remove('active') }
+            adaptToPage(Idref, menuItem, 'socials', 'games', {activated: 'img/icons/connect_active.png', off: 'img/icons/roblox_white.png'})
         } 
     } else if (window_data == 'muckydriver') {
-        styles.games.display = 'none'; styles.muckydriver.display = 'block'; styles.socials.display = 'none'; 
+        toggleContent('muckydriver', ['games', 'socials'])
         document.title = "Claasgreeneye's Project"
 
         for (let i = 0; i <  menuItems.length; i++) {
