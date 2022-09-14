@@ -95,7 +95,9 @@ let elements = {
     visits: document.getElementById('visits'),
     author: document.getElementById('author'),
     buildingTime: document.getElementById('buildingtime'),
-    lastUpdated: document.getElementById('lastUpdated')
+    lastUpdated: document.getElementById('lastUpdated'),
+    revenue_usd: document.getElementById('revenue-usd'),
+    revenue_robux: document.getElementById('revenue-robux')
 }
 
 close_viewer.onclick = function() {
@@ -126,6 +128,9 @@ for (let i = 0; i <  viewButtonList.length; i++) {
             elements.visits.getElementsByTagName('span')[0].innerText = gameData['visits']
             elements.author.getElementsByTagName('span')[0].innerText = gameData['author']
             elements.buildingTime.getElementsByTagName('span')[0].innerText = gameData['buildingtime']
+
+            elements.revenue_usd.getElementsByTagName('span')[0].innerText = gameData['revenueUsd']
+            elements.revenue_robux.getElementsByTagName('span')[0].innerText = gameData['revenueRbx']
 
             game_viewer.style.display = 'block'
             loading_games_div.style.display = 'none'

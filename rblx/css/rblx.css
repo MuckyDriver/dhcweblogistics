@@ -280,16 +280,10 @@ div.game_viewer div.viewer div.viewer_details #description {
 
 /* Game Viewer > Panels */
 div.game_viewer div.viewer div.viewer_details .panel {
-    display: grid;
+    display: grid; border-radius: 8px;
     width: 100%; padding: 10px; margin-bottom: 10px;
-    background-color: rgba(255,255,255, 0.1);
+    background-color: rgba(255,255,255, 0.08);
     grid-template-columns: calc(100%/3) calc(100%/3) calc(100%/3);
-}
-
-@media (max-width: 500px) {
-    div.game_viewer div.viewer div.viewer_details .panel {
-        grid-template-columns: auto;
-    }
 }
 
 div.game_viewer div.viewer div.viewer_details .panel div {
@@ -309,4 +303,54 @@ div.game_viewer div.viewer div.viewer_details .panel div span {
 div.game_viewer div.viewer div.viewer_details .lastUpdated {
     display: block; color: rgba(255, 255, 255, 0.4);
     text-align: end; padding: 5px;
+}
+
+/* Game Viewer > Split Panels */
+div.game_viewer div.viewer div.viewer_details .split-panel {
+    display: grid;
+    grid-template-columns: 50% 50%; gap: 10px;
+    width: 100%; margin-bottom: 10px;
+}
+
+div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split {
+    background-color: rgba(255,255,255, 0.08);
+    padding: 10px; border-radius: 8px;
+}
+
+div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split > .split-panel-header {
+    color: #87cc0f;
+    font-size: 120%; margin-bottom: 8px;
+}
+
+div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split > .split-panel-content div {
+    background-color: rgb(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 10px; overflow: hidden; min-width: calc(50% - 2.5px);
+    white-space: nowrap; text-overflow: ellipsis;
+    border-radius: 8px;
+}
+
+div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split > .split-panel-content div img {
+    height: 36px; margin-right: 8px; vertical-align: middle;
+    padding: 5px; top: -1px; position: relative;
+}
+
+div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split > .split-panel-content div span {
+    vertical-align: middle;
+}
+
+@media (max-width: 500px) {
+    div.game_viewer div.viewer div.viewer_details .panel {
+        grid-template-columns: auto;
+    }
+
+    div.game_viewer div.viewer div.viewer_details .split-panel {
+        grid-template-columns: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split > .split-panel-content div { 
+        display: block; margin-bottom: 5px;
+    }
 }
