@@ -83,10 +83,9 @@ window.onload = function() { load_pages() }
 function loadInfo(id, content) {
     let item = this
     let url = './games/' + id + '.json'
-    
-    console.log(item)
 
     (async function() {
+        console.log("hi")
         let gameData = await (await fetch(url)).json()
         item.innerText = gameData[content]
     })()
