@@ -88,7 +88,7 @@ function loadInfo(item, id, content) {
     })()
 }
 
-async function loadImg(item, id, content) {
+function loadImg(item, id, content) {
     (async function() {
         let url = 'games/' + id + '.json';
         let gameData = await (await fetch(url)).json();
