@@ -84,9 +84,7 @@ async function loadInfo(id, content) {
     let url = './games/' + id + '.json'
     let gameData = await (await fetch(url)).json()
 
-    if (gameData) {
-        this.innerText = gameData[content]
-    }
+    this.innerText = gameData[content]
 }
 
 async function loadImg(id, content) {
