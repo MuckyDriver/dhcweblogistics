@@ -80,11 +80,8 @@ window.onhashchange = function() { load_pages() }
 window.onload = function() { load_pages() }
 
 /* Game Grid Load Data */
-function loadInfo(id, content) {
-    let item = this;
-
+function loadInfo(item, id, content) {
     (async function() {
-        console.log("hi");
         let url = 'games/' + id + '.json';
         let gameData = await (await fetch(url)).json();
         item.innerText = gameData[content];
