@@ -88,13 +88,12 @@ function loadInfo(item, id, content) {
     })()
 }
 
-async function loadImg(id, content) {
-    let url = './games/' + id + '.json'
-    let gameData = await (await fetch(url)).json()
-
-    if (gameData) {
-        this.src = gameData[content]
-    }
+async function loadImg(item, id, content) {
+    (async function() {
+        let url = 'games/' + id + '.json';
+        let gameData = await (await fetch(url)).json();
+        item.src = gameData[content];
+    })()
 }
 
 /* Load a game */
