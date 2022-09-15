@@ -138,8 +138,4 @@ for (let i = 0; i <  viewButtonList.length; i++) {
     }
  }
 
- /* Clear Right Click */
-
- document.oncontextmenu = function() {
-    return false;
- }
+ /* Custom Right Click Menu (Coming Soon) */
