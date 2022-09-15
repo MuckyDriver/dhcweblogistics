@@ -81,6 +81,7 @@ window.onload = function() { load_pages() }
 
 /* Game Grid Load Data */
 async function loadInfo(id, content) {
+    console.log(this)
     let url = './games/' + id + '.json'
     let gameData = await (await fetch(url)).json()
 
