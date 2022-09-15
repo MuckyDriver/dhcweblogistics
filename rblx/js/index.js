@@ -79,23 +79,6 @@ let load_pages = function() {
 window.onhashchange = function() { load_pages() }
 window.onload = function() { load_pages() }
 
-/* Game Grid Load Data */
-function loadInfo(item, id, content) {
-    (async function() {
-        let url = 'games/' + id + '.json';
-        let gameData = await (await fetch(url)).json();
-        item.innerText = gameData[content];
-    })()
-}
-
-function loadImg(item, id, content) {
-    (async function() {
-        let url = 'games/' + id + '.json';
-        let gameData = await (await fetch(url)).json();
-        item.src = gameData[content];
-    })()
-}
-
 /* Load a game */
 const loading_games_div = document.getElementById('loading_games_div')
 const viewButtonList = document.getElementsByClassName('play')
