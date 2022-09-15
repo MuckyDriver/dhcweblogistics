@@ -85,7 +85,7 @@ function loadInfo(id, content) {
 
     (async function() {
         console.log("hi")
-        let url = './games/' + id + '.json'
+        let url = 'games/' + id + '.json'
         let gameData = await (await fetch(url)).json()
         item.innerText = gameData[content]
     })()
