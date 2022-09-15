@@ -81,7 +81,7 @@ window.onload = function() { load_pages() }
 
 /* Game Grid Load Data */
 async function loadInfo(id, content) {
-    let url = './games/' + toString(id) + '.json'
+    let url = './games/' + id + '.json'
     let gameData = await (await fetch(url)).json()
 
     if (gameData) {
@@ -90,7 +90,7 @@ async function loadInfo(id, content) {
 }
 
 async function loadImg(id, content) {
-    let url = './games/' + toString(id) + '.json'
+    let url = './games/' + id + '.json'
     let gameData = await (await fetch(url)).json()
 
     if (gameData) {
