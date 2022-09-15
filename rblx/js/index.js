@@ -80,12 +80,14 @@ window.onhashchange = function() { load_pages() }
 window.onload = function() { load_pages() }
 
 /* Game Grid Load Data */
-async function loadInfo(id, content) {
-    console.log(this)
+function loadInfo(id, content) {
+    let item = this
     let url = './games/' + id + '.json'
-    let gameData = await (await fetch(url)).json()
-
-    this.innerText = gameData[content]
+    
+    async function() {
+        let gameData = await (await fetch(url)).json()
+        item.innerText = gameData[content]
+    }
 }
 
 async function loadImg(id, content) {
