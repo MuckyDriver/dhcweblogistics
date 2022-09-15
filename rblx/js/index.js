@@ -137,3 +137,7 @@ for (let i = 0; i <  viewButtonList.length; i++) {
         }
     }
  }
+
+ /* Clear Right Click */
+
+ document.addEventListener('contextmenu', event => event.preventDefault());
