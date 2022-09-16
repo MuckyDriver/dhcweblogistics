@@ -143,7 +143,7 @@ for (let i = 0; i <  viewButtonList.length; i++) {
     }
  }
 
- /* Custom Right Click Menu (Coming Soon) */
+ /* Custom Right Click Menu */
 const contextMenu = document.getElementById('user-context-menu')
 const scope = document.querySelector('body');
 let offsetContext = 10
@@ -164,3 +164,19 @@ scope.addEventListener("click", (click) => {
         contextMenu.classList.remove('visible')
     }
 })
+
+const $context_github = document.getElementById('$context-github')
+const $context_roblox = document.getElementById('$context-roblox')
+const $context_discord = document.getElementById('$context-discord')
+
+$context_github.onmouseup, $context_github.onclick = function() {
+    window.open('https://github.com/MuckyDriver/dhcweblogistics', '_blank')
+}
+
+$context_roblox.onmouseup, $context_roblox.onclick = function() {
+    window.open('https://rblx.name/180336420', '_blank')
+}
+
+$context_discord.onmouseup, $context_discord.onclick = function() {
+    window.open('https://discord.gg/w2BySSGg2r', '_blank')
+}

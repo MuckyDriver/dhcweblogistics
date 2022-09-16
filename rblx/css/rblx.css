@@ -361,9 +361,11 @@ div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split
 div#user-context-menu {
     color: black;
     font-family: 'Rubik';
+    user-select: none;
     position: fixed;
     z-index: 100000;
-    max-width: 200px;
+    max-width: 220px;
+    max-height: 400px; overflow-y: auto;
     background: white;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     border-radius: 5px;
@@ -384,6 +386,10 @@ div#user-context-menu div.item {
     grid-template-columns: 36px auto;
     cursor: pointer;
     border-radius: inherit;
+}
+
+div#user-context-menu div.item.disabled {
+    opacity: 0.5; cursor: default;
 }
 
 div#user-context-menu div.item img {
