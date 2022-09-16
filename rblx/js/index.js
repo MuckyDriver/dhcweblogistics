@@ -144,3 +144,24 @@ for (let i = 0; i <  viewButtonList.length; i++) {
  }
 
  /* Custom Right Click Menu (Coming Soon) */
+const contextMenu = document.getElementById('user-context-menu')
+const scope = document.querySelector('body');
+
+scope.addEventListener("contextmenu", (event) => {
+    event.preventDefault()
+
+    contextMenu.style.top = (event.clientY + 10) + "px";
+    contextMenu.style.left = (event.clientX + 10) + "px";
+
+    contextMenu.classList.remove("visible")
+
+    setTimeout(() => {
+        contextMenu.classList.add("visible")
+    })
+});
+
+scope.addEventListener("click", (click) => {
+    if (click.target.offsetParent != contextMenu) {
+        contextMenu.classList.remove('visible')
+    }
+})

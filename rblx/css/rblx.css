@@ -356,3 +356,43 @@ div.game_viewer div.viewer div.viewer_details .split-panel div.split-panel-split
         display: block; margin-bottom: 5px;
     }
 }
+
+/* Context Menu */
+div#user-context-menu {
+    color: black;
+    font-family: 'Rubik';
+    position: fixed;
+    z-index: 100000;
+    max-width: 200px;
+    background: white;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    transform: scale(0);
+    transform-origin: top left;
+    transition: transform 150ms ease-in-out;
+}
+
+div#user-context-menu.visible {
+    transform: scale(1);
+}
+
+div#user-context-menu div.item {
+    padding: 2px 8px;
+    display: grid;
+    grid-template-columns: 36px auto;
+    cursor: pointer;
+    border-radius: inherit;
+}
+
+div#user-context-menu div.item img {
+    width: 36px; padding: 5px;
+}
+
+div#user-context-menu div.item span {
+    display: flex; align-self: center;
+    padding: 5px;
+}
+
+div#user-context-menu div.item:hover {
+    background-color: rgb(0, 0, 0, 0.05);
+}
