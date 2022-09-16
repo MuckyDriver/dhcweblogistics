@@ -2,13 +2,13 @@
 body { 
     margin: 0; 
     background-color: rgb(15, 15, 15); 
-    user-select: none;
     overflow-y: scroll;
 }
 
 /* Game loader */
 div.game_loader {
     display: none; /* flex */
+    user-select: none;
     position: fixed;
     justify-content: center;
     align-items: center;
@@ -39,6 +39,7 @@ div.game_loader span.games_loading img {
 
 /* Header */
 header {
+    user-select: none;
     max-width: 1200px;
     margin: auto;
 }
@@ -109,6 +110,7 @@ header.content_header div.menu_area a span {
 
 /* Footer */
 footer {
+    user-select: none;
     width: 100%; padding: 16px; text-align: center;
     font-family: 'Rubik';
     border-top: rgba(255, 255, 255, 0.1) 1px solid;
@@ -132,6 +134,7 @@ div.content_page div.content {
 
 /* Content Headers */
 div.content_page div.super-header {
+    user-select: none;
     padding: 10px; margin-top: 10px;
     display: block;
     border-bottom: #87cc0f solid 2px;
