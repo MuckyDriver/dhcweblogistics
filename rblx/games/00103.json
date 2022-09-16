@@ -10,5 +10,7 @@
     "revenueUsd": "0.00",
     "revenueRbx": "0",
     "pagelastupdated": "14.09.2022",
-    "imgThumbnailUrl": "./img/game_thumbnails/sutartstorysad.png"
+    "imgThumbnailUrl": "./img/game_thumbnails/sutartstorysad.png",
+    "releaseYear": "2019",
+    "serverSize": "10"
 }
