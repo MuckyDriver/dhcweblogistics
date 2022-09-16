@@ -367,13 +367,15 @@ div#user-context-menu {
     background: white;
     box-shadow: 0 0 1rem rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    opacity: 0;
     transform: scaleY(0) scaleX(0.5);
     transform-origin: top left;
-    transition: transform 150ms ease-in-out;
+    transition: transform 150ms ease-in-out, opacity 100ms ease-in-out;
 }
 
 div#user-context-menu.visible {
     transform: scaleY(1) scaleX(1);
+    opacity: 1;
 }
 
 div#user-context-menu div.item {
