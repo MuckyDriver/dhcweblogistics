@@ -146,13 +146,12 @@ for (let i = 0; i <  viewButtonList.length; i++) {
  /* Custom Right Click Menu (Coming Soon) */
 const contextMenu = document.getElementById('user-context-menu')
 const scope = document.querySelector('body');
+let offsetContext = 10
 
 scope.addEventListener("contextmenu", (event) => {
     event.preventDefault()
-
-    contextMenu.style.top = (event.clientY + 10) + "px";
-    contextMenu.style.left = (event.clientX + 10) + "px";
-
+    contextMenu.style.top = (event.clientY + offsetContext) + "px";
+    contextMenu.style.left = (event.clientX + offsetContext) + "px";
     contextMenu.classList.remove("visible")
 
     setTimeout(() => {
