@@ -295,7 +295,7 @@ div.game_viewer div.viewer div.viewer_details .panel div {
 
 div.game_viewer div.viewer div.viewer_details .panel div img {
     width: 36px; margin-right: 8px; vertical-align: middle;
-    padding: 5px; top: -1px; position: relative;
+    padding: 5px; top: -1px; position: relative; user-select: none;
 }
 
 div.game_viewer div.viewer div.viewer_details .panel div span {
