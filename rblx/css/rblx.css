@@ -218,7 +218,7 @@ div.content_page div.games div.games_grid div.game div.about img.thumbnail {
 
 /* Game Viewer */
 div.content_page div.game_viewer {
-    display: block;
+    display: none;
     position: fixed; z-index: 500;
     left: 50%; transform: translateX(-50%);
     width: calc(100% - 25px); max-width: 1200px;
