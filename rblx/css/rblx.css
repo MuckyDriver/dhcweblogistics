@@ -389,10 +389,10 @@ div#user-context-menu div.item img {
 }
 
 div#user-context-menu div.item span {
-    display: flex; align-self: center;
+    align-self: center;
     padding: 5px;
 }
 
 div#user-context-menu div.item:hover {
-    background-color: rgb(0, 0, 0, 0.05);
+    background-color: rgb(0, 0, 0, 0.1);
 }
