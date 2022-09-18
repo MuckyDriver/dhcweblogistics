@@ -168,6 +168,9 @@ scope.addEventListener("click", (click) => {
 const $context_github = document.getElementById('$context-github')
 const $context_roblox = document.getElementById('$context-roblox')
 const $context_discord = document.getElementById('$context-discord')
+const $context_refresh = document.getElementById('$context-refresh')
+const $context_fullscreen = document.getElementById('$context-fullscreen')
+const $context_exitfullscreen = document.getElementById('$context-exitFullscreen')
 
 $context_github.onmouseup, $context_github.onclick = function() {
     window.open('https://github.com/MuckyDriver/dhcweblogistics', '_blank')
@@ -180,3 +183,30 @@ $context_roblox.onmouseup, $context_roblox.onclick = function() {
 $context_discord.onmouseup, $context_discord.onclick = function() {
     window.open('https://discord.gg/w2BySSGg2r', '_blank')
 }
+
+$context_refresh.onmouseup, $context_refresh.onclick = function() {
+    location.reload()
+}
+
+let de = document.documentElement
+$context_fullscreen.onmouseup, $context_fullscreen.onclick = function() {
+    $context_fullscreen.style.display = 'none'
+    $context_exitfullscreen.style.display = 'grid'
+
+    if (de.requestFullscreen) { de.requestFullscreen()
+    } else if (de.webkitRequestFullscreen) { de.webkitRequestFullscreen()
+    } else if (de.msRequestFullscreen) { de.msRequestFullscreen() }
+}
+
+$context_exitfullscreen.onmouseup, $context_exitfullscreen.onclick = function() {
+    if (document.fullscreenElement) {
+        document.exitFullscreen()
+    }
+}
+
+addEventListener('fullscreenchange', (event) => { 
+    if (!document.fullscreenElement) {
+        $context_fullscreen.style.display = 'grid'
+        $context_exitfullscreen.style.display = 'none'
+    }
+});
