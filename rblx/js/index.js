@@ -213,6 +213,8 @@ addEventListener('fullscreenchange', (event) => {
 
 /* Game Grid Loadup (Test) */
 window.onload = function() {
+    loading_games_div.style.display = 'flex';
+
     for (let i = 0; i < viewButtonList.length; i++) {
         const gameButton = viewButtonList[i]
         const gameAbout = gameButton.parentElement.getElementsByClassName('about')[0];
@@ -234,4 +236,6 @@ window.onload = function() {
             }
         })()
     }
+
+    loading_games_div.style.display = 'none';
 }
