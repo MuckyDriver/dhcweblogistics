@@ -210,3 +210,23 @@ addEventListener('fullscreenchange', (event) => {
         $context_exitfullscreen.style.display = 'none'
     }
 });
+
+/* Game Grid Loadup (Test) */
+const game_10106 = document.getElementById('play=10106')
+const game_item = game_10106.parentElement
+const game_description_10106 = game_item.getElementsByClassName('desc')[0]
+const game_heading_10106 = game_item.getElementsByClassName('heading')[0]
+const game_icon_10106 = game_item.getElementsByClassName('icon')[0]
+const game_thumbnail_10106 = game_item.getElementsByClassName('thumbnail')[0]
+
+async function() {
+    let url = './games/' + toString(game_10106.id.split("=")[1]) + '.json'
+    let gameData = await (await fetch(url)).json()
+
+    if (gameData) {
+        game_description_10106.innerText = gameData['description']
+        game_heading_10106.innerText = gameData['title']
+        game_icon_10106.src = gameData['imgIconUrl']
+        game_thumbnail_10106.src = gameData['imgThumbnailUrl']
+    }
+}
