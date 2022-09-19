@@ -219,7 +219,7 @@ const game_heading_10106 = game_item.getElementsByClassName('heading')[0]
 const game_icon_10106 = game_item.getElementsByClassName('icon')[0]
 const game_thumbnail_10106 = game_item.getElementsByClassName('thumbnail')[0]
 
-async function() {
+(async function() {
     let url = './games/' + toString(game_10106.id.split("=")[1]) + '.json'
     let gameData = await (await fetch(url)).json()
 
@@ -229,4 +229,4 @@ async function() {
         game_icon_10106.src = gameData['imgIconUrl']
         game_thumbnail_10106.src = gameData['imgThumbnailUrl']
     }
-}
+})()
