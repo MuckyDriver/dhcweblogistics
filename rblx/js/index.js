@@ -213,7 +213,7 @@ addEventListener('fullscreenchange', (event) => {
 
 /* Game Grid Loadup (Test) */
 window.onload = function() {
-    const game_10106 = document.getElementById('play=10106')
+    const game_10106 = document.getElementById('play=00106')
     const game_item = game_10106.parentElement
     const game_description_10106 = game_item.getElementsByClassName('desc')[0]
     const game_heading_10106 = game_item.getElementsByClassName('heading')[0]
