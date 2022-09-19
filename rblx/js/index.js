@@ -213,24 +213,25 @@ addEventListener('fullscreenchange', (event) => {
 
 /* Game Grid Loadup (Test) */
 window.onload = function() {
-    const game_00106 = document.getElementById('play=00106');
-    const game_item = game_00106.parentElement;
-    const game_about = game_item.getElementsByClassName('about')[0];
-    const game_description_10106 = game_about.getElementsByClassName('desc')[0];
-    const game_heading_10106 = game_about.getElementsByClassName('heading')[0];
-    const game_icon_10106 = game_about.getElementsByClassName('icon')[0];
-    const game_thumbnail_10106 = game_about.getElementsByClassName('thumbnail')[0];
+    for (let i = 0; i < viewButtonList.length; i++) {
+        const gameButton = viewButtonList[i]
+        const gameAbout = gameButton.parentElement.getElementsByClassName('about')[0];
+        const gameTitle = gameAbout.getElementsByClassName('heading')[0];
+        const gameDescription = gameAbout.getElementsByClassName('desc')[0];
+        const gameIcon = gameAbout.getElementsByClassName('icon')[0];
+        const gameThumbnail = gameAbout.getElementsByClassName('thumbnail')[0];
 
-    (async function() {
-        let id = game_00106.id.split("=")[1]
-        let url = './games/' + id + '.json'
-        let gameData = await (await fetch(url)).json()
-
-        if (gameData) {
-            game_description_10106.innerText = gameData['description']
-            game_heading_10106.innerText = gameData['title']
-            game_icon_10106.src = gameData['imgIconUrl']
-            game_thumbnail_10106.src = gameData['imgThumbnailUrl']
-        }
-    })()
+        (async function() {
+            let id = gameButton.id.split('=')[1]
+            let url = './games/' + id + '.json'
+            let gameData = await (await fetch(url)).json()
+    
+            if (gameData) {
+                gameDescription.innerText = gameData['description']
+                gameTitle.innerText = gameData['title']
+                gameIcon.src = gameData['imgIconUrl']
+                gameThumbnail.src = gameData['imgThumbnailUrl']
+            }
+        })()
+    }
 }

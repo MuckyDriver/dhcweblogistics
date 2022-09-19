@@ -11,6 +11,7 @@
     "revenueRbx": "0",
     "pagelastupdated": "16.09.2022",
     "imgThumbnailUrl": "./img/game_thumbnails/planetary_object_realm.png",
+    "imgIconUrl": "./img/game_icons/planetary.png",
     "releaseYear": "2020",
     "serverSize": "18"
 }
