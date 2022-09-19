@@ -213,7 +213,7 @@ addEventListener('fullscreenchange', (event) => {
 
 /* Game Grid Loadup (Test) */
 window.onload = function() {
-    const game_10106 = document.getElementById('play=00106');
+    const game_00106 = document.getElementById('play=00106');
     const game_item = game_10106.parentElement;
     const game_about = game_item.getElementsByClassName('about')[0];
     const game_description_10106 = game_about.getElementsByClassName('desc')[0];
@@ -222,7 +222,8 @@ window.onload = function() {
     const game_thumbnail_10106 = game_about.getElementsByClassName('thumbnail')[0];
 
     (async function() {
-        let url = './games/' + toString(game_10106.id.split("=")[1]) + '.json'
+        let id = game_00106.id.split("=")[1]
+        let url = './games/' + id + '.json'
         let gameData = await (await fetch(url)).json()
 
         if (gameData) {
