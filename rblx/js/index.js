@@ -189,8 +189,8 @@ $context_refresh.onmouseup, $context_refresh.onclick = function() {
     location.reload()
 }
 
-$context_source.onmouseup, $context_source.onclick = function() {
-    window.location.href = "view-source:https://dhcweblogistics.net/rblx/"
+$context_source.onclick = function() {
+    window.open("view-source:" + location.href)
 }
 
 let de = document.documentElement
