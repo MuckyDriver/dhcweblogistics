@@ -190,7 +190,7 @@ $context_refresh.onmouseup, $context_refresh.onclick = function() {
 }
 
 $context_source.onclick = function() {
-    window.open("view-source:" + location.href)
+    window.location = "view-source:" + window.location;
 }
 
 let de = document.documentElement
