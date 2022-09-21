@@ -410,3 +410,27 @@ div#user-context-menu div.item span {
 div#user-context-menu div.item:hover {
     background-color: rgb(0, 0, 0, 0.1);
 }
+
+/* Copyright */
+
+div.copyright {
+    padding: 5px 8px;
+    cursor: default;
+    font-family: 'Rubik';
+    position: fixed; z-index: 1000;
+    border-radius: 5px;
+    margin: 10px; bottom: 0;
+    backdrop-filter: blur(10px);
+    background-color: rgba(25, 25, 25, 0.5);
+    transition: 0.1s opacity ease-in-out;
+}
+
+div.copyright:hover {
+    opacity: 0.25;
+}
+
+div.copyright span {
+    font-size: larger;
+    vertical-align: middle;
+    top: -1px; position: relative;
+}
