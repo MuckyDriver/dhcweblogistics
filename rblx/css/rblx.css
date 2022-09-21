@@ -408,7 +408,7 @@ div#user-context-menu div.item span {
 }
 
 div#user-context-menu div.item:hover {
-    background-color: rgb(0, 0, 0, 0.1);
+    background-color: rgb(0, 0, 0, 0.075);
 }
 
 /* Copyright */

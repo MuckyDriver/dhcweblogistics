@@ -169,7 +169,6 @@ const $context_github = document.getElementById('$context-github')
 const $context_roblox = document.getElementById('$context-roblox')
 const $context_discord = document.getElementById('$context-discord')
 const $context_refresh = document.getElementById('$context-refresh')
-const $context_source = document.getElementById('$context-source')
 const $context_fullscreen = document.getElementById('$context-fullscreen')
 const $context_exitfullscreen = document.getElementById('$context-exitFullscreen')
 
@@ -187,10 +186,6 @@ $context_discord.onmouseup, $context_discord.onclick = function() {
 
 $context_refresh.onmouseup, $context_refresh.onclick = function() {
     location.reload()
-}
-
-$context_source.onclick = function() {
-    window.location = "view-source:" + window.location;
 }
 
 let de = document.documentElement
