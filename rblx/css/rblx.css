@@ -414,7 +414,7 @@ div#user-context-menu div.item:hover {
 /* Copyright */
 
 div.copyright {
-    padding: 5px 8px;
+    padding: 6px 10px;
     cursor: pointer;
     font-family: 'Rubik';
     position: fixed; z-index: 999;
@@ -441,7 +441,6 @@ div.copyright span {
 div.copyright div.info {
     margin-top: 5px;
     font-weight: lighter;
-    max-width: 200px;
 }
 
 /* Other */
