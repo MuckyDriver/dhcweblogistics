@@ -235,3 +235,18 @@ window.onload = function() {
         })()
     }
 }
+
+/* Copyright Toggle Information */
+const copyright_element = document.getElementById('$copyright')
+const copyrightInfo_element = document.getElementById('$copyright-info')
+let copyright_enabled = false
+
+copyright_element.onclick = function() {
+    if (copyrightInfo_element) {
+        copyrightInfo_element.classList.add('hidden')
+    } else {
+        copyrightInfo_element.classList.remove('hidden')
+    }
+
+    copyright_enabled != copyright_enabled
+}

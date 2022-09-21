@@ -415,7 +415,7 @@ div#user-context-menu div.item:hover {
 
 div.copyright {
     padding: 5px 8px;
-    cursor: default;
+    cursor: pointer;
     font-family: 'Rubik';
     position: fixed; z-index: 999;
     border-radius: 5px;
@@ -436,4 +436,16 @@ div.copyright span {
         transform: translateX(calc(-100% + -10px));
         opacity: 0;
     }
+}
+
+div.copyright div.info {
+    margin-top: 5px;
+    font-weight: lighter;
+    max-width: 200px;
+}
+
+/* Other */
+
+*.hidden {
+    display: none;
 }
