@@ -420,7 +420,7 @@ div.copyright {
     position: fixed; z-index: 999;
     border-radius: 5px;
     margin: 10px; bottom: 0;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px) brightness(0.25);
     background-color: rgba(135, 204, 17, 0.2);
     transition: all 0.4s ease-in-out;
 }
@@ -448,3 +448,5 @@ div.copyright div.info {
 *.hidden {
     display: none;
 }
+
+*.
