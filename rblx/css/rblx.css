@@ -443,10 +443,8 @@ div.copyright div.info {
     font-weight: lighter;
 }
 
-/* Other */
-
-*.hidden {
+div.copyright div.info.hidden {
     display: none;
 }
 
-*.
+/* Other */
