@@ -216,7 +216,6 @@ window.onload = function() {
     for (let i = 0; i < viewButtonList.length; i++) {
         const gameButton = viewButtonList[i]
         const gameAbout = gameButton.parentElement.getElementsByClassName('about')[0];
-        const gameTitle = gameAbout.getElementsByClassName('heading')[0];
         const gameDescription = gameAbout.getElementsByClassName('desc')[0];
         const gameIcon = gameAbout.getElementsByClassName('icon')[0];
         const gameThumbnail = gameAbout.getElementsByClassName('thumbnail')[0];
@@ -229,7 +228,6 @@ window.onload = function() {
             if (gameData) {
                 gameDescription.innerText = gameData['description']
                 gameIcon.src = gameData['imgIconUrl']
-                gameTitle.getElementsByTagName('span')[0].innerText = gameData['title']
                 gameThumbnail.src = gameData['imgThumbnailUrl']
             }
         })()
