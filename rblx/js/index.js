@@ -229,8 +229,7 @@ window.onload = function() {
             if (gameData) {
                 gameDescription.innerText = gameData['description']
                 gameIcon.src = gameData['imgIconUrl']
-                gameTitle.innerText = gameData['title']
-
+                gameTitle.getElementsByTagName('span')[0].innerText = gameData['title']
                 gameThumbnail.src = gameData['imgThumbnailUrl']
             }
         })()
