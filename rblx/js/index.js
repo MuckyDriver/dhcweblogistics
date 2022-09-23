@@ -228,8 +228,9 @@ window.onload = function() {
 
             if (gameData) {
                 gameDescription.innerText = gameData['description']
-                gameTitle.innerText = gameData['title']
                 gameIcon.src = gameData['imgIconUrl']
+                gameTitle.innerText = gameData['title']
+
                 gameThumbnail.src = gameData['imgThumbnailUrl']
             }
         })()
