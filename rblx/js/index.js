@@ -225,7 +225,7 @@ window.onload = function() {
             let id = gameButton.id.split('=')[1]
             let url = './games/' + id + '.json'
             let gameData = await (await fetch(url)).json()
-    
+
             if (gameData) {
                 gameDescription.innerText = gameData['description']
                 gameTitle.innerText = gameData['title']
