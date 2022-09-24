@@ -99,7 +99,7 @@ let elements = {
     revenue_usd: document.getElementById('revenue-usd'),
     revenue_robux: document.getElementById('revenue-robux'),
     release_year: document.getElementById('release-yr'),
-    visability: document.getElementById('visability-listing')
+    visability: document.getElementById('visability-listing'),
     serverSize: document.getElementById('server-size')
 }
 
