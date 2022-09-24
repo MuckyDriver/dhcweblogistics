@@ -185,8 +185,8 @@ div.content_page div.games div.games_grid div.game div.play {
     padding: 12.5px;
     text-align: center;
     background-color: transparent;
+    color: #87cc0f;
     border: #87cc0f 1px solid;
-    color: black;
     cursor: pointer;
     transition: all 0.2s ease-in-out;
     margin-top: auto;
@@ -195,7 +195,7 @@ div.content_page div.games div.games_grid div.game div.play {
 div.content_page div.games div.games_grid div.game div.play:hover {
     border-color: transparent;
     background-color: #87cc0f;
-    color: white;
+    color: black;
 }
 
 div.content_page div.games div.games_grid div.game div.about {
