@@ -99,6 +99,7 @@ let elements = {
     revenue_usd: document.getElementById('revenue-usd'),
     revenue_robux: document.getElementById('revenue-robux'),
     release_year: document.getElementById('release-yr'),
+    visability: document.getElementById('visability-listing')
     serverSize: document.getElementById('server-size')
 }
 
@@ -133,6 +134,7 @@ for (let i = 0; i <  viewButtonList.length; i++) {
 
             elements.release_year.getElementsByTagName('span')[0].innerText = gameData['releaseYear']
             elements.serverSize.getElementsByTagName('span')[0].innerText = gameData['serverSize']
+            elements.visability.getElementsByTagName('span')[0].innerText = gameData['visibility']
 
             elements.revenue_usd.getElementsByTagName('span')[0].innerText = gameData['revenueUsd']
             elements.revenue_robux.getElementsByTagName('span')[0].innerText = gameData['revenueRbx']

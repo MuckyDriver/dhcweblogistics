@@ -13,5 +13,6 @@
     "imgThumbnailUrl": "./img/game_thumbnails/nullzone.png",
     "imgIconUrl": "./img/game_icons/nullzone.png",
     "releaseYear": "2021",
-    "serverSize": "10"
+    "serverSize": "10",
+    "visibility": "Public"
 }

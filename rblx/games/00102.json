@@ -13,5 +13,6 @@
     "imgThumbnailUrl": "./img/game_thumbnails/planetary_object_realm.png",
     "imgIconUrl": "./img/game_icons/planetary.png",
     "releaseYear": "2020",
-    "serverSize": "18"
+    "serverSize": "18",
+    "visibility": "Private"
 }

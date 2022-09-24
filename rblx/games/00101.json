@@ -13,5 +13,6 @@
     "imgThumbnailUrl": "./img/game_thumbnails/nukelab_2018.png",
     "imgIconUrl": "./img/game_icons/nukelab.png",
     "releaseYear": "2018",
-    "serverSize": "8"
+    "serverSize": "8",
+    "visibility": "Public"
 }

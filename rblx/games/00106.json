@@ -13,5 +13,6 @@
     "imgThumbnailUrl": "./img/game_thumbnails/bridgeobby.png",
     "imgIconUrl": "./img/game_icons/bridgeobby.png",
     "releaseYear": "2018",
-    "serverSize": "20"
+    "serverSize": "20",
+    "visibility": "Private"
 }

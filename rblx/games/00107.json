@@ -2,7 +2,7 @@
     "title": "Drive - Flatlands",
     "description": "Coming soon as part of a project",
     "author": "Claasgreeneye",
-    "rating": "N/A",
+    "rating": "--/10",
     "buildingtime": "Not finished",
     "awards": "0",
     "favorites": "0",
@@ -13,5 +13,6 @@
     "imgThumbnailUrl": "./img/game_thumbnails/drive.png",
     "imgIconUrl": "./img/game_icons/drive.png",
     "releaseYear": "Not released",
-    "serverSize": "1"
+    "serverSize": "1",
+    "visibility": "Private"
 }

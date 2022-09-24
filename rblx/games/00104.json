@@ -13,5 +13,6 @@
     "imgThumbnailUrl": "./img/game_thumbnails/jailbreak_old.png",
     "imgIconUrl": "./img/game_icons/jailbreak_old.png",
     "releaseYear": "2021",
-    "serverSize": "100"
+    "serverSize": "100",
+    "visibility": "Public"
 }
