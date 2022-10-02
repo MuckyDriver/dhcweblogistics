@@ -1,1 +1,7 @@
-<script async type="text/javascript">window.location.replace('/'); alert("Error 404: Page not found!")</script>
+<script async type="text/javascript">
+    const confirmed = confirm('Error 404: Page not found, the url does not exist on this domain. Close this tab or click OK to return to the domains main page.')
+
+    if (confirmed) {
+        window.location.replace('/');
+    }
+</script>
