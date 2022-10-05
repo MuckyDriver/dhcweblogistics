@@ -281,3 +281,39 @@ input.search-box {
     margin-bottom: 15px; 
     border-radius: 8px;
 }
+
+/* Copyright */
+
+div.copyright {
+    padding: 6px 10px;
+    cursor: pointer;
+    font-family: 'Rubik';
+    position: fixed; z-index: 999;
+    border-radius: 5px;
+    margin: 10px; bottom: 0;
+    backdrop-filter: blur(10px) brightness(0.25);
+    background-color: rgba(52, 152, 219, 0.2);
+    transition: all 0.4s ease-in-out;
+}
+
+div.copyright span {
+    font-size: larger;
+    vertical-align: middle;
+    top: -1px; position: relative;
+}
+
+@media (max-width: 650px) {
+    div.copyright {
+        transform: translateX(calc(-100% + -10px));
+        opacity: 0;
+    }
+}
+
+div.copyright div.info {
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+div.copyright div.info.hidden {
+    display: none;
+}
