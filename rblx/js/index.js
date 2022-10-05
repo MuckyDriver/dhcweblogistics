@@ -4,76 +4,44 @@ let menuItems = menu_area.getElementsByTagName('a')
 
 /* Contents */
 const content_games = document.getElementById('content_games')
-const content_muckydriver = document.getElementById('content_muckydriver')
+const content_muckydriver = document.getElementById('content_project')
 const content_socials = document.getElementById('content_socials')
 
-let styles = {
-    games: content_games.style,
-    muckydriver: content_muckydriver.style,
-    socials: content_socials.style
-}
+let contentList = [
+    ['games', content_games], ['project', content_muckydriver], ['socials', content_socials]
+]
 
 /* Load Content & Page */
-function adaptToPage(Idref, menuItem, pageToOpen, ignoreThis, imagery) {
-    if (Idref == pageToOpen) {
-        menuItem.classList.add('active')
-        menuItem.getElementsByTagName('img')[0].src = imagery.activated
-    } else if (Idref == ignoreThis) {
-        menuItem.getElementsByTagName('img')[0].src = imagery.off
-        menuItem.classList.remove('active')
-    } else { menuItem.classList.remove('active') }
+function updateMenuButtons(windowData) {
+    let pageToOpen = windowData
+
+    for (let i = 0; i < menuItems.length; i++) {
+        let menuItem = menuItems[i]
+        let IdReference = menuItem.id.split('_')[1]
+
+        if (IdReference == pageToOpen) {
+            menuItem.classList.add('active')
+        } else { 
+            menuItem.classList.remove('active') 
+        }
+    }
 }
 
-function toggleContent(contentOpen, contentsToClose) {
-    styles[contentOpen].display = 'block';
-
-    for (let i = 0; i < contentsToClose.length; i++) {
-        styles[contentsToClose[i]].display = 'none'
-    }
+function updateContent(windowData) {
+    contentList.forEach(function(item) {
+        if (item[0] == windowData) {
+            item[1].style.display = 'block';
+        } else {
+            item[1].style.display = 'none';
+        }
+    })
 }
 
 let load_pages = function() {
-    let window_data = window.location.hash.split('#')[1]
+    let windowData = window.location.hash.split('#')[1]
 
-    if (window_data == 'games') {
-        toggleContent('games', ['socials', 'muckydriver'])
-        document.title = "Claasgreeneye's Games"
-
-        for (let i = 0; i <  menuItems.length; i++) {
-            let menuItem = menuItems[i] 
-            let Idref = menuItem.id.split('_')[1]
-
-            adaptToPage(Idref, menuItem, 'games', 'socials', {activated: 'img/icons/roblox_active.png', off: 'img/icons/connect_white.png'})
-        } 
-    } else if (window_data == 'socials') {
-        toggleContent('socials', ['games', 'muckydriver'])
-        document.title = "Claasgreeneye's Socials"
-
-        for (let i = 0; i <  menuItems.length; i++) {
-            let menuItem = menuItems[i] 
-            let Idref = menuItem.id.split('_')[1]
-
-            adaptToPage(Idref, menuItem, 'socials', 'games', {activated: 'img/icons/connect_active.png', off: 'img/icons/roblox_white.png'})
-        } 
-    } else if (window_data == 'muckydriver') {
-        toggleContent('muckydriver', ['games', 'socials'])
-        document.title = "Claasgreeneye's Project"
-
-        for (let i = 0; i <  menuItems.length; i++) {
-            let menuItem = menuItems[i] 
-            let Idref = menuItem.id.split('_')[1]
-
-            if (Idref == 'muckydriver') {
-                menuItem.classList.add('active')
-            } else if (Idref == 'socials') {
-                menuItem.getElementsByTagName('img')[0].src = 'img/icons/connect_white.png'
-                menuItem.classList.remove('active')
-            } else {
-                menuItem.getElementsByTagName('img')[0].src = 'img/icons/roblox_white.png'
-                menuItem.classList.remove('active')
-            }
-        } 
-    }
+    document.title = "Claasgreeneye's " + windowData.charAt(0).toUpperCase() + windowData.slice(1)
+    updateMenuButtons(windowData); updateContent(windowData)
 }
 
 window.onhashchange = function() { load_pages() }

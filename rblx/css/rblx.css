@@ -80,8 +80,16 @@ header.content_header div.menu_area a {
     transition: opacity 0.1s ease-in-out;
 }
 
+header.content_header div.menu_area a img {
+    filter: brightness(1000%) grayscale(1)
+}
+
 header.content_header div.menu_area a.active {
     color: #87cc0f;
+}
+
+header.content_header div.menu_area a.active img {
+    filter: brightness(100%);
 }
 
 header.content_header div.menu_area a:hover {
