@@ -3,10 +3,12 @@ const menu_area = document.getElementById('menu_area')
 let menuItems = menu_area.getElementsByTagName('a')
 
 /* Contents */
+const content_page = document.getElementById('content')
 const content_games = document.getElementById('content_games')
 const content_muckydriver = document.getElementById('content_project')
 const content_socials = document.getElementById('content_socials')
 
+let transitionSpeed = 500; // ms
 let contentList = [
     ['games', content_games], ['project', content_muckydriver], ['socials', content_socials]
 ]
@@ -28,20 +30,30 @@ function updateMenuButtons(windowData) {
 }
 
 function updateContent(windowData) {
-    contentList.forEach(function(item) {
-        if (item[0] == windowData) {
-            item[1].style.display = 'block';
-        } else {
-            item[1].style.display = 'none';
-        }
-    })
+    content_page.classList.add('transition')
+
+    setTimeout(function() {
+        contentList.forEach(function(item) {
+            if (item[0] == windowData) {
+                item[1].style.display = 'block';
+            } else {
+                item[1].style.display = 'none';
+            }
+        })
+
+        setTimeout(function() {
+            content_page.classList.remove('transition')
+        }, transitionSpeed/2)
+    }, transitionSpeed/2)
 }
 
 let load_pages = function() {
     let windowData = window.location.hash.split('#')[1]
 
-    document.title = "Claasgreeneye's " + windowData.charAt(0).toUpperCase() + windowData.slice(1)
-    updateMenuButtons(windowData); updateContent(windowData)
+    if (windowData) {
+        document.title = "Claasgreeneye's " + windowData.charAt(0).toUpperCase() + windowData.slice(1)
+        updateMenuButtons(windowData); updateContent(windowData)
+    }
 }
 
 window.onhashchange = function() { load_pages() }

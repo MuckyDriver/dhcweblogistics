@@ -138,9 +138,21 @@ div.content_page {
     font-family: 'Rubik';
 }
 
+div.content_page.transition {
+    animation-name: pageTransition;
+    animation-duration: .5s;
+}
+
 div.content_page div.content {
     display: none;
     padding: 10px 25px;
+}
+
+@keyframes pageTransition {
+    0% { opacity: 1; }
+    40% { opacity: 0; }
+    60% { opacity: 0; }
+    100% { opacity: 1; }
 }
 
 /* Content Headers */
