@@ -77,7 +77,6 @@ let load_pages = function() {
 }
 
 window.onhashchange = function() { load_pages() }
-window.onload = function() { load_pages() }
 
 /* Load a game */
 const loading_games_div = document.getElementById('loading_games_div')
@@ -213,8 +212,10 @@ addEventListener('fullscreenchange', (event) => {
     }
 });
 
-/* Game Grid Loadup (Test) */
+/* Game Grid Loadup (Test) + Load Page */
 window.onload = function() {
+    load_pages()
+
     for (let i = 0; i < viewButtonList.length; i++) {
         const gameButton = viewButtonList[i]
         const gameAbout = gameButton.parentElement.getElementsByClassName('about')[0];
