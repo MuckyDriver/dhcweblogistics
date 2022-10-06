@@ -148,7 +148,7 @@ const $context_fullscreen = document.getElementById('$context-fullscreen')
 const $context_exitfullscreen = document.getElementById('$context-exitFullscreen')
 
 $context_github.onmouseup, $context_github.onclick = function() {
-    window.open('https://github.com/MuckyDriver/dhcweblogistics', '_blank')
+    window.open('https://github.com/MuckyDriver/dhcweblogistics/tree/main/rblx', '_blank')
 }
 
 $context_roblox.onmouseup, $context_roblox.onclick = function() {
