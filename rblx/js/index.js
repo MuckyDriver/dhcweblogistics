@@ -2,16 +2,10 @@
 const menu_area = document.getElementById('menu_area')
 let menuItems = menu_area.getElementsByTagName('a')
 
-/* Contents */
+/* Content Pages */
 const content_page = document.getElementById('content')
-const content_games = document.getElementById('content_games')
-const content_muckydriver = document.getElementById('content_project')
-const content_socials = document.getElementById('content_socials')
-
+const contents = content_page.getElementsByClassName('content')
 let transitionSpeed = 500; // ms
-let contentList = [
-    ['games', content_games], ['project', content_muckydriver], ['socials', content_socials]
-]
 
 /* Load Content & Page */
 function updateMenuButtons(windowData) {
@@ -33,13 +27,13 @@ function updateContent(windowData) {
     content_page.classList.add('transition')
 
     setTimeout(function() {
-        contentList.forEach(function(item) {
-            if (item[0] == windowData) {
-                item[1].style.display = 'block';
-            } else {
-                item[1].style.display = 'none';
-            }
-        })
+        for (let i = 0; i < contents.length; i++) {
+            const content = contents[i]
+            let pageIdentity = content.id.split('_')[1]
+    
+            if (pageIdentity == windowData) { content.style.display = 'block';
+            } else { content.style.display = 'none'; }
+        }
 
         setTimeout(function() {
             content_page.classList.remove('transition')
