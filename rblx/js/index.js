@@ -210,3 +210,16 @@ window.onload = function() {
         })()
     }
 }
+
+/* Project Menu Items + Page Handling */
+const portalMenu = document.getElementById('portal-menu');
+const portalMenuItems = portalMenu.getElementsByTagName('a')
+
+for (let i = 0; i < portalMenuItems.length; i++) {
+    const portalItem = portalMenuItems[i]
+    let menuReference = portalItem.id.split('-')[1]
+
+    portalItem.onclick = function() {
+        console.log(menuReference)
+    }
+}
