@@ -214,12 +214,39 @@ window.onload = function() {
 /* Project Menu Items + Page Handling */
 const portalMenu = document.getElementById('portal-menu');
 const portalMenuItems = portalMenu.getElementsByTagName('a')
+const portalPages = document.getElementById('portal-pages')
+const portalPageItems = portalPages.getElementsByClassName('portal-page')
+
+function togglePortalPage(reference) {
+    for (let i = 0; i < portalPageItems.length; i++) {
+        const portalPage = portalPageItems[i] 
+        let toRef = portalPage.id
+
+        if (reference == toRef) {
+            portalPage.style.display = 'block';
+        } else {
+            portalPage.style.display = 'none'
+        }
+    }
+
+    for (let i = 0; i < portalMenuItems.length; i++) {
+        const portalItem = portalMenuItems[i]
+
+        if (portalItem.id.split("-")[1] == reference) {
+            portalItem.classList.add('active')
+        } else {
+            portalItem.classList.remove('active')
+        }
+
+        
+    }
+}
 
 for (let i = 0; i < portalMenuItems.length; i++) {
     const portalItem = portalMenuItems[i]
     let menuReference = portalItem.id.split('-')[1]
 
     portalItem.onclick = function() {
-        console.log(menuReference)
+        togglePortalPage(menuReference)
     }
 }

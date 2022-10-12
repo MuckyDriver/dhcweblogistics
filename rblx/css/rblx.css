@@ -474,9 +474,9 @@ div.copyright div.info.hidden {
 
 /* Muckydriver */
 div.portal-header {
-    display: grid;
-    margin-top: 12px; padding-bottom: 12px;
+    display: grid; margin-top: 12px; padding-bottom: 12px;
     border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+    overflow-y: hidden; white-space: nowrap;
 }
 
 div.portal-header > div.portal-menu {
@@ -502,6 +502,12 @@ div.portal-header a:hover::after {
 
 div.portal-header a:hover::before {
     opacity: 1; color: #87cc0f;
+}
+
+/* Muckydriver > Portal Page */
+div.portal-pages > div.portal-page {
+    display: none;
+    margin-top: 16px;
 }
 
 /* Other */
