@@ -472,4 +472,36 @@ div.copyright div.info.hidden {
     display: none;
 }
 
+/* Muckydriver */
+div.portal-header {
+    display: grid;
+    margin-top: 12px; padding-bottom: 12px;
+    border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+}
+
+div.portal-header > div.portal-menu {
+    margin: auto 0 auto auto;
+}
+
+div.portal-header a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    padding: 4px; margin: 4px 0px;
+}
+
+div.portal-header a.active { color: #87cc0f; }
+
+div.portal-header a::after { content: " }"; opacity: 0; transition: all 0.1s ease-in-out; }
+div.portal-header a::before { content: "{ "; opacity: 0; transition: all 0.1s ease-in-out;  }
+
+div.portal-header a:hover::after {
+    opacity: 1; color: #87cc0f;
+} 
+
+div.portal-header a:hover::before {
+    opacity: 1; color: #87cc0f;
+}
+
 /* Other */
