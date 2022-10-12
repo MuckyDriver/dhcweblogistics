@@ -475,7 +475,7 @@ div.copyright div.info.hidden {
 /* Muckydriver */
 div.portal-header {
     display: grid; margin-top: 12px; padding-bottom: 12px;
-    border-bottom: rgba(255, 255, 255, 0.1) 1px solid;
+    border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
     overflow-y: hidden; white-space: nowrap;
 }
 
@@ -507,7 +507,31 @@ div.portal-header a:hover::before {
 /* Muckydriver > Portal Page */
 div.portal-pages > div.portal-page {
     display: none;
+    background-color: rgb(45, 45, 45);
     margin-top: 16px;
+}
+
+div.portal-pages > div.portal-page div.header-cover {
+    height: 150px; width: 100%; display: flex;
+    justify-content: center; align-items: center;
+    font-size: large;
+    background-size: cover;
+    background-position: center;
+}
+
+div.portal-pages > div.portal-page div.header-cover#details { background-image: url('https://muckydriver.net/img/Gallery/thumbnail_1.png'); }
+div.portal-pages > div.portal-page div.header-cover#development { background-image: url('https://muckydriver.net/img/Gallery/thumbnail_2.png'); }
+div.portal-pages > div.portal-page div.header-cover#future { background-image: url('https://muckydriver.net/img/Gallery/thumbnail_3.png'); }
+div.portal-pages > div.portal-page div.header-cover#resources { background-image: url('https://muckydriver.net/img/Gallery/thumbnail_4.png'); }
+
+div.portal-pages > div.portal-page div.header-cover span {
+    padding: 8px 16px; background-color: rgb(0, 0, 0, 0.5);
+    border-radius: 50px;
+}
+
+div.portal-pages > div.portal-page div.section {
+    padding: 16px; font-weight: lighter;
+    line-height: 1.5;
 }
 
 /* Other */

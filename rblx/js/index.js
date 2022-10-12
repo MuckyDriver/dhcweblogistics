@@ -237,8 +237,6 @@ function togglePortalPage(reference) {
         } else {
             portalItem.classList.remove('active')
         }
-
-        
     }
 }
 
