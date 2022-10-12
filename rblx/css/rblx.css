@@ -539,7 +539,7 @@ div.portal-pages :is(h1, h2, h3, h4, h5, h6) {
     margin-block-start: 0; margin-block-end: 0;
 }
 
-div.portal-pages hr { color: rgb(255, 255, 255, 0.2); }
+div.portal-pages hr { color: #575757; }
 
 div.portal-pages div.column {
     columns: 300px;
