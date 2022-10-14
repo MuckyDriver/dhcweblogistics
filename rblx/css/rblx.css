@@ -493,8 +493,8 @@ div.portal-header a {
 
 div.portal-header a.active { color: #87cc0f; }
 
-div.portal-header a::after { content: " ﹞"; opacity: 0; transition: all 0.1s ease-in-out; }
-div.portal-header a::before { content: "﹝ "; opacity: 0; transition: all 0.1s ease-in-out;  }
+div.portal-header a::after { content: " ◈"; opacity: 0; transition: all 0.1s ease-in-out; }
+div.portal-header a::before { content: "◈ "; opacity: 0; transition: all 0.1s ease-in-out;  }
 
 div.portal-header a:hover::after {
     opacity: 1; color: #87cc0f;
