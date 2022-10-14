@@ -248,3 +248,28 @@ for (let i = 0; i < portalMenuItems.length; i++) {
         togglePortalPage(menuReference)
     }
 }
+
+/* Dropper */
+const droppers = document.getElementsByClassName('dropper')
+const openImgSrc = 'img/icons/close_dropper.svg';
+
+for (let i = 0; i < droppers.length; i++) {
+    let toggle = false;
+    const dropper = droppers[i];
+    const content = dropper.getElementsByClassName('dropper-content')[0]
+    const dominator = dropper.getElementsByClassName('dominator')[0]
+    const dropImage = dominator.getElementsByTagName('img')[0]
+    let defaultImg = dropImage.src
+
+    dominator.onclick = function() {
+        if (toggle == false) {
+            toggle = true;
+            content.classList.add('open')
+            dropImage.src = openImgSrc;
+        } else {
+            toggle = false;
+            content.classList.remove('open');
+            dropImage.src = defaultImg;
+        }
+    }
+}
