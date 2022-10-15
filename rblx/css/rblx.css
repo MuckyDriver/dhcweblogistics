@@ -552,8 +552,8 @@ div.portal-pages div.column {
 
 /* Dropper */
 div.portal-pages div.section div.dropper {
-    display: block;
     margin-bottom: 8px;
+    background-color: rgb(0,0,0, 0.2);
 }
 
 div.portal-pages div.section div.dropper > div.dominator {
@@ -561,7 +561,6 @@ div.portal-pages div.section div.dropper > div.dominator {
     user-select: none;
     font-weight: normal;
     grid-template-columns: auto auto;
-    background-color: rgb(0,0,0, 0.2);
     border: rgba(255, 255, 255, 0) 1px dashed;
     padding: 12px;
     cursor: pointer;
@@ -574,18 +573,15 @@ div.portal-pages div.section div.dropper > div.dominator:hover {
 
 div.portal-pages div.section div.dropper > div.dominator div.drop-image {
     margin: auto 0 auto auto;
-    display: flex;
-    align-items: center;
 }
 
-div.portal-pages div.section div.dropper > div.dominator div.heading {
+div.portal-pages div.section div.dropper > div.dominator div {
     display: flex;
     align-items: center;
 }
 
 div.portal-pages div.section div.dropper > div.dropper-content {
     padding: 12px;
-    background-color: rgb(0,0,0, 0.2); 
     border-top: #575757 1px solid;
     display: none; overflow-y: auto; 
     max-height: 400px;
