@@ -263,13 +263,13 @@ for (let i = 0; i < droppers.length; i++) {
 
     dominator.onclick = function() {
         if (toggle == false) {
-            toggle = true;
             content.classList.add('open')
             dropImage.src = openImgSrc;
         } else {
-            toggle = false;
             content.classList.remove('open');
             dropImage.src = defaultImg;
         }
+
+        toggle = !toggle
     }
 }
