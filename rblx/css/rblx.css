@@ -605,16 +605,7 @@ table.drop td, th {
 table.drop td[header] {
     position: relative;
     text-align: left;
-}
-
-table.drop td[header]::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
-    width: 2px;
-    background-color: #87cc0f;
+    border-right: #87cc0f solid 2px;
 }
 
 @media (max-width: 500px) {
