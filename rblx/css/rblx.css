@@ -476,7 +476,7 @@ div.copyright div.info.hidden {
 
 /* Muckydriver */
 div.portal-header {
-    display: grid; margin-top: 12px; padding-bottom: 12px;
+    display: grid; margin-top: 12px; padding-bottom: 10px;
     border-bottom: rgba(255, 255, 255, 0.15) 1px solid;
     overflow-y: hidden; white-space: nowrap;
 }
@@ -490,13 +490,10 @@ div.portal-header a {
     text-decoration: none;
     color: white;
     cursor: pointer;
-    padding: 4px; margin: 4px 0px;
+    padding: 4px; margin: 4px 8px;
 }
 
 div.portal-header a.active { color: #87cc0f; }
-
-div.portal-header a::after { content: " ◈"; opacity: 0; transition: all 0.1s ease-in-out; }
-div.portal-header a::before { content: "◈ "; opacity: 0; transition: all 0.1s ease-in-out;  }
 
 div.portal-header a:hover::after {
     opacity: 1; color: #87cc0f;
@@ -591,4 +588,55 @@ div.portal-pages div.section div.dropper > div.dropper-content.open {
     display: block;
 }
 
+/* Dropper > Tables */
+table.drop {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: right;
+    font-size: smaller;
+    table-layout: fixed;
+}
+
+table.drop td, th {
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    padding: 8px 16px;
+}
+
+table.drop td[header] {
+    position: relative;
+    text-align: left;
+}
+
+table.drop td[header]::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: #87cc0f;
+}
+
+@media (max-width: 500px) {
+    table.drop {
+        font-size: small;
+    }
+}
+
 /* Other */
+div.align-right {
+    float: right;
+}
+
+div.small {
+    font-size: smaller;
+}
+
+div.clickable {
+    cursor: pointer;
+    opacity: 0.5;
+    margin: 8px;
+    transition: opacity 0.15s ease-in-out;
+}
+
+div.clickable:hover { opacity: 1; }
