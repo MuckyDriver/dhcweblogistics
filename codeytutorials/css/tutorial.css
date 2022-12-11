@@ -1,0 +1,68 @@
+/* HTML Layout Div */
+div.html-layout-grid {
+    display: grid;
+    grid-template-areas: "header header" "nav nav" "aside content" "footer footer";
+    grid-template-columns: 1fr 3fr;
+    gap: 6px;
+}
+
+div.html-layout-grid > div {
+    background-color: rgba(65, 105, 225, 0.125);
+    padding: 24px; border-radius: 8px;
+    color: rgb(0, 0, 0, 0.75);
+    outline: transparent 2px solid;
+    transition: all 0.125s ease-in-out;
+}
+
+div.html-layout-grid > div:hover {
+    color: royalblue;
+    outline-color: royalblue;
+}
+
+@media only screen and (max-width: 600px) {
+    div.html-layout-grid > div {
+        padding: 16px;
+    }
+}
+
+/* Dark Theme */ body[color-scheme="dark"] div.html-layout-grid > div {
+    border-color: rgb(255, 255, 255, 0.25);
+    color: rgb(255, 255, 255, 0.75)
+}
+
+/* Dark Theme */ body[color-scheme="dark"] div.html-layout-grid > div:hover {
+    color: hsl(225, 73%, 70%);
+    outline-color: hsl(225, 73%, 70%);
+}
+
+div.html-layout-grid > div[portion="header"] {
+    grid-area: header;
+}
+
+div.html-layout-grid > div[portion="nav"] {
+    grid-area: nav;
+}
+
+div.html-layout-grid > div[portion="content"] {
+    grid-area: content; 
+}
+
+div.html-layout-grid > div[portion="aside"] {
+    grid-area: aside;
+}
+div.html-layout-grid > div[portion="footer"] {
+    grid-area: footer;
+}
+
+/* Tutorial Bullets */
+ul.tutorial-list li::marker {
+    color: royalblue; font-size: 110%;
+}
+
+/* Dark Theme */ body[color-scheme="dark"] ul.tutorial-list li::marker {
+    color: hsl(225, 73%, 70%);
+}
+
+ul.tutorial-list.star li::marker {
+    content: "★  "
+}

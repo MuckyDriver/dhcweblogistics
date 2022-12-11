@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeyTutorial • Home</title>
+        <meta charset="UTF-8">
+        <meta name="color-scheme" content="light" id="meta-theme">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet" type="text/css">
+        <link href="css/tutorial.css" rel="stylesheet" type="text/css">
+        <link href="img/icon.png" rel="icon" type="image/png">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;500&amp;display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Mobile Menu-->
+        <div class="mobile-menu" id="mobile-menu">
+            <div class="mm-controls">
+                <div class="head">Mobile Menu</div>
+                <img src="img/close.png" class="close" id="hamburger-controls-close">
+            </div>
+            <div class="mm-nav">
+                <a href="#home" id="mobile.test.home" class="active">Home</a>
+                <a href="#tutorials" id="mobile.test.tutorials">Tutorials</a>
+                <a href="#about-us" id="mobile.test.about-us">About Us</a>
+                <a href="#contact-us" id="mobile.test.contact-us">Contact Us</a>
+            </div>
+        </div>
+
+        <!-- Header -->
+        <header>
+            <div class="wrapper">
+                <img src="img/icon.png" alt="Header Icon">
+                <nav>
+                    <a href="#home" id="button.test.home" class="active">Home</a>
+                    <a href="#tutorials" id="button.test.tutorials">Tutorials</a>
+                    <a href="#about-us" id="button.test.about-us">About Us</a>
+                    <a href="#contact-us" id="button.test.contact-us">Contact Us</a>
+                    <a onclick="setTheme()">◐</a>
+                </nav>
+                <div class="hamburger" id="hamburger-mobile-menu">
+                    <img src="img/hamburger.png">
+                </div>
+            </div>
+        </header>
+
+        <!-- Pages -->
+        <div class="pages">
+
+            <!-- Home Page -->
+            <div class="page" id="test.home" style="display: block;">
+                <div class="image-center rounded" id="img-background-home"></div>
+                <div class="p-container rounded">
+                    <h3>Welcome to this website</h3>
+                    <p>
+                        This website is made for educational purposes only, meaning that nothing in this webpage or other webpages are for commercial use or for any financial
+                        gain. The website which was created to present what can be made on websites for others to learn. The tutorials given are simple 
+                        HTML, CSS and Javascript guides to help people start their own websites.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Tutorials Page -->
+            <div class="page" id="test.tutorials">
+                <div class="p-container rounded">
+                    <h3>Tutorials</h3>
+                    <p>Want to learn to code a website? Why not take a look at these short informative tutorials to teach you how today.</p>
+                </div>
+                <div class="tutorial-search">
+                    <div class="search">
+                        <input spellcheck="false" type="search" placeholder="Search a keyword to shrink results" id="search-input-tutorial">
+                        <img class="search-btn" src="img/search.png" id="search-btn-tutorial">
+                    </div>
+                </div>
+                <div class="grid-auto">
+                    <div class="rounded tutorial-button" id="#tutorials:html-basics" keywords="html basics web code">
+                        <img src="img/stock/html_basics.webp"><h2><span>HTML Basics</span></h2>
+                    </div>
+                    <div class="rounded tutorial-button" id="#tutorials:js-basics" keywords="js javascript code web basics">
+                        <img src="img/stock/javascript_basics.webp"><h2><span>Javascript Basics</span></h2>
+                    </div>
+                    <div class="rounded tutorial-button" id="#tutorials:howto-website" keywords="website development guide howto">
+                        <img src="img/stock/setup-website.webp"><h2><span>How to setup a website</span></h2>
+                    </div>
+                    <div class="rounded tutorial-button" id="#tutorials:css-guide" keywords="css styles design guide tutorial basics">
+                        <img src="img/stock/css_guides.webp"><h2><span>CSS Guides</span></h2>
+                    </div>
+                    <div class="rounded tutorial-button" id="#tutorials:one-page-static-website" keywords="static website page tutorial webpage web">
+                        <img src="img/stock/one_page_website.webp"><h2><span>One page website technique (Static)</span></h2>
+                    </div>
+                    <div class="rounded tutorial-button" id="#tutorials:howto-bootstrap" keywords="guide howto how css bootstrap tutorial toolkit stylesheet">
+                        <img src="https://getbootstrap.com/docs/5.2/assets/img/bootstrap-themes.png"><h2><span>How to setup Bootstrap</span></h2>
+                    </div>
+                    <div class="rounded tutorial-button" id="#tutorials:html-forms" keywords="forms input html web php">
+                        <img src="img/stock/forms.webp"><h2><span>Forms</span></h2>
+                    </div>
+                    <div class="rounded tutorial-button" id="#tutorials:responsive-web-design" keywords="responsive mobile design web css">
+                        <img src="img/stock/responsive.webp"><h2><span>Responsive web design</span></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="test.about-us" customTitle="About Us">
+                <div class="p-container rounded">
+                    <h3>About Us Page</h3>
+                    <p>The website was created to give guidance on how to code for the web.</p>
+                </div>
+            </div>
+            <div class="page" id="test.contact-us" customTitle="Contact Us">
+                <div class="p-container rounded">
+                    <h3>Contact Us Page</h3>
+                    <p>Our social media's and other ways you can contact us with.</p>
+                </div>
+            </div>
+
+            <!-- Tutorial Pages -->
+            <div class="page" id="test.tutorials:html-basics" customTitle="HTML Basics">
+                <div class="p-container error rounded" style="margin-top: 0;">
+                    <img src="img/error.png" class="icon"><span>The page is currently still under development, expect sections of information not be present.</span>
+                </div>
+                <div class="tutorial-container">
+
+                    <!-- Anchor links to part of the tutorial page -->
+                    <aside class="t-adornee">
+                        <h3>HTML Basics</h3>
+                        <div class="tutorial-anchor">
+                            <a goto="hb-intro">Introduction</a><a goto="hb-layout">HTML Layout</a><a goto="hb-practices">Best Practices</a>
+                            <a goto="hb-issues">Frequent Issues</a><a goto="hb-reference">HTML Tag Reference</a><a goto="hb-finish">Conclusion</a>
+                        </div>
+                    </aside>
+
+                    <!-- Anchor links to part of the tutorial page -->
+                    <div class="t-content">
+                        <div class="img"><img src="img/stock/html_basics.webp"><h2>HTML BASICS</h2></div>
+                        <h3 id="hb-intro">Introduction</h3>
+                        <p>HTML is an abbreviation for HyperText Markup Language. It is used to create web pages by utilising a markup language. The link between web pages is defined by hypertext. To define the text document within the tag that defines the structure of web pages, a markup language is used.</p>
+                        <p>In this tutorial it will go through the layout of a html page and including best practices, problems to look out for, html tag reference with their descriptions.</p>
+                        <h3 id="hb-layout">Layout</h3>
+                        <div class="html-layout-grid">
+                            <div portion="header">HEADER</div><div portion="nav">NAV</div><div portion="content">CONTENT</div><div portion="aside">SIDEBAR</div>
+                            <div portion="footer">FOOTER</div>
+                        </div>
+                        <ul class="tutorial-list star" style="font-weight: 100">
+                            <li><b>Header:</b> Includes elements relating to website logo, navigation bar and social links.</li>
+                            <li><b>Nav:</b> Navigation bar which has links to different pages on a website.</li>
+                            <li><b>Sidebar:</b> Would include anchor links which skip down to a relevant heading on the page. May also include advertisements.</li>
+                            <li><b>Content:</b> All the page content would be located here. Main point of the page would be here.</li>
+                            <li><b>Footer:</b> A place on a webpage where important and not needed links and information would be placed. Could include links to a policy page for example.</li>
+                        </ul>
+                        <p>Note: Not all websites will follow a layout like this, this just an example of how one would most likely look like.</p>
+                        <h3 id="hb-practices">Best Practices</h3>
+                        <p>Things which people need to know before creating their first website. Making sure they do not forget the important practices to create amazing websites.</p>
+                        <h3 id="hb-issues">Common Mistakes</h3>
+                        <p>In coding, the possbility of making mistakes in website development can be common due to many reasons. Lets take a look at common issues with 
+                            peoples html/css code and what suggestions are given to help.</p>
+                        <h3 id="hb-reference">HTML References</h3>
+                        <p>A table covering all the frequently used html tags and features to make a website including their descriptions on where to use them.</p>
+                        <h3 id="hb-finish">Conclusion</h3>
+                        <p>Website development is important...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page" id="test.tutorials:js-basics" customTitle="Javascript Basics">
+                <div class="p-container error rounded" style="margin-top: 0;">
+                    <img src="img/error.png" class="icon"><span>The page is currently still under development, expect sections of information not be present.</span>
+                </div>
+                <div class="tutorial-container">
+                    <aside class="t-adornee">
+                        <h3>Javascript Basics</h3>
+                        <div class="tutorial-anchor">
+                            <a goto="jb-intro">Introduction</a><a goto="jb-vcft">Javascript Fundamentals</a>
+                            <a goto="jb-finish">Conclusion</a>
+                        </div>
+                    </aside>
+
+                    <!-- Anchor links to part of the tutorial page -->
+                    <div class="t-content">
+                        <div class="img"><img src="img/stock/javascript_basics.webp"><h2>JAVASCRIPT BASICS</h2></div>
+                        <h3 id="jb-intro">Introduction</h3>
+                        <div class="quote">
+                            "JavaScript is a cross-platform, object-oriented scripting language used to make webpages interactive 
+                            (e.g., having complex animations, clickable buttons, popup menus, etc.)."
+                            <a href="https://shorturl.at/cFMR6" target="_blank">Source</a>
+                        </div>
+                        <p>In this tutorial it will cover the essentials for beginners to know the common uses of Javascript</p>
+                        <h3 id="jb-vcft">Variables, Constants, Functions and Tables</h3>
+                        <p>...</p>
+                        <h3 id="jb-finish">Conclusion</h3>
+                        <p>...</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Footer Pages -->
+            <div class="page" id="test.external-sources" customTitle="Sources">
+                <div class="p-container rounded">
+                    <h3>Resources used to create this website.</h3>
+                    <p>Links to sources for icons, images, styles and more!</p>
+                </div>
+                <div class="list-box">
+                    <div class="rounded"><div class="title">Icons</div><input type="url" readonly value="https://icons8.com/icons/material"></div>
+                    <div class="rounded"><div class="title">Stock Images</div><input type="url" readonly value="https://unsplash.com/"></div>
+                    <div class="rounded"><div class="title">Bootstrap Image</div><input type="url" readonly value="https://getbootstrap.com/docs/5.2/assets/img/bootstrap-themes.png"></div>
+                </div>
+            </div>
+            <div class="page" id="test.policy">
+                <div class="p-container rounded">
+                    <h3>Policies and Conditions</h3>
+                    <p>About privacy, security, copyright etc. Including terms and conditions which need to be obeyed (Coming Soon)</p>
+                </div>
+                <div>
+                    <details class="content-dropdown">
+                        <summary><div class="title"><img src="img/privacy.png"><span>Privacy</span></div><div class="indicator"><img src="img/expand.png"></div></summary>
+                        <div class="content">Information stating all privacy policy relating documentation.</div>
+                    </details>
+                    <details class="content-dropdown">
+                        <summary><div class="title"><img src="img/security.png"><span>Security</span></div><div class="indicator"><img src="img/expand.png"></div></summary>
+                        <div class="content">Information stating all security policy relating documentation.</div>
+                    </details>
+                    <details class="content-dropdown">
+                        <summary><div class="title"><img src="img/copyright.png"><span>Copyright</span></div><div class="indicator"><img src="img/expand.png"></div></summary>
+                        <div class="content">Information stating all copyright policy relating documentation.</div>
+                    </details>
+                    <details class="content-dropdown">
+                        <summary><div class="title"><img src="img/terms_conditions.png"><span>Terms & Conditions</span></div><div class="indicator"><img src="img/expand.png"></div></summary>
+                        <div class="content">Information stating all terms and conditions.</div>
+                    </details>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Container -->
+        <footer>
+            <div class="wrapper">
+                <div><h3><img src="img/more.png"><span>More</span></h3>
+                    <div class="footer-external">
+                        <a disabled>Games</a><br><a disabled>Educational Panel</a>
+                    </div>
+                </div>
+                <div><h3><img src="img/external.png"><span>External</span></h3>
+                    <div class="footer-external">
+                        <a href="#external-sources">Sources & Credits</a>
+                    </div>
+                </div>
+                <div><h3><img src="img/company.png"><span>Company</span></h3>
+                    <div class="footer-external">
+                        <a href="#about-us">About Us</a><br><a href="#policy">Policies</a><br><a disabled>Website</a>
+                    </div>
+                </div>
+                <div class="credit"><span class="c">&copy; </span><span>Website created by Claasgreeneye</span></div>
+            </div>
+        </footer>
+    </body>
+    <script src="js/index.js"></script>
+</html>
