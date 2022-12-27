@@ -166,6 +166,7 @@ details.dropdown-extra > div {
     font-weight: 300; font-size: 95%;
     line-height: 1.5;
     overflow-y: auto; max-height: 300px;
+    border-bottom-right-radius: 12px; border-bottom-left-radius: 12px;
 }
 
 /* Other */
