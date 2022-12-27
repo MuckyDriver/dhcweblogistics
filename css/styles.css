@@ -18,6 +18,7 @@ header {
     background-color: white;
     padding: 12px 24px;
     position: sticky; top: 0;
+    z-index: 100;
 }
 
 header > div.wrapper {
@@ -100,6 +101,11 @@ div.weblog-banner > div span {
 /* Page */
 div.page {
     padding: 12px 24px;
+}
+
+div.page.dark {
+    background-color: #353535;
+    color: white;
 }
 
 div.page > div.content {
@@ -189,13 +195,13 @@ details.dropdown-extra > div {
     vertical-align: middle;
 }
 
-.greenify {
-    color: #87cc0f;
-}
+.greenify { color: #87cc0f; }
+.center { text-align: center; }
+.normalize { font-weight: normal; }
+.spaced { line-height: 1.5; }
 
-.center {
-    text-align: center;
-}
+.iconify > span { vertical-align: middle; }
+.iconify > img { vertical-align: middle; margin-right: 10px; max-width: 30px; }
 
 a.learn-more {
     display: inline-block;
@@ -206,4 +212,14 @@ a.learn-more {
 
 a.learn-more:hover {
     text-decoration: underline;
+}
+
+img.wavey-top {
+    transform: translateY(5px);
+    width: 100%;
+}
+
+img.wavey-bottom {
+    transform: translateY(-5px);
+    width: 100%;
 }
