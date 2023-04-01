@@ -70,7 +70,7 @@ header > div.wrapper nav a.active::after {
 
 /* Banner */
 div.weblog-banner {
-    background-image: url("../img/backgrounds/weblog-banner-1.jpg");
+    background-image: url("../img/backgrounds/weblog-banner-2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -99,18 +99,34 @@ div.weblog-banner > div span {
 }
 
 /* Page */
-div.page {
-    padding: 12px 24px;
-}
+div.page { padding: 12px 24px; }
 
 div.page.dark {
     background-color: #353535;
     color: white;
 }
 
+div.page.accent { background-color: rgba(0, 0, 0, 0.075); }
+
 div.page > div.content {
     max-width: var(--pageWidth);
     margin: auto;
+}
+
+div.page.design { 
+    overflow: hidden;
+    position: relative;
+}
+
+div.page.design > div.content {
+    position: relative;
+    z-index: 10;
+}
+
+div.page > img.design-image {
+    position: absolute;
+    right: 15%; top: 0%;
+    transform: scale(1.6);
 }
 
 /* Grids */
