@@ -144,18 +144,18 @@ div.grid-3 > div {
     transition: all 0.15s ease-in-out;
 }
 
-div.grid-3 > div :is(h1, h2, h3, h4, h5) {
+div.grid-3 > div :is(h1, h2, h3, h4, h5, span) {
     margin-block: 0px;
     font-weight: normal;
 }
 
-div.grid-3 > div :is(h1, h2, h3, h4, h5) img {
+div.grid-3 > div :is(h1, h2, h3, h4, h5, span) img {
     max-width: 24px;
     margin-right: 8px;
     vertical-align: middle;
 }
 
-div.grid-3 > div :is(h1, h2, h3, h4, h5) span {
+div.grid-3 > div :is(h1, h2, h3, h4, h5, span) span {
     vertical-align: middle;
 }
 
