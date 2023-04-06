@@ -41,8 +41,8 @@ div.return-home > a > * {
     vertical-align: middle;
 }
 
-/* Error 404 */
-body[error="404"] {
+/* Error */
+body[error] {
     background-color: black;
     display: flex;
     justify-content: center;
