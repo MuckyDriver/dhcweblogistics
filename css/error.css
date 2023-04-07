@@ -28,8 +28,13 @@ div.return-home {
     z-index: 999;
 }
 
-div.return-home:hover:focus {
+div.return-home:hover {
     background-color: rgb(24, 24, 24);
+}
+
+div.return-home:focus {
+    background-color: rgb(24, 24, 24);
+    outline: none;
 }
 
 div.return-home > a {
