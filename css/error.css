@@ -28,7 +28,7 @@ div.return-home {
     z-index: 999;
 }
 
-div.return-home:hover {
+div.return-home:hover:focus {
     background-color: rgb(24, 24, 24);
 }
 
