@@ -6,12 +6,14 @@
 }
 
 *.title {
+    margin-block-start: 0;
     font-size: xx-large;
     font-weight: lighter;
 }
 
 p {
     line-height: 1.5;
+    margin-block-end: 0;
 }
 
 code { color: lightcoral; }
