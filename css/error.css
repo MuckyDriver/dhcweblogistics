@@ -32,7 +32,7 @@ div.return-home:hover {
     background-color: rgb(24, 24, 24);
 }
 
-div.return-home:focus {
+div.return-home:target {
     background-color: rgb(24, 24, 24);
     outline: none;
 }
