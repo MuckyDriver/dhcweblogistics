@@ -41,7 +41,7 @@ header > div.wrapper nav {
 header > div.wrapper nav a {
     display: inline-block;
     padding: 8px;
-    margin: 4px;
+    margin: 4px 0.5px;
     text-decoration: none;
     color: black;
     position: relative;
