@@ -19,10 +19,25 @@
         <link href="fonts/source-code-pro.css" rel="stylesheet">
 
         <!-- External Scripts -->
-        <!-- Coming soon... -->
+        <script async src="js/index.js" type="text/javascript"></script>
     </head>
     <body><!-- Container includes header, content and footer including links and images of the webpage... -->
         <div class="weblog-notice">Website currently under development, please come back another time!</div>
+
+        <!-- Container for the mobile menu content, will open when mobile menu button is pressed. -->
+        <div class="mobile-menu closed" id="mobile-menu">
+            <div class="mm-controls">
+                <div id="close-mobile-menu">
+                    <img src="img/icon/material/close.png" alt="close icon" width="32" height="32">
+                </div>
+            </div>
+            <nav>
+                <a href="/" class="active">Home</a>
+                <a href="web">Webpages</a>
+                <a href="projects">Projects</a>
+                <a href="other">More</a>
+            </nav>
+        </div>
 
         <header><!-- Container includes header stuff which would be the navigation of the website... -->
             <div class="wrapper"><img class="icon" src="img/icon.svg" alt="icon" width="50" height="50">
@@ -32,6 +47,9 @@
                     <a href="projects">Projects</a>
                     <a href="other">More</a>
                 </nav>
+                <div class="mobile" id="mobile-menu-btn">
+                    <img src="img/icon/material/menu.png" alt="menu button icon" width="26" height="26">
+                </div>
             </div>
         </header>
 
