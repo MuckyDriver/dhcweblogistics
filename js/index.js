@@ -17,3 +17,23 @@ mobileMenuCloseBtn.onclick = function() {
         open = false;
     }
 }
+
+// Open Project - go to project
+const projectList = document.getElementById('project-list');
+const projectItems = projectList.getElementsByClassName('project-item')
+const projectUrls = {
+    [3]: "https://www.roblox.com/games/12633113230/"
+}
+
+for (let i = 0; i < projectItems.length; i++) {
+    let projectItem = projectItems[i]
+    let url = projectUrls[projectItem.id]
+
+    function goTo() {
+        if (url) {
+            window.open(url)
+        };
+    }
+
+    projectItem.onclick = function() { goTo() };
+} 

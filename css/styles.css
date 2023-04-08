@@ -284,6 +284,10 @@ div.project-list > div.project-item:hover {
 }
 
 /* Project Items */
+div.project-list > div.project-item > img {
+    border-radius: 6px;
+}
+
 div.project-list > div.project-item > div.info :is(h4, h3, h2, h1) {
     display: block;     
     overflow: hidden;
@@ -306,6 +310,7 @@ div.project-list > div.project-item > div.info {
 div.project-list > div.project-item > div.stats {
     flex-direction: row;
 }
+
 div.project-list > div.project-item > div.stats > div.stat {
     padding: 0.2em 0.75em; display: flex; align-items: center;
 }
