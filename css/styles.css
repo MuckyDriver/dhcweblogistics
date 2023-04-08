@@ -129,6 +129,11 @@ div.page > img.design-image {
     transform: scale(1.6);
 }
 
+/* Special Divs */
+div.valign * {
+    vertical-align: middle;
+}
+
 /* Grids */
 div.grid-3 {
     display: grid;
