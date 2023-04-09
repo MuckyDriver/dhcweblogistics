@@ -20,12 +20,13 @@ mobileMenuCloseBtn.onclick = function() {
 
 // Open Project - go to project
 const projectList = document.getElementById('project-list');
-const projectItems = projectList.getElementsByClassName('project-item')
 const projectUrls = {
     [3]: "https://www.roblox.com/games/12633113230/"
 }
 
 if (projectList) {
+    const projectItems = projectList.getElementsByClassName('project-item');
+
     for (let i = 0; i < projectItems.length; i++) {
         let projectItem = projectItems[i]
         let url = projectUrls[projectItem.id]
