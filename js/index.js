@@ -25,15 +25,17 @@ const projectUrls = {
     [3]: "https://www.roblox.com/games/12633113230/"
 }
 
-for (let i = 0; i < projectItems.length; i++) {
-    let projectItem = projectItems[i]
-    let url = projectUrls[projectItem.id]
-
-    function goTo() {
-        if (url) {
-            window.open(url)
-        };
+if (projectList) {
+    for (let i = 0; i < projectItems.length; i++) {
+        let projectItem = projectItems[i]
+        let url = projectUrls[projectItem.id]
+    
+        function goTo() {
+            if (url) {
+                window.open(url)
+            };
+        }
+    
+        projectItem.onclick = function() { goTo() };
     }
-
-    projectItem.onclick = function() { goTo() };
-} 
+}
