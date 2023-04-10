@@ -7,5 +7,5 @@ let windowData = window.location.href
 let windowDataSplit = windowData.split("?")[1]
 
 if (windowDataSplit) {
-    window.open(directProjectList[windowDataSplit])
+    window.location.assign(directProjectList[windowDataSplit]);
 }
