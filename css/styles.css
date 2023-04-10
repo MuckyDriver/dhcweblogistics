@@ -82,6 +82,18 @@ header > div.wrapper div.mobile {
     header > div.wrapper nav { display: none;}
 }
 
+/* Footer */
+footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.125); 
+    margin-top: 1em;
+    padding: 1em;
+}
+
+footer > div.content { 
+    max-width: var(--pageWidth);
+    margin: auto;
+}
+
 /* Mobile Menu */
 div.mobile-menu {
     position: fixed;
@@ -323,6 +335,10 @@ div.project-list > div.project-item > div.stats > div.stat {
     position: relative;
 }
 
+:is(h1, h2).page-title.higher {
+    margin-block-start: 1.2em;
+}
+
 :is(h1, h2).page-title::before {
     content: "";
     position: absolute;
@@ -415,4 +431,12 @@ img.wavey-top {
 img.wavey-bottom {
     transform: translateY(-5px);
     width: 100%;
+}
+
+:is(span, i, h1, h2, h3, h4, p).light {
+    font-weight: lighter;
+}
+
+:is(span, i, h1, h2, h3, h4, p).small {
+    font-size: smaller;
 }
