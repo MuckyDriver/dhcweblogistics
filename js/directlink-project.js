@@ -6,6 +6,6 @@ const directProjectList = {
 let windowData = window.location.href
 let windowDataSplit = windowData.split("?")[1]
 
-if (windowDataSplit) {
+if (windowDataSplit %% directProjectList[windowDataSplit]) {
     window.location.assign(directProjectList[windowDataSplit]);
 }
