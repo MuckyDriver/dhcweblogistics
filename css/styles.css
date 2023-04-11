@@ -31,6 +31,23 @@ header > div.wrapper {
 header > div.wrapper img {
     max-width: 50px;
     align-self: center;
+    animation-name: eyeMovement;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: ease-in-out;
+    animation-play-state: paused;
+}
+
+header > div.wrapper img:hover {
+    animation-play-state: running;
+}
+
+/* Animations */
+@keyframes eyeMovement {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(90deg); }
+    100% { transform: rotate(0deg); }
 }
 
 /* Navigation */
