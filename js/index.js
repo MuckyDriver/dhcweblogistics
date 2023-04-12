@@ -21,7 +21,8 @@ mobileMenuCloseBtn.onclick = function() {
 // Open Project - go to project
 const projectList = document.getElementById('project-list');
 const projectUrls = {
-    [3]: "https://www.roblox.com/games/12633113230/"
+    [3]: "https://www.roblox.com/games/12633113230/",
+    [4]: "https://muckydriver.net/"
 }
 
 if (projectList) {

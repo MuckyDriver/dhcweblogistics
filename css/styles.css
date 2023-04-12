@@ -429,6 +429,8 @@ div.aboutme-container > div {
 .iconify > span { vertical-align: middle; }
 .iconify > img { vertical-align: middle; margin-right: 10px; max-width: 30px; }
 
+
+/* A tags */
 a.learn-more {
     display: inline-block;
     margin-top: 8px;
@@ -436,10 +438,15 @@ a.learn-more {
     text-decoration: none;
 }
 
-a.learn-more:hover {
-    text-decoration: underline;
+a.learn-more:hover { text-decoration: underline; }
+a.link:hover { text-decoration: underline; }
+
+a.link {
+    color: #375306;
+    text-decoration: none;
 }
 
+/* Old */
 img.wavey-top {
     transform: translateY(5px);
     width: 100%;
@@ -450,6 +457,7 @@ img.wavey-bottom {
     width: 100%;
 }
 
+/* Span, i, h1, h2, h3, h4, p Stuff */
 :is(span, i, h1, h2, h3, h4, p).light {
     font-weight: lighter;
 }
