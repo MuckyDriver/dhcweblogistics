@@ -27,6 +27,7 @@
 
         <!-- External Scripts -->
         <script async src="js/index.js" type="text/javascript"></script>
+        <script async src="js/filter.js" type="text/javascript"></script>
     </head>
     <body><!-- Container includes header, content and footer including links and images of the webpage... -->
         <div class="weblog-notice">Website currently under development, please come back another time!</div>
@@ -63,10 +64,27 @@
                 <h1 class="page-title">PROJECTS</h1>
             </div>
 
+            <!-- Content container for category options -->
+            <div class="content">
+                <div class="filter-area">
+                    <div class="filter">
+                        <label>Filter by Category</label>
+                        <select id="filter" autocomplete="off">
+                            <option value="all" selected>All</option>
+                            <option value="roblox">Roblox</option>
+                            <option value="web">Web development</option>
+                            <option value="edu" disabled>Educational</option>
+                            <option value="company" disabled>Company</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
             <div class="content">
                 <!-- Project list, list of all the projects I am working on and whats been completed -->
                 <div class="project-list" id="project-list">
-                    <div class="project-item" id="3" tabindex="0" role="button">
+                    <div class="project-item" id="3" tabindex="0" role="button" category="roblox all">
                         <img src="img/icon/other/planetaryObjectRealm2Icon.png" alt="project icon" width="48" height="48">
                         <div class="info"><h3>Planetary Object Realm 2</h3><span>Explore the planetary objects of our solar system and beyond.</span></div>
                         <div class="stats">
@@ -74,7 +92,7 @@
                         </div>
                     </div>
 
-                    <div class="project-item" id="4" tabindex="0" role="button">
+                    <div class="project-item" id="4" tabindex="0" role="button" category="roblox web all">
                         <img src="img/icon/other/mdr.png" alt="project icon" width="48" height="48">
                         <div class="info"><h3>Mucky Driver</h3><span>Offroad car game where players collect points, gems and more to unlock more vehicles.</span></div>
                         <div class="stats">

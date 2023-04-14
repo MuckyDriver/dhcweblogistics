@@ -230,6 +230,30 @@ div.valign * {
     vertical-align: middle;
 }
 
+/* Filter Area */
+div.filter-area {
+    display: flex;
+    justify-content: end;
+}
+
+div.filter-area > div.filter label {
+    font-size: 90%;
+    margin-right: 0.5em;
+    font-weight: lighter;
+}
+
+div.filter-area > div.filter select {
+    padding: 0.5em;
+    background-color: white;
+    border-radius: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 425px) {
+    div.filter-area > div.filter label { display: none; }
+    div.filter-area > div.filter select { width: 100%; }
+}
+
 /* Grids */
 div.grid-3 {
     display: grid;
