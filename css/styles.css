@@ -453,6 +453,9 @@ div.aboutme-container > div {
 .iconify > span { vertical-align: middle; }
 .iconify > img { vertical-align: middle; margin-right: 10px; max-width: 30px; }
 
+img.icon-round {
+    border-radius: 12px;
+}
 
 /* A tags */
 a.learn-more {
