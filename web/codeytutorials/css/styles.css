@@ -53,7 +53,7 @@ header div.wrapper > nav > a {
     text-decoration: none;
     padding: 8px 14px;
     margin: 4px 2px;
-    color: royalblue;
+    color: #224FD8;
     font-weight: normal;
     border-radius: 9999px;
     cursor: pointer;
@@ -127,7 +127,7 @@ footer div.footer-external a {
     font-size: small;
     border-radius: 9999px;
     text-decoration: none;
-    color: royalblue;
+    color: #224FD8;
     transition: all 0.15s ease-in-out;
 }
 
@@ -170,7 +170,7 @@ div.page div.image-center {
     background-size: cover;
 }
 
-div.page div.image-center#img-background-home { background-image: url(https://images.unsplash.com/photo-1621839673705-6617adf9e890); }
+div.page div.image-center#img-background-home { background-image: url(../img/main.webp); }
 
 div.page *.rounded {
     border-radius: 12px;
@@ -244,7 +244,7 @@ div.page div.p-container *:is(h1, h2, h3, h4, h5, h6) {
 
 div.page div.p-container p { font-weight: lighter; }
 
-div.page div.p-container.blue { background-color: royalblue; color: white; }
+div.page div.p-container.blue { background-color: #224FD8; color: white; }
 div.page div.p-container.error { background-color: rgb(240, 128, 128, 0.35); color: #8b0000; border: darkred dashed 2px; }
 div.page div.p-container.success { background-color: rgb(144, 238, 144, 0.25); color: green; border: green dashed 2px; }
 
@@ -280,7 +280,7 @@ div.page div.list-box div > div.title {
     border: 2px rgba(65, 105, 225, 0.5) solid;
     border-right: none;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
-    background-color: royalblue;
+    background-color: #224FD8;
     color: white;
     padding: 12px;
     border-bottom-left-radius: 12px;
@@ -353,7 +353,7 @@ details.content-dropdown[open] > summary img {
 
 details.content-dropdown[open] > summary {
     color: white;
-    background-color: royalblue;
+    background-color: #224FD8;
     border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;
 }
 
@@ -402,7 +402,7 @@ div.mobile-menu > div.mm-controls > div.head {
 div.mobile-menu > div.mm-nav > a {
     display: block;
     padding: 12px 24px;
-    color: royalblue; 
+    color: #224FD8; 
     text-decoration: none;
 }
 
@@ -412,7 +412,7 @@ div.mobile-menu > div.mm-nav > a:hover {
 
 div.mobile-menu > div.mm-nav > a.active {
     color: white;
-    background-color: royalblue;
+    background-color: #224FD8;
 }
 
 /* Media */
@@ -482,7 +482,7 @@ div.tutorial-search input[type="search"] {
 }
 
 div.tutorial-search input[type="search"]:focus {
-    outline: royalblue 2px solid;
+    outline: #224FD8 2px solid;
 }
 
 div.tutorial-search div.search {
@@ -491,7 +491,7 @@ div.tutorial-search div.search {
 }
 
 div.tutorial-search div.search > img.search-btn {
-    background-color: royalblue;
+    background-color: #224FD8;
     padding: 8px;
     border-radius: 12px; border-top-left-radius: 0; border-bottom-left-radius: 0;
     height: 40px;
@@ -504,7 +504,7 @@ div.tutorial-search div.search > img.search-btn:hover {
 }
 
 div.tutorial-search input[type="search"]:focus + img.search-btn {
-    outline: royalblue 2px solid;
+    outline: #224FD8 2px solid;
 }
 
 /* Tutorial Container */
@@ -534,7 +534,7 @@ div.tutorial-container :is(h1, h2, h3, h4, h5) {
 
 div.tutorial-container > aside.t-adornee a {
     display: block;
-    color: royalblue;
+    color: #224FD8;
     text-decoration: none;
     cursor: default;
     padding: 8px 14px;
@@ -566,7 +566,7 @@ div.tutorial-container > div.t-content :is(p) {
 div.tutorial-container > div.t-content div.quote {
     padding: 12px;
     font-style: italic;
-    border: royalblue dashed 2px;
+    border: #224FD8 dashed 2px;
     border-radius: 12px;
     font-weight: 300;
     position: relative;
@@ -577,7 +577,7 @@ div.tutorial-container > div.t-content div.quote {
 }
 
 div.tutorial-container > div.t-content div.quote a {
-    color: royalblue; padding: 6px 8px;
+    color: #224FD8; padding: 6px 8px;
     opacity: 0;
     backdrop-filter: blur(15px);
     position: absolute; bottom: 0; right: 0;
