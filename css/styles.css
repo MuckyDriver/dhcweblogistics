@@ -320,6 +320,7 @@ div.project-list {
 div.project-list > div.project-item {
     display: grid;
     gap: 1em;
+    position: relative;
     grid-template-columns: max-content auto max-content;
     cursor: pointer;
     align-items: center;
@@ -368,6 +369,22 @@ div.project-list > div.project-item > div.stats {
 div.project-list > div.project-item > div.stats > div.stat {
     padding: 0.2em 0.75em; display: flex; align-items: center;
 }
+
+/* Hover-to-reveal */
+div.project-list > div.project-item > div.hover-to-reveal {
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+    z-index: 99;
+    right: 0; top: 100%;
+    padding: 0.5em;
+    border: rgba(0, 0, 0, 0.25) 1px solid;
+    border-top: none;
+    border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;
+    display: none;
+}
+
+div.project-list > div.project-item:hover > div.hover-to-reveal { display: block; }
 
 /* Page Title */
 :is(h1, h2).page-title {
@@ -491,4 +508,30 @@ img.wavey-bottom {
 
 :is(span, i, h1, h2, h3, h4, p).small {
     font-size: smaller;
+}
+
+/* Tags */
+
+span.tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background: rgba(0, 0, 0, 0.075);
+    vertical-align: middle;
+    border-radius: 6px;
+    border: dashed 1px rgba(0, 0, 0, 0.25);
+    font-size: small;
+    margin-right: 0.5em;
+    font-weight: lighter;
+}
+
+span.tag.end { margin-right: 0; }
+span.tag.non { background-color: transparent; border: none; }
+span.tag.point { position: relative; }
+span.tag.point::after {
+    content: " ";
+    position: absolute;
+    right: -3.5px; top: 0;
+    height: 100%; width: 1px; 
+    transform: scaleY(0.6) rotate(15deg);
+    background-color: rgba(0, 0, 0, 0.4);
 }
