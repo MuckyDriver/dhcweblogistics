@@ -29,7 +29,7 @@
         <script async src="js/index.js" type="text/javascript"></script>
         <script async src="js/filter.js" type="text/javascript"></script>
     </head>
-    <body><!-- Container includes header, content and footer including links and images of the webpage... -->
+    <body class="flexify"><!-- Container includes header, content and footer including links and images of the webpage... -->
         <div class="weblog-notice">Website currently under development, please come back another time!</div>
 
         <!-- Container for the mobile menu content, will open when mobile menu button is pressed. -->
@@ -71,10 +71,13 @@
                         <label>Filter by Category</label>
                         <select id="filter" autocomplete="off">
                             <option value="all" selected>All</option>
-                            <option value="roblox">Roblox</option>
-                            <option value="web">Web development</option>
-                            <option value="edu">Educational</option>
-                            <option value="other">Other</option>
+                            <option value="games">Games</option>
+                            <option value="web">Websites</option>
+                            <option value="edu" disabled>Educational</option>
+                            <option value="media" disabled>Media</option>
+                            <option value="math" disabled>Mathematical</option>
+                            <option value="resource" disabled>Resources</option>
+                            <option value="other" disabled>Other</option>
                         </select>
                     </div>
                 </div>
@@ -83,7 +86,7 @@
             <div class="content">
                 <!-- Project list, list of all the projects I am working on and whats been completed -->
                 <div class="project-list" id="project-list">
-                    <div class="project-item" id="3" tabindex="0" role="button" category="roblox all">
+                    <div class="project-item" id="3" tabindex="0" role="button" category="games all">
                         <img src="img/icon/other/planetaryObjectRealm2Icon.png" alt="project icon" width="48" height="48">
                         <div class="info"><h3>Planetary Object Realm 2</h3><span>Explore the planetary objects of our solar system and beyond.</span></div>
                         <div class="stats">
@@ -92,7 +95,7 @@
                         <div class="hover-to-reveal"><span class="tag non point">V2.0.9 Beta</span><span class="tag non end">2023-Present</span></div>
                     </div>
 
-                    <div class="project-item" id="5" tabindex="0" role="button" category="roblox all">
+                    <div class="project-item" id="5" tabindex="0" role="button" category="games all">
                         <img src="img/icon/other/TrafficGameLogo.webp" alt="project icon" width="48" height="48">
                         <div class="info"><h3>Traffic</h3><span>A showcase game that demonstrates the flow of traffic on a highway.</span></div>
                         <div class="stats">
@@ -101,7 +104,7 @@
                         <div class="hover-to-reveal"><span class="tag non point">V1.1 Beta</span><span class="tag non end">2023</span></div>
                     </div>
 
-                    <div class="project-item" id="4" tabindex="0" role="button" category="roblox web all">
+                    <div class="project-item" id="4" tabindex="0" role="button" category="web all">
                         <img src="img/icon/other/mdr.png" alt="project icon" width="48" height="48">
                         <div class="info"><h3>Mucky Driver</h3><span>Offroad car game where players collect points, gems and more to unlock more vehicles.</span></div>
                         <div class="stats">
@@ -114,9 +117,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Element below has been added for a brief moment as the website gets various updates and will be removed when the site has been completed... -->
-        <div class="coming-soon"><div><img src="img/animated/coming_soon.gif" alt="coming soon gif" width="50" height="50"></div><div>Currently developing the website.</div></div>
 
         <!-- At the bottom of the page, there is a footer which includes useful links and information -->
         <footer>
