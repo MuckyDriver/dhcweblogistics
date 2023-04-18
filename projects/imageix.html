@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><!-- Container includes meta data, title, links to external sources etc... -->
+        <!-- 
+            Welcome to DHCWeblogistics (https://dhcweblogistics.net). 
+            Credits: Claasgreeneye & Github
+        -->
+        <title>Project - Imageix</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Imageix is a webpage which loads random images depending on a search criteria. Powered by UnSplash">
+
+        <!-- Linked Sources -->
+        <link href="../img/icon.svg" rel="icon" type="image/svg">
+
+        <!-- External CSS and Fonts -->
+        <link href="../css/projects.css" rel="stylesheet" type="text/css">
+        <link href="../fonts/rubik.css" rel="stylesheet">
+        <link href="../fonts/source-code-pro.css" rel="stylesheet">
+
+        <!-- External Scripts -->
+        <script async src="../js/imageix.js" type="text/javascript"></script>
+    </head>
+    <body class="imageix"><!-- Container includes header, content and footer including links and images of the webpage... -->
+        <header>
+            <input type="search" id="input-imgx" placeholder="search keyword">
+            <button id="button-imgx">SEARCH</button>
+            <button id="button-reload">LOAD ANOTHER</button>
+        </header>
+        <div class="output-imgx" id="imgx"></div>
+        <footer>
+            <span class="light small">Powered by <a class="link" href="https://www.unsplash.com/">UnSplash</a></span>
+        </footer>
+    </body>
+</html>
