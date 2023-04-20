@@ -4,19 +4,18 @@ const mobileMenuBtn = document.getElementById('mobile-menu-btn');
 const mobileMenuCloseBtn = document.getElementById('close-mobile-menu');
 let open = false;
 
-mobileMenuBtn.onclick = function() {
-    if (open == false) {
-        mobileMenu.classList.add('open'); // Removing 'closed' class will transition show the mobile menu.
-        open = true;
-    }
-}
-
-mobileMenuCloseBtn.onclick = function() {
-    if (open == true) {
+function toggleMobileMenu() {
+    if (open) {
         mobileMenu.classList.remove('open'); // Adding 'closed' class will transition hide the mobile menu.
-        open = false;
+    } else {
+        mobileMenu.classList.add('open'); // Removing 'closed' class will transition show the mobile menu.
     }
-}
+
+    open = !open;
+};
+
+mobileMenuBtn.addEventListener('click', toggleMobileMenu) // Event is fired after mobileMenuBtn is clicked
+mobileMenuCloseBtn.addEventListener('click', toggleMobileMenu) // Event is fired after mobileMenuCloseBtn is clicked
 
 // Open Project - go to project
 const projectList = document.getElementById('project-list');
@@ -42,3 +41,14 @@ if (projectList) {
         projectItem.onclick = function() { goTo() };
     }
 }
+
+// Mobile Device dropdowns are automatically closed.
+const details = document.getElementsByTagName('details');
+const dropdownExtra = document.getElementsByClassName('dropdown-extra');
+
+for (let i = 0; i < dropdownExtra.length; i++) {
+    let dropdown = dropdownExtra[i]; // Assigning the dropdown element via the dropdownExtra class array.
+    let statement = (document.body.offsetWidth <= 600); // A statement which returns false/true depending if the offsetWidth is smaller than the value.
+
+    dropdown.open = !statement; // It will set the open attribute to the opposite value of {statement}. 
+};

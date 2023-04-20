@@ -122,7 +122,6 @@ div.mobile-menu {
     max-width: 400px;
     background-color: white;
     transform: translate(100%);
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.125);
     z-index: 999;
     overflow-y: auto;
     transition: transform 0.4s ease-in-out;
@@ -130,6 +129,7 @@ div.mobile-menu {
 
 div.mobile-menu.open {
     transform: translate(0%);
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.125);
 }
 
 div.mobile-menu > div.mm-controls {
