@@ -33,12 +33,17 @@ if (projectList) {
         let url = projectUrls[projectItem.id]
     
         function goTo() {
-            if (url) {
-                window.open(url)
-            };
+            if (url) { window.open(url) };
         }
     
         projectItem.onclick = function() { goTo() };
+
+        // There is a chance if a user is only using keyboard then we need to check when they press enter on the project item:
+        projectItem.addEventListener("keypress", (event) => {
+            if (event.key === "Enter") {
+                goTo()
+            }
+        });
     }
 }
 
