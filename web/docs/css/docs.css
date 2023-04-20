@@ -285,16 +285,20 @@ input.search-box {
 /* Copyright */
 
 div.copyright {
-    padding: 6px 10px;
+    padding: 8px 12px;
     cursor: pointer;
-    font-family: 'Rubik';
+    font-family: inherit;
     position: fixed; z-index: 999;
-    border-radius: 5px;
+    border-radius: 6px;
+    color: white;
     margin: 10px; bottom: 0;
-    backdrop-filter: blur(10px) brightness(0.25);
-    background-color: rgba(52, 152, 219, 0.2);
+    backdrop-filter: blur(10px);
+    background-color: #194a6b;
     transition: all 0.4s ease-in-out;
 }
+
+div.copyright.opaque { opacity: 0.25; }
+div.copyright.opaque:hover { opacity: 1; }
 
 div.copyright span {
     font-size: larger;
@@ -316,4 +320,10 @@ div.copyright div.info {
 
 div.copyright div.info.hidden {
     display: none;
+}
+
+div.hitbox-copy {
+    position: fixed;
+    transform: scale(10);
+    padding: 2em;
 }

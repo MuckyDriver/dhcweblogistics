@@ -624,3 +624,49 @@ div.tutorial-container > div.t-content div.img {
     display: grid;
     margin-bottom: 24px;
 }
+
+/* Copyright */
+
+div.copyright {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-family: inherit;
+    position: fixed; z-index: 999;
+    border-radius: 6px;
+    color: white;
+    margin: 10px; bottom: 0;
+    backdrop-filter: blur(10px);
+    background-color: #224FD8;
+    transition: all 0.4s ease-in-out;
+}
+
+div.copyright.opaque { opacity: 0.25; }
+div.copyright.opaque:hover { opacity: 1; }
+
+div.copyright span {
+    font-size: larger;
+    vertical-align: middle;
+    top: -1px; position: relative;
+}
+
+@media (max-width: 650px) {
+    div.copyright {
+        transform: translateX(calc(-100% + -10px));
+        opacity: 0;
+    }
+}
+
+div.copyright div.info {
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+div.copyright div.info.hidden {
+    display: none;
+}
+
+div.hitbox-copy {
+    position: fixed;
+    transform: scale(10);
+    padding: 2em;
+}
