@@ -49,7 +49,7 @@ function handleNewHitbox() {
         }
 }
 
-addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener("DOMContentLoaded", (event) => {
     buildCopyright(); // Builds the copyright container
     handleButtonEvent(); // Handles the click event when user clicks on the copyright container.
     handleNewHitbox(); // Hitbox used to check whether mouse is close to the copyrighr container.
