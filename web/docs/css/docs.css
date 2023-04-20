@@ -325,5 +325,5 @@ div.copyright div.info.hidden {
 div.hitbox-copy {
     position: fixed;
     transform: scale(10);
-    padding: 2em;
+    padding: 1em;
 }
