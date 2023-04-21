@@ -4,7 +4,7 @@ const projectItems = document.getElementsByClassName('project-item')
 function applyChanges(category) {
     for (let i = 0; i < projectItems.length; i++) {
         const projectItem = projectItems[i];
-        let relatedCategories = projectItem.getAttribute('category').split(" ")
+        let relatedCategories = projectItem.getAttribute('data-category').split(" ")
 
         if (relatedCategories.includes(category)) {
             projectItem.style.display = 'grid';

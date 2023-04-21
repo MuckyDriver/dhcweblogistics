@@ -363,7 +363,8 @@ details.content-dropdown[open] > div.content {
     font-weight: 300;
 }
 
-/* Dark Theme */ body[color-scheme="dark"] details.content-dropdown > summary img { filter: invert(); }
+/* Dark Theme */ 
+body[color-scheme="dark"] details.content-dropdown > summary img { filter: invert(1); }
 
 /* Mobile Menu */
 div.mobile-menu {

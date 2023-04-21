@@ -16,7 +16,7 @@
 
         <!-- External Scripts -->
         <script async src="js/index.js"></script>
-        <script async src="/js/copyright.js" type="text/javascript"></script>
+        <script async src="/js/copyright.js"></script>
     </head>
     <body>
         <!-- Mobile Menu-->
@@ -36,7 +36,7 @@
         <!-- Header -->
         <header>
             <div class="wrapper">
-                <img alt="logo icon" src="img/icon/icon.png" alt="Header Icon">
+                <img src="img/icon/icon.png" alt="Header Icon">
                 <nav>
                     <a href="#home" id="button.test.home" class="active">Home</a>
                     <a href="#tutorials" id="button.test.tutorials">Tutorials</a>
@@ -79,40 +79,40 @@
                     </div>
                 </div>
                 <div class="grid-auto">
-                    <div class="rounded tutorial-button" id="#tutorials:html-basics" keywords="html basics web code">
+                    <div class="rounded tutorial-button" id="#tutorials:html-basics" data-keywords="html basics web code">
                         <img alt="thumb image" src="img/thumbs/sun-tornado2.svg"><h2><span>HTML Basics</span></h2>
                     </div>
-                    <div class="rounded tutorial-button" id="#tutorials:js-basics" keywords="js javascript code web basics">
+                    <div class="rounded tutorial-button" id="#tutorials:js-basics" data-keywords="js javascript code web basics">
                         <img alt="thumb image" src="img/thumbs/protruding-squares.svg"><h2><span>Javascript Basics</span></h2>
                     </div>
-                    <div class="rounded tutorial-button" id="#tutorials:howto-website" keywords="website development guide howto">
+                    <div class="rounded tutorial-button" id="#tutorials:howto-website" data-keywords="website development guide howto">
                         <img alt="thumb image" src="img/thumbs/radiant-gradient.svg"><h2><span>How to setup a website</span></h2>
                     </div>
-                    <div class="rounded tutorial-button" id="#tutorials:css-guide" keywords="css styles design guide tutorial basics">
+                    <div class="rounded tutorial-button" id="#tutorials:css-guide" data-keywords="css styles design guide tutorial basics">
                         <img alt="thumb image" src="img/thumbs/radiant-gradient2.svg"><h2><span>CSS Guides</span></h2>
                     </div>
-                    <div class="rounded tutorial-button" id="#tutorials:one-page-static-website" keywords="static website page tutorial webpage web">
+                    <div class="rounded tutorial-button" id="#tutorials:one-page-static-website" data-keywords="static website page tutorial webpage web">
                         <img alt="thumb image" src="img/thumbs/rainbow-vortex.svg"><h2><span>One page website technique (Static)</span></h2>
                     </div>
-                    <div class="rounded tutorial-button" id="#tutorials:howto-bootstrap" keywords="guide howto how css bootstrap tutorial toolkit stylesheet">
+                    <div class="rounded tutorial-button" id="#tutorials:howto-bootstrap" data-keywords="guide howto how css bootstrap tutorial toolkit stylesheet">
                         <img alt="thumb image" src="img/thumbs/rose-petals.svg"><h2><span>How to setup Bootstrap</span></h2>
                     </div>
-                    <div class="rounded tutorial-button" id="#tutorials:html-forms" keywords="forms input html web php">
+                    <div class="rounded tutorial-button" id="#tutorials:html-forms" data-keywords="forms input html web php">
                         <img alt="thumb image" src="img/thumbs/sun-tornado.svg"><h2><span>Forms</span></h2>
                     </div>
-                    <div class="rounded tutorial-button" id="#tutorials:responsive-web-design" keywords="responsive mobile design web css">
+                    <div class="rounded tutorial-button" id="#tutorials:responsive-web-design" data-keywords="responsive mobile design web css">
                         <img alt="thumb image" src="img/thumbs/hollowed-boxes.svg"><h2><span>Responsive web design</span></h2>
                     </div>
                 </div>
             </div>
 
-            <div class="page" id="test.about-us" customTitle="About Us">
+            <div class="page" id="test.about-us" data-customTitle="About Us">
                 <div class="p-container rounded">
                     <h3>About Us Page</h3>
                     <p>The website was created to give guidance on how to code for the web.</p>
                 </div>
             </div>
-            <div class="page" id="test.contact-us" customTitle="Contact Us">
+            <div class="page" id="test.contact-us" data-customTitle="Contact Us">
                 <div class="p-container rounded">
                     <h3>Contact Us Page</h3>
                     <p>Our social media's and other ways you can contact us with.</p>
@@ -120,7 +120,7 @@
             </div>
 
             <!-- Tutorial Pages -->
-            <div class="page" id="test.tutorials:html-basics" customTitle="HTML Basics">
+            <div class="page" id="test.tutorials:html-basics" data-customTitle="HTML Basics">
                 <div class="p-container error rounded" style="margin-top: 0;">
                     <img alt="error icon" src="img/icon/error.png" class="icon"><span>The page is currently still under development, expect sections of information not be present.</span>
                 </div>
@@ -130,8 +130,8 @@
                     <aside class="t-adornee">
                         <h3>HTML Basics</h3>
                         <div class="tutorial-anchor">
-                            <a goto="hb-intro">Introduction</a><a goto="hb-layout">HTML Layout</a><a goto="hb-practices">Best Practices</a>
-                            <a goto="hb-issues">Frequent Issues</a><a goto="hb-reference">HTML Tag Reference</a><a goto="hb-finish">Conclusion</a>
+                            <a data-goTo="hb-intro">Introduction</a><a data-goTo="hb-layout">HTML Layout</a><a data-goTo="hb-practices">Best Practices</a>
+                            <a data-goTo="hb-issues">Frequent Issues</a><a data-goTo="hb-reference">HTML Tag Reference</a><a data-goTo="hb-finish">Conclusion</a>
                         </div>
                     </aside>
 
@@ -143,8 +143,8 @@
                         <p>In this tutorial it will go through the layout of a html page and including best practices, problems to look out for, html tag reference with their descriptions.</p>
                         <h3 id="hb-layout">Layout</h3>
                         <div class="html-layout-grid">
-                            <div portion="header">HEADER</div><div portion="nav">NAV</div><div portion="content">CONTENT</div><div portion="aside">SIDEBAR</div>
-                            <div portion="footer">FOOTER</div>
+                            <div data-portion="header">HEADER</div><div data-portion="nav">NAV</div><div data-portion="content">CONTENT</div><div data-portion="aside">SIDEBAR</div>
+                            <div data-portion="footer">FOOTER</div>
                         </div>
                         <ul class="tutorial-list star" style="font-weight: 100">
                             <li><b>Header:</b> Includes elements relating to website logo, navigation bar and social links.</li>
@@ -167,7 +167,7 @@
                 </div>
             </div>
 
-            <div class="page" id="test.tutorials:js-basics" customTitle="Javascript Basics">
+            <div class="page" id="test.tutorials:js-basics" data-customTitle="Javascript Basics">
                 <div class="p-container error rounded" style="margin-top: 0;">
                     <img alt="error icon" src="img/icon/error.png" class="icon"><span>The page is currently still under development, expect sections of information not be present.</span>
                 </div>
@@ -175,8 +175,8 @@
                     <aside class="t-adornee">
                         <h3>Javascript Basics</h3>
                         <div class="tutorial-anchor">
-                            <a goto="jb-intro">Introduction</a><a goto="jb-vcft">Javascript Fundamentals</a>
-                            <a goto="jb-finish">Conclusion</a>
+                            <a data-goTo="jb-intro">Introduction</a><a data-goTo="jb-vcft">Javascript Fundamentals</a>
+                            <a data-goTo="jb-finish">Conclusion</a>
                         </div>
                     </aside>
 
@@ -200,7 +200,7 @@
 
 
             <!-- Footer Pages -->
-            <div class="page" id="test.external-sources" customTitle="Sources">
+            <div class="page" id="test.external-sources" data-customTitle="Sources">
                 <div class="p-container rounded">
                     <h3>Resources used to create this website.</h3>
                     <p>Links to sources for icons, images, styles and more!</p>

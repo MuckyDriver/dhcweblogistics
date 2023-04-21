@@ -35,22 +35,22 @@ div.html-layout-grid > div:hover {
     outline-color: hsl(225, 73%, 70%);
 }
 
-div.html-layout-grid > div[portion="header"] {
+div.html-layout-grid > div[data-portion="header"] {
     grid-area: header;
 }
 
-div.html-layout-grid > div[portion="nav"] {
+div.html-layout-grid > div[data-portion="nav"] {
     grid-area: nav;
 }
 
-div.html-layout-grid > div[portion="content"] {
+div.html-layout-grid > div[data-portion="content"] {
     grid-area: content; 
 }
 
-div.html-layout-grid > div[portion="aside"] {
+div.html-layout-grid > div[data-portion="aside"] {
     grid-area: aside;
 }
-div.html-layout-grid > div[portion="footer"] {
+div.html-layout-grid > div[data-portion="footer"] {
     grid-area: footer;
 }
 

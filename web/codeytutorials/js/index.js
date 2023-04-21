@@ -49,7 +49,7 @@ function loadPage() {
 
         for (let i = 0; i < pages.length; i++) {
             let page = pages[i] 
-            let customTitle = page.getAttribute('customTitle')
+            let customTitle = page.getAttribute('data-customTitle')
             let reference = page.id.split('.')[1] 
 
             updateButtons(page, windowData, reference)
@@ -110,7 +110,7 @@ function tutorialSearch() {
 
     for (let i = 0; i < tutorialButtons.length; i++) {
         let tutorialButton = tutorialButtons[i]
-        let keywords = tutorialButton.getAttribute('keywords');
+        let keywords = tutorialButton.getAttribute('data-keywords');
 
         if (keywords && inputData != "" || null) {
             let keywordsArray = keywords.split(" ")
@@ -151,7 +151,7 @@ for (let i = 0; i < tutorialAnchorLists.length; i++) {
 
     for (let i = 0; i < tutorialAnchorLinkages.length; i++) {
         let tutorialLinkage = tutorialAnchorLinkages[i]
-        let linkageGoTo = tutorialLinkage.getAttribute('goto')
+        let linkageGoTo = tutorialLinkage.getAttribute('data-goto')
 
         tutorialLinkage.onclick = function() {
             const anchorTitle = document.getElementById(linkageGoTo)
