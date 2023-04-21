@@ -54,3 +54,12 @@ window.addEventListener("load", (event) => {
     handleButtonEvent(); // Handles the click event when user clicks on the copyright container.
     handleNewHitbox(); // Hitbox used to check whether mouse is close to the copyrighr container.
 })
+
+// There is a chance that the newHitbox element will be obstructing a link or button on the webpage.
+window.addEventListener("resize", () => {
+    if (document.body.offsetWidth <= 1000) {
+        newHitbox.style.display = 'none';
+    } else {
+        newHitbox.style.display = 'block';
+    }
+})
