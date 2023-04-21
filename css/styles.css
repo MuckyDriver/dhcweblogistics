@@ -205,6 +205,8 @@ div.page.dark {
     color: white;
 }
 
+div.page.dimmed { background-color: rgba(0, 0, 0, 0.075); }
+
 div.page.accent { background-color: rgba(0, 0, 0, 0.075); }
 
 div.page > div.content {
