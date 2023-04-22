@@ -507,13 +507,20 @@ img.wavey-bottom {
 }
 
 /* Span, i, h1, h2, h3, h4, p Stuff */
-:is(span, i, h1, h2, h3, h4, p).light {
+:is(span, i, h1, h2, h3, h4, p, ul, ol, li).light {
     font-weight: lighter;
 }
 
-:is(span, i, h1, h2, h3, h4, p).small {
+:is(span, i, h1, h2, h3, h4, p, ul, ol, li).small {
     font-size: smaller;
 }
+
+/* Unordered list style */
+ul.tv { list-style-image: url("https://img.icons8.com/material/14/null/retro-tv.png"); }
+ul.tv > li.watching { color: #375306; list-style-image: url("https://img.icons8.com/material/14/375306/retro-tv.png"); }
+
+ul.movie { list-style-image: url("https://img.icons8.com/material/14/null/movie-projector.png"); }
+ul.movie > li.watching { color: #375306; list-style-image: url("https://img.icons8.com/material/14/375306/movie-projector.png"); }
 
 /* Tags */
 
