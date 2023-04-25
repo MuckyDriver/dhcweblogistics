@@ -48,12 +48,14 @@ if (projectList) {
 }
 
 // Mobile Device dropdowns are automatically closed.
-const details = document.getElementsByTagName('details');
-const dropdownExtra = document.getElementsByClassName('dropdown-extra');
+window.addEventListener("load", (event) => {
+    const details = document.getElementsByTagName('details');
+    const dropdownExtra = document.getElementsByClassName('dropdown-extra');
 
-for (let i = 0; i < dropdownExtra.length; i++) {
-    let dropdown = dropdownExtra[i]; // Assigning the dropdown element via the dropdownExtra class array.
-    let statement = (document.body.offsetWidth <= 600); // A statement which returns false/true depending if the offsetWidth is smaller than the value.
+    for (let i = 0; i < dropdownExtra.length; i++) {
+        let dropdown = dropdownExtra[i]; // Assigning the dropdown element via the dropdownExtra class array.
+        let statement = (document.body.offsetWidth <= 600); // A statement which returns false/true depending if the offsetWidth is smaller than the value.
 
-    dropdown.open = !statement; // It will set the open attribute to the opposite value of {statement}. 
-};
+        dropdown.open = !statement; // It will set the open attribute to the opposite value of {statement}. 
+    };
+})

@@ -106,7 +106,7 @@ header > div.wrapper div.mobile {
 footer {
     border-top: 1px solid rgba(0, 0, 0, 0.125); 
     margin-top: auto;
-    padding: 1em;
+    padding: 1em 24px;
 }
 
 footer > div.content { 
@@ -126,6 +126,7 @@ footer > div.footer-content div.link-list {
     flex-direction: column;
     line-height: 1.8;
     font-size: smaller;
+    margin-bottom: 1em;
 }
 
 footer > div.footer-content div.link-list > a {
@@ -139,6 +140,12 @@ footer > div.footer-content div.link-list img.prefix {
 
 footer > div.footer-content div.foot-head {
     margin-bottom: 0.5em;
+}
+
+@media (max-width: 400px) {
+    footer > div.footer-content {
+        grid-template-columns: auto;
+    }
 }
 
 /* Mobile Menu */
@@ -293,6 +300,12 @@ div.grid-3 {
     gap: 12px;
     margin: 12px 0px;
     align-items: flex-start;
+}
+
+@media (max-width: 400px) {
+    div.grid-3 {
+        grid-template-columns: auto;
+    }
 }
 
 div.grid-3 > div {
