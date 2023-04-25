@@ -438,6 +438,10 @@ div.project-list > div.project-item:hover > div.hover-to-reveal { display: block
     position: relative;
 }
 
+:is(h1, h2).page-title:target {
+    scroll-margin-top: 100px;
+}
+
 :is(h1, h2).page-title.higher {
     margin-block-start: 1.2em;
 }
