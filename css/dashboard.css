@@ -110,6 +110,32 @@ div.dashboard > div.pages > div.dash-page {
     display: none;
 }
 
+/* Dashboard tags group */
+div.tag-group {
+    padding: 0.5em;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.05);
+    margin-top: 1em;
+}
+
+div.tag-group > a.tags {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 0.25em;
+    background: white;
+    border-radius: 100px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    color: black;
+    font-size: small;
+    font-weight: normal;
+    text-decoration: none;
+    transition: box-shadow 0.15s ease-in-out;
+}
+
+div.tag-group > a.tags:hover {
+    box-shadow: 0 0.2em 0.5rem rgba(0, 0, 0, 0.15);
+}
+
 /* Other */
 div.dash-page :is(h1, h2, h3, h4).remove-top {
     margin-block-start: 0;
