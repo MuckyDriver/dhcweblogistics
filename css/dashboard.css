@@ -5,6 +5,7 @@ div.dashboard {
     gap: 1em;
     margin: 2em auto;
     max-width: 1100px;
+    align-items: start;
 }
 
 div.dashboard > div { 
