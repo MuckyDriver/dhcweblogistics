@@ -162,11 +162,11 @@ a.quick-button {
 }
 
 a.quick-button:hover {
-    background-color: rgba(135, 204, 15, 0.5);
+    background-color: rgba(135, 204, 15, 0.7);
 }
 
 a.quick-button:focus {
-    background-color: rgba(135, 204, 15, 0.5);
+    background-color: rgba(135, 204, 15, 0.7);
 }
 
 /* Media - Responsiveness */
