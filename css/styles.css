@@ -383,7 +383,7 @@ div.project-list > div.project-item > div {
 }
 
 div.project-list > div.project-item:hover {
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: rgba(0, 0, 0, 0.04);
 }
 
 /* Project Items */
