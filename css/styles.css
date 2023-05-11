@@ -458,7 +458,7 @@ div.tester-packages > div.package > div.features span { display: inline-block; t
 
 div.tester-packages div.pricing span.price, span.heading {
     font-size: x-large;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.325em;
 }
 
 div.tester-packages div.pricing span.price::before {
