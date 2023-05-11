@@ -247,6 +247,10 @@ div.page > div.content {
     margin: auto;
 }
 
+div.page.bluey {
+    background: linear-gradient(rgba(158, 192, 255, 0.15), transparent);
+}
+
 div.page.design { 
     overflow: hidden;
     position: relative;
