@@ -8,6 +8,7 @@ const durationTypeCalculation = {
     ["min"]: 60 // seconds
 }
 
+
 for (i = 0; i < countTimeElements.length; i++) {
     const countTimeElement = countTimeElements[i];
     const lastEpochTimestamp = countTimeElement.getAttribute('data-epoch');
