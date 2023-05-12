@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><!-- Container includes meta data, title, links to external sources etc... -->
+        <!-- 
+            Welcome to DHCWeblogistics (https://dhcweblogistics.net). 
+            Credits: Claasgreeneye & Github
+        -->
+        <title>Game Tester Enquiry</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Request the tester!">
+        
+        <!-- Linked Sources -->
+        <link href="../img/icon.svg" rel="icon" type="image/svg">
+        <link rel="manifest" href="json/manifest.json">
+
+        <!-- External CSS and Fonts -->
+        <link href="../css/post.css" rel="stylesheet" type="text/css">
+        <link href="../fonts/rubik.css" rel="stylesheet">
+        <link href="../fonts/source-code-pro.css" rel="stylesheet">
+
+        <!-- Meta tags for embedding links -->
+        <meta content="Game Tester Request" property="og:title">
+        <meta content="Request the tester." property="og:description">
+        <meta content="https://dhcweblogistics.net/post/post-gametester-enquiry.html" property="og:url">
+        <meta content="" property="og:image">
+        <meta content="#87cc0f" data-react-helmet="true" name="theme-color">
+
+        <!-- External Scripts -->
+        <!-- None -->
+    </head>
+    <body>
+        <div class="content">
+            <h1>Request the Tester</h1>
+            <p>Fill out this form to send an enquiry.</p>
+        </div>
+        <div class="content transparent">
+            <a href="../game-tester.html"><button type="button">BACK TO MAIN WEBSITE</button></a>
+        </div>
+        <div class="content">
+            <form method="POST" action="https://formspree.io/f/xoqzbddz" autocomplete="off">
+                <div>
+                    <label for="contact-info">Account Domain & Contact Info</label>
+                    <select name="contact-info" required>
+                        <option value="twitter">Twitter</option>
+                        <option value="discord">Discord</option>
+                        <option value="other">Other (Specify in below input field)</option>
+                    </select>
+                    <input type="text" placeholder="Twitter, Discord account etc" required name="contact-info" maxlength="100">
+                </div>
+                <div>
+                    <label for="package">Package</label>
+                    <select name="package" required>
+                        <option value="basic">Basic - Free</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="game-link">Game Link</label>
+                    <input type="url" name="game-link" required maxlength="400" placeholder="https://www.roblox.com/games/{game-id-here}">
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" required minlength="100" maxlength="2000" placeholder="Give a brief explaination on the purpose of the game test."></textarea>
+                </div>
+                <button type="submit">SEND ENQUIRY</button>
+            </form>
+        </div>
+    </body>
+</html>
