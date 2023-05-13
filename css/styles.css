@@ -640,6 +640,10 @@ ul.movie > li.watching { color: #375306; list-style-image: url("https://img.icon
     transition: all 0.125s ease-in-out;
 }
 
+:is(a, button).quick-button.no-right-margin {
+    margin-right: 0em;
+}
+
 :is(a, button).quick-button:hover {
     background-color: rgba(135, 204, 15, 0.7);
 }
