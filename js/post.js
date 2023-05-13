@@ -18,5 +18,9 @@ if (windowData) {
 
 // Button Handling
 popupElementClose.addEventListener('click', () => {
-    popupElement.classList.remove('open')
+    popupElement.classList.remove('open');
+
+    setTimeout(() => {
+        popupElement.style.display = 'none';
+    }, 250)
 })
