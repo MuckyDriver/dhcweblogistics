@@ -13,10 +13,15 @@ if (windowData) {
 }
 
 // Button Handling
-popupElementClose.addEventListener('click', () => {
+function closePopup() {
     popupElement.classList.remove('open');
 
     setTimeout(() => {
         popupElement.style.display = 'none';
     }, 250)
+}
+
+popupElementClose.addEventListener('click', closePopup)
+popupElementClose.addEventListener('keypress', (event) => {
+    if (event.key == "Enter") { closePopup() }
 })
