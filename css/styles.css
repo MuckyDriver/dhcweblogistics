@@ -446,6 +446,11 @@ div.tester-packages > div.package > div {
 }
 
 div.tester-packages > div.package > div.features { border-bottom: none; }
+div.tester-packages > div.package > div.features > div {
+    display: flex; gap: 0.5em;
+    align-items: center;
+    margin: 0.2em 0;
+}
 
 div.tester-packages > div.package > div span.caption {
     font-size: small; font-weight: lighter; font-style: italic;
