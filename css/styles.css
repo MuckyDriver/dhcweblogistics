@@ -718,3 +718,35 @@ div.hitbox-copy {
     transform: scale(10);
     padding: 1em;
 }
+
+/* Post Dialog Success Prompt */
+dialog#post-popup-element {
+    position: fixed;
+    top: 1em;
+    border: none;
+    box-shadow: 0 0.2em 0.5em rgba(0, 0, 0, 0.2);
+    padding: 1em;
+    border-radius: 6px;
+    opacity: 0;
+    display: block;
+    z-index: 9999;
+    width: 400px;
+    max-width: calc(100vw - 50px);
+    transform: translateY(-1em);
+
+    transition: all 0.25s ease-in-out;
+}
+
+dialog#post-popup-element.open {
+    opacity: 1;
+    transform: translateY(0em);
+}
+
+dialog#post-popup-element > div.header {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+dialog#post-popup-element > div.header > .last { margin-left: auto; }
+dialog#post-popup-element > div.header > img#post-dialog-close { cursor: pointer; }

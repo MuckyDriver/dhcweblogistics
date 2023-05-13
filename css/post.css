@@ -93,7 +93,7 @@ form div > * {
     border-radius: 6px;
 }
 
-button { 
+.button, button { 
     display: block;
     margin-block-start: 2em;
     background-color: #87cc0f;
@@ -107,12 +107,10 @@ button {
     transition: all 0.2s ease-in-out;
 }
 
-button[type="button"] {
-    margin-block-start: 0;
-}
+.button { margin-block-start: 0; }
 
-button:hover {
+.button:hover, button:hover {
     background-color: rgba(135, 204, 15, 0.75);
 }
 
-a { text-decoration: none; }
+a { text-decoration: none; text-align: center; }
