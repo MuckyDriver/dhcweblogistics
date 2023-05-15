@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Console 404</title>
+
+        <!-- Imported Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+        <!-- External Scripts -->
+        <script async src="js/console404.js"></script>
+
+        <!-- External CSS -->
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+
+        <!-- The console container, containing all of the webpage visible content -->
+        <div class="console">
+
+            <!-- Static Element to the console -->
+            <div class="static">
+                <div class="line" data-loadtimeout="100">Error 404: Page not found!</div>
+                <div class="line" data-loadtimeout="110" data-linecolor="red" data-lineindent="4">Description: Page not found.</span></div>
+                <div class="line" data-loadtimeout="140" data-linecolor="red" data-lineindent="4">Error Code: 404</span></div>
+                <div class="line" data-loadtimeout="150" data-linecolor="red" data-lineindent="2"><span>Could not find such webpage under domain:</div>
+                <div class="line" data-loadtimeout="200" data-linecolor="blue" data-lineindent="4"><span class="console-domain"></span></div>
+                <div class="line" data-loadtimeout="250" data-linecolor="red" data-lineindent="2">Make sure the url have entered is typed correctly.</div>
+                <div class="line" data-loadtimeout="300" data-linecolor="" data-lineindent="0">For help type in the command "help" below to get commands.</div>
+            </div>
+
+            <!-- Actual Console that is being written -->
+            <div class="console-written" id="console-written">
+                <div class="line" data-loadtimeout="325" id="input-example">
+                    <span class="console-directory in"></span><input spellcheck="false" placeholder="goto ?" data-current="true" type="text">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

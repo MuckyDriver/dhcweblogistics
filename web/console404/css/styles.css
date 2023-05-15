@@ -1,0 +1,35 @@
+body { 
+    margin: 0em; 
+    background-color: black;
+    color: white;
+}
+
+* { 
+    box-sizing: border-box;
+    font-size: 0.98em;
+    font-family: 'Source Code Pro', sans-serif; /* M PLUS Code Latin */
+}
+
+/* Console */
+div.line {
+    padding: 0.2em 1em;
+    display: none;
+}
+
+div.line > span.in::before { content: "<"; }
+div.line > span.in::after { content: ">"; }
+
+div.line > input[type="text"] {
+    background: transparent;
+    border: none;
+    font-size: 1em;
+    color: #70aeff;
+    outline: none;
+    margin-left: 0.5em;
+    min-width: 300px;
+}
+
+:where(input[type="text"]):focus { background-color: rgba(255, 255, 255, 0.1); }
+
+/* Other */
+.dimmed { opacity: 0.8; }
