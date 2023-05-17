@@ -43,11 +43,16 @@ const responses = {
     ['help']: [
         ['You can you use the commands listed below:', 0],
         ['help', 1],
+        ['domain', 1],
+        ['url', 1],
         ['goto', 1],
         ['Syntax: goto {page name} | For example: goto index.html', 2],
         ['return', 1],
         ['The "return" command will return to last available page you visited.', 2]
     ],
+
+    ['domain']: [ [(window.location.host && window.location.host || "hello"), 0] ],
+    ['url']: [ ["Url: " + window.location.href, 0] ],
 
     ['return']: function() { history.back(); },
 
@@ -82,7 +87,7 @@ function handleInputs() {
 
                     // If the response array does not exist then the command does not exist.
                     if (responseArray == undefined) {
-                        responseArray = ["The command you entered does not exist!"]
+                        responseArray = [["The command you entered does not exist!", 0]]
                     }
     
                     for (let i = 0; i < responseArray.length; i++) {
