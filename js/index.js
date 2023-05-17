@@ -22,7 +22,8 @@ const projectList = document.getElementById('project-list');
 const projectUrls = {
     [3]: "https://www.roblox.com/games/12633113230/",
     [4]: "https://muckydriver.net/",
-    [5]: "https://www.roblox.com/games/12468321078/"
+    [5]: "https://www.roblox.com/games/12468321078/",
+    [404]: "./projects/console404/"
 }
 
 if (projectList) {

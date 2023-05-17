@@ -41,13 +41,16 @@ const writtenConsole = document.getElementById('console-written')
 
 const responses = {
     ['help']: [
-        'You can you use commands "goto" or "return".',
-        'Syntax: goto {page name} | Example: goto index.html',
-        'The command "return" will return to your last page you visited.'
+        ['You can you use the commands listed below:', 0],
+        ['help', 1],
+        ['goto', 1],
+        ['Syntax: goto {page name} | For example: goto index.html', 2],
+        ['return', 1],
+        ['The "return" command will return to last available page you visited.', 2]
     ],
-    ['return']: function() {
-        history.back();
-    },
+
+    ['return']: function() { history.back(); },
+
     ['goto']: function(page) {
         if (page.length < 1 || page == "/") { page = "" }
         window.location.assign("https://dhcweblogistics.net/" + page)
@@ -86,12 +89,12 @@ function handleInputs() {
                         let response = responseArray[i];
                         let newLine = document.createElement('div');
             
-                        newLine.innerText = response
+                        newLine.innerText = response[0]
                         newLine.style.display = 'block';
-                        newLine.style.paddingLeft = (32 * i) + "px";
+                        newLine.style.paddingLeft = (32 * response[1]) + "px";
                         newLine.classList.add('line')
 
-                        if (i > 0) {
+                        if (response[1] > 1) {
                             newLine.classList.add('dimmed')
                         }
                         
