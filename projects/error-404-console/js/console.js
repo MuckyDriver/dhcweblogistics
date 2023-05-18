@@ -1,7 +1,5 @@
 // Console Script
-/*
-    This script will handle the console written content as well as some of static content to be loaded in.
-*/
+// This script will handle the console written content as well as some of static content to be loaded in.
 
 // Global variables and constants
 let tabIndentScale = 32
