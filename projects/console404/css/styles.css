@@ -29,7 +29,6 @@ div.line > input[type="text"] {
     min-width: 300px;
 }
 
-:where(input[type="text"]):focus { background-color: rgba(255, 255, 255, 0.1); }
-
 /* Other */
-.dimmed { opacity: 0.8; }
+.dimmed { color: rgba(255, 255, 255, 0.8) }
+.bullet::before { content: "? "; color: #70aeff }
