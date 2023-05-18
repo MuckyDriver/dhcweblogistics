@@ -103,7 +103,7 @@ const commands = {
     ['help']: function() { responseCommand('help') },
     ['domain']: function() { responseCommand('domain') },
     ['url']: function() { responseCommand('url') },
-    ['protocol']: function() { responseCommand('port') },
+    ['protocol']: function() { responseCommand('protocol') },
     ['return']: function() { history.back(); },
 
     // goto is a more complex command, and will use more than one line on the data structure.
