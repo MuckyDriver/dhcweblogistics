@@ -46,7 +46,7 @@ const responses = {
     // All custom responses would go here, lines would be the individual lines of text and indents is the amount of indents you want the text to be at.
     ['help']: {
         ['lines']: [
-            "You can use the following commands:", "help", "domain", "url", "port",
+            "You can use the following commands:", "help", "domain", "url", "protocol",
             "goto", 'Syntax: goto {page name} | For example: goto index.html',
             "return", 'The "return" command will return to last available page you visited'
         ],
