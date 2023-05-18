@@ -67,7 +67,7 @@ const responses = {
     },
 
     ['protocol']: {
-        ['lines']: [ "Port: " + window.location.protocol.split(":")[0].toUpperCase() ],
+        ['lines']: [ "Protocol: " + window.location.protocol.split(":")[0].toUpperCase() ],
         ['indents']: [0], ['listItem']: [false]
     },
 
