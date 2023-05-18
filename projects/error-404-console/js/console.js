@@ -72,11 +72,6 @@ const responses = {
     ['gotoFailed']: {
         ['lines']: [ 'Incorrect use of the command "goto"', 'Syntax: goto {page name} | For example: goto index.html'],
         ['indents']: [0, 1], ['listItem']: [false, true]
-    },
-
-    ['returnFailed']: {
-        ['lines']: [ 'You cannot perform the command "return" as there is no last visited page to go to.'],
-        ['indents']: [0], ['listItem']: [false]
     }
 }
 
@@ -107,13 +102,7 @@ const commands = {
     ['domain']: function() { responseCommand('domain') },
     ['url']: function() { responseCommand('url') },
     ['protocol']: function() { responseCommand('protocol') },
-    ['return']: function() { 
-        if (history.length > 2) {
-            history.back()
-        } else {
-            responseCommand("returnFailed");
-        }
-    },
+    ['return']: function() { history.back() },
 
     // goto is a more complex command, and will use more than one line on the data structure.
     ['goto']: function(inputValue) {
