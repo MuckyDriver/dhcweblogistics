@@ -66,8 +66,8 @@ const responses = {
         ['indents']: [0], ['listItem']: [false]
     },
 
-    ['port']: {
-        ['lines']: [ "Port: " + window.location.port ],
+    ['protocol']: {
+        ['lines']: [ "Port: " + window.location.protocol ],
         ['indents']: [0], ['listItem']: [false]
     },
 
@@ -103,7 +103,7 @@ const commands = {
     ['help']: function() { responseCommand('help') },
     ['domain']: function() { responseCommand('domain') },
     ['url']: function() { responseCommand('url') },
-    ['port']: function() { responseCommand('port') },
+    ['protocol']: function() { responseCommand('port') },
     ['return']: function() { history.back(); },
 
     // goto is a more complex command, and will use more than one line on the data structure.
