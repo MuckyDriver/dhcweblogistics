@@ -11,7 +11,7 @@ for (let i = 0; i < consoleItems.length; i++) {
     let consoleItem = consoleItems[i]
     let consoleDir = consoleItem.getAttribute("data-console")
 
-    if (consoleDir == "directory") { consoleItem.innerHTML = window.location.pathname; } 
+    if (consoleDir == "directory") { consoleItem.innerHTML = window.location.pathname; }
     else if (consoleDir == "domain") { consoleItem.innerHTML = window.location.host; }
 }
 
