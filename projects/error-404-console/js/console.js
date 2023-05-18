@@ -51,7 +51,7 @@ const responses = {
             "return", 'The "return" command will return to last available page you visited'
         ],
         ['indents']: [0, 1, 1, 1, 1, 1, 2, 1, 2],
-        ['listItem']: [false, false, false, false, false, true, false, true]
+        ['listItem']: [false, false, false, false, false, false, true, false, true]
     },
 
     ['url']: {
