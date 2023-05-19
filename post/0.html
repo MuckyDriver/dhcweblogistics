@@ -30,24 +30,29 @@
         <!-- None -->
     </head>
     <body>
+
+        <!-- Content relating to the heading and the sub heading of the webpage -->
         <div class="content">
             <h1>Request the Tester</h1>
             <p>Fill out this form to send an enquiry.</p>
         </div>
+
+        <!-- Content allowing users to go back to the main website if they feel they do not want to fill out the form -->
         <div class="content transparent">
             <a class="button valign" href="../game-tester">
-                <img src="../img/icon/material/goback.png" alt="" width="20" height="20">&nbsp;
-                <span>BACK TO MAIN WEBSITE</span>
+                <img src="../img/icon/material/goback.png" alt="" width="20" height="20">&nbsp;&nbsp;<span>BACK TO MAIN WEBSITE</span>
             </a>
         </div>
+
+        <!-- Main content, which includes the form that can be filled out -->
         <div class="content">
+
+            <!-- Actuall form content. -->
             <form method="POST" action="https://submit-form.com/BiYULeCU" autocomplete="off">
                 <input type="hidden" name="_redirect" value="https://dhcweblogistics.net/game-tester?success">
                 <div class="double">
                     <div>
-                        <label for="contact-domain" class="valign">
-                            <img src="../img/icon/material/website_2.png" alt="" height="18" width="18">&nbsp;<span>Contact Domain</span>
-                        </label>
+                        <label for="contact-domain" class="valign"><img src="../img/icon/material/website_2.png" alt="" height="18" width="18">&nbsp;<span>Contact Domain</span></label>
                         <select name="contact-domain" id="contact-domain" autocomplete="off">
                             <option>Discord</option>
                             <option>Twitter</option>
@@ -57,36 +62,29 @@
                         </select>
                     </div>
                     <div>
-                        <label for="contact-info" class="valign">
-                            <img src="../img/icon/material/account.png" alt="" height="18" width="18">&nbsp;<span>Contact Info</span>
-                        </label>
+                        <label for="contact-info" class="valign"><img src="../img/icon/material/account.png" alt="" height="18" width="18">&nbsp;<span>Contact Info</span></label>
                         <input type="text" placeholder="Twitter, Discord account etc" required name="contact-info" id="contact-info"  maxlength="100">
                     </div>
                 </div>
                 <div class="smallprint">Providing a contact domain means I will know what the contact information is linked with allowing me to contact you.</div>
                 <div style="opacity: 0.5">
-                    <label for="package" class="valign">
-                        <img src="../img/icon/material/books.png" alt="" height="18" width="18">&nbsp;<span>Package</span>
-                    </label>
+                    <label for="package" class="valign"><img src="../img/icon/material/books.png" alt="" height="18" width="18">&nbsp;<span>Package</span></label>
                     <select name="package" id="package">
                         <option value="basic">Basic - Free</option>
                     </select>
                 </div>
                 <div>
-                    <label for="game-link" class="valign">
-                        <img src="../img/icon/material/link.png" alt="" height="18" width="18">&nbsp;<span>Game Link</span>
-                    </label>
+                    <label for="game-link" class="valign"><img src="../img/icon/material/link.png" alt="" height="18" width="18">&nbsp;<span>Game Link</span></label>
                     <input type="url" name="game-link" id="game-link" required maxlength="400" placeholder="https://www.roblox.com/games/game-id-here">
                 </div>
                 <div>
-                    <label for="message" class="valign">
-                        <img src="../img/icon/material/message.png" alt="" height="18" width="18">&nbsp;<span>Message</span>
-                    </label>
+                    <label for="message" class="valign"><img src="../img/icon/material/message.png" alt="" height="18" width="18">&nbsp;<span>Message</span></label>
                     <textarea name="message" id="message" required minlength="100" maxlength="800" placeholder="Give a brief explaination on the purpose of the game test."></textarea>
                 </div>
+
+                <!-- Submit button that will process the form inputs and check for validation issues etc. -->
                 <button type="submit" class="valign">
-                    <img src="../img/icon/material/done.png" alt="" height="20" width="20">&nbsp;
-                    <span>SEND ENQUIRY</span>
+                    <img src="../img/icon/material/done.png" alt="" height="20" width="20">&nbsp;&nbsp;<span>SEND ENQUIRY</span>
                 </button>
             </form>
         </div>
