@@ -60,3 +60,19 @@ window.addEventListener("load", (event) => {
         dropdown.open = !statement; // It will set the open attribute to the opposite value of {statement}. 
     };
 })
+
+// Weblog Banner Random Image
+const weblogBanner = document.getElementById('weblog-banner')
+const weblogOverlay = document.getElementById('weblog-overlay')
+const weblogOverlayTransparency = [0.7, 0.75, 0, 0.5]
+const weblogImages = [ 
+    "./img/backgrounds/weblog-banner-1.webp", 
+    "./img/backgrounds/weblog-banner-2.webp",
+    "./img/backgrounds/weblog-banner-3.webp", 
+    "./img/backgrounds/weblog-banner-4.webp"
+]
+
+const randomNumber = Math.floor(Math.random() * weblogImages.length)
+
+weblogBanner.style.backgroundImage = "url(" + weblogImages[randomNumber] + ")";
+weblogOverlay.style.backgroundColor = "rgba(0, 0, 0, " + weblogOverlayTransparency[randomNumber] + ")";

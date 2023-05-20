@@ -198,7 +198,6 @@ div.mobile-menu > nav a.active {
 
 /* Banner */
 div.weblog-banner {
-    background-image: url("../img/backgrounds/weblog-banner-2.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,7 +212,10 @@ div.weblog-banner > div {
     min-height: inherit;
     text-align: center;
     padding: 24px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.5);
+
+    /* Animation */
+    animation: alter-darknesslevels 5s infinite alternate
 }
 
 div.weblog-banner > div img.icon {
