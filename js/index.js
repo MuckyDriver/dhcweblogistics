@@ -73,5 +73,7 @@ const weblogImages = [
 
 const randomNumber = Math.floor(Math.random() * weblogImages.length)
 
-weblogBanner.style.backgroundImage = "url(" + weblogImages[randomNumber] + ")";
-weblogOverlay.style.backgroundColor = "rgba(0, 0, 0, " + weblogOverlayTransparency[randomNumber] + ")";
+if (weblogBanner && weblogOverlay) {
+    weblogBanner.style.backgroundImage = "url(" + weblogImages[randomNumber] + ")";
+    weblogOverlay.style.backgroundColor = "rgba(0, 0, 0, " + weblogOverlayTransparency[randomNumber] + ")";
+}
