@@ -213,9 +213,6 @@ div.weblog-banner > div {
     text-align: center;
     padding: 24px;
     background-color: rgba(0, 0, 0, 0.5);
-
-    /* Animation */
-    animation: alter-darknesslevels 5s infinite alternate
 }
 
 div.weblog-banner > div img.icon {
