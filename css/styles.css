@@ -388,6 +388,8 @@ div.project-list > div.project-item:hover {
 /* Project Items */
 div.project-list > div.project-item > img {
     border-radius: 6px;
+    width: 48px;
+    aspect-ratio: 1/1;
 }
 
 div.project-list > div.project-item > div.info :is(h4, h3, h2, h1) {
@@ -415,6 +417,11 @@ div.project-list > div.project-item > div.stats {
 
 div.project-list > div.project-item > div.stats > div.stat {
     padding: 0.2em 0.75em; display: flex; align-items: center;
+}
+
+div.project-list > div.project-item > div.stats > div.stat > img {
+    width: 24px;
+    aspect-ratio: 1/1;
 }
 
 /* Game Testing Packages */
