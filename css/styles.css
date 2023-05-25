@@ -1,4 +1,5 @@
 @import "animations.css";
+@import "misc.css";
 
 /* Main */
 body { margin: 0; }
@@ -422,6 +423,22 @@ div.project-list > div.project-item > div.stats > div.stat > img {
     aspect-ratio: 1/1;
 }
 
+/* Hover-to-reveal */
+div.project-list > div.project-item > div.hover-to-reveal {
+    position: absolute;
+    background-color: white;
+    pointer-events: none;
+    z-index: 99;
+    right: 0; top: 100%;
+    padding: 0.5em;
+    border: rgba(0, 0, 0, 0.25) 1px solid;
+    border-top: none;
+    border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;
+    display: none;
+}
+
+div.project-list > div.project-item:hover > div.hover-to-reveal { display: block; }
+
 /* Game Testing Packages */
 div.tester-packages {
     display: flex;
@@ -463,8 +480,6 @@ div.tester-packages > div.package > div span.caption {
 div.tester-packages > div.package > div span { display: block; text-align: center; }
 div.tester-packages > div.package > div.features span { display: inline-block; text-align: start; }
 
-
-
 div.tester-packages div.pricing span.price, span.heading {
     font-size: x-large;
     margin-bottom: 0.325em;
@@ -477,22 +492,6 @@ div.tester-packages div.pricing span.price::before {
 @media (max-width: 600px) {
     div.tester-packages { font-size: 0.9em; flex-direction: column; align-items: center; }
 }
-
-/* Hover-to-reveal */
-div.project-list > div.project-item > div.hover-to-reveal {
-    position: absolute;
-    background-color: white;
-    pointer-events: none;
-    z-index: 99;
-    right: 0; top: 100%;
-    padding: 0.5em;
-    border: rgba(0, 0, 0, 0.25) 1px solid;
-    border-top: none;
-    border-bottom-left-radius: 6px; border-bottom-right-radius: 6px;
-    display: none;
-}
-
-div.project-list > div.project-item:hover > div.hover-to-reveal { display: block; }
 
 /* Page Title */
 :is(h1, h2).page-title {
@@ -549,77 +548,13 @@ div.aboutme-container > div {
 }
 
 /* Other */
-.gap-bottom {
-    margin-bottom: 2em;
-}
-
 .weblog-notice {
-    display: block;
     padding: 12px;
     background-color: orange;
-    color: black;
     text-align: center;
 }
 
-.coming-soon {
-    display: flex;
-    flex-direction: column;
-    min-height: calc(100vh - (95px));
-    justify-content: center;
-    align-items: center;
-    padding: 24px;
-}
-
-.coming-soon img {
-    max-width: 50px;
-    vertical-align: middle;
-}
-
-.coming-soon span {
-    vertical-align: middle;
-}
-
-.greenify { color: var(--design);; }
-.center { text-align: center; }
-.normalize { font-weight: normal; }
-.spaced { line-height: 1.5; }
-.uppercase { text-transform: uppercase; }
-
-.iconify > span { vertical-align: middle; }
-.iconify > img { vertical-align: middle; margin-right: 10px; max-width: 30px; }
-
-img.icon-round {
-    border-radius: 12px;
-}
-
-/* A tags */
-a.learn-more {
-    display: inline-block;
-    margin-top: 8px;
-    color: var(--textDesign);
-    text-decoration: none;
-}
-
-a.learn-more:hover { text-decoration: underline; }
-a.link:hover { text-decoration: underline; }
-
-a.link {
-    color: var(--textDesign);
-    text-decoration: none;
-}
-
-a.link.grey { color: rgba(0, 0, 0, 0.7); }
-
-/* Old */
-img.wavey-top {
-    transform: translateY(5px);
-    width: 100%;
-}
-
-img.wavey-bottom {
-    transform: translateY(-5px);
-    width: 100%;
-}
+img.icon-round { border-radius: 12px; }
 
 /* Span, i, h1, h2, h3, h4, p Stuff */
 :is(span, i, h1, h2, h3, h4, p, ul, ol, li).light {
@@ -688,7 +623,6 @@ span.tag.point::after {
 }
 
 /* Copyright */
-
 div.copyright {
     padding: 8px 12px;
     cursor: pointer;

@@ -1,0 +1,53 @@
+/* Links: Includes different styles */
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+a.learn-more { display: inline-block; margin-top: 8px; color: var(--textDesign); }
+a.link { color: var(--textDesign); }
+a.link.grey { color: rgba(0, 0, 0, 0.7); }
+
+/* ..ify */
+.iconify > span { vertical-align: middle; }
+.iconify > img { vertical-align: middle; margin-right: 10px; max-width: 30px; }
+.greenify { color: var(--design); }
+
+/* Pulsator */
+div.pulse {
+    position: relative; display: inline-block;
+    background-color: #000000;
+    width: 20px; margin: 10px; aspect-ratio: 1/1;
+    border-radius: 100%;
+}
+
+div.pulse.red { background-color: crimson; }
+div.pulse.green { background-color: mediumseagreen; }
+div.pulse.orange { background-color: orangered; }
+div.pulse.yellow { background-color: orange; }
+div.pulse.blue { background-color: royalblue; }
+div.pulse.purple { background-color: blueviolet; }
+
+div.pulse.small { width: 16px; margin: 8px; }
+div.pulse.medium { width: 24px; margin: 12px; }
+div.pulse.large { width: 32px; margin: 16px; }
+
+div.pulse.no-height-m { margin-top: 0; margin-bottom: 0; }
+div.pulse.no-width-m { margin-right: 0; margin-left: 0; }
+
+div.pulse::before { 
+    content: "";
+    animation: pulsate 2s infinite;
+    background-color: inherit; border-radius: inherit;
+    width: 100%; height: 100%;
+    transform-origin: center; position: absolute;
+}
+
+div.pulse.fast::before { animation-duration: 1s; }
+div.pulse.slow::before { animation-duration: 4s; }
+
+/* Other */
+.center { text-align: center; }
+.normalize { font-weight: normal; }
+.spaced { line-height: 1.5; }
+.uppercase { text-transform: uppercase; }
+.gap-bottom { margin-bottom: 2em; }
+.no-whitespace { display: flex; flex-wrap: wrap; }

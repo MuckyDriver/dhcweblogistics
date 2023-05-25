@@ -1,5 +1,34 @@
 /* All the animations will be listed here */
+@keyframes fade-in-out {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
 
+@keyframes fade2-in-out {
+    0% { opacity: 1; }
+    50% { opacity: 0.25; }
+    100% { opacity: 1; }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+
+    60% { 
+        transform: scale(1.5);
+        opacity: 0.4;
+    }
+
+    100% { 
+        transform: scale(0.95);
+        opacity: 0;
+    }
+}
+
+/* Specific */
 @keyframes eyeMovement {
     0% { transform: rotate(0deg); }
     50% { transform: rotate(90deg); }
