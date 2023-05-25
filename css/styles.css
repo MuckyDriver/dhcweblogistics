@@ -74,7 +74,7 @@ header > div.wrapper nav a::after {
     height: 3.5px; width: 100%;
     transform: scaleX(0);
     transform-origin: center;
-    background-color: var(--design);;
+    background-color: var(--design);
     transition: all 0.15s ease-in-out;
 }
 
@@ -200,7 +200,7 @@ div.weblog-banner {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    border-bottom: var(--design); solid 3px;
+    border-bottom: var(--design) solid 3px;
     color: white;
 }
 
