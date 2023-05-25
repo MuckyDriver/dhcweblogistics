@@ -1,3 +1,5 @@
+@import "animations.css";
+
 /* Main */
 body { margin: 0; }
 body.flexify {
@@ -13,6 +15,9 @@ body.flexify {
 
 :root {
     --pageWidth: 1100px;
+    --dimmed: rgba(0, 0, 0, 0.06);
+    --textDesign: #375306; /* #375306 */
+    --design: #87cc0f; /* #87cc0f */
 }
 
 /* Header */
@@ -46,13 +51,6 @@ header > div.wrapper img.icon:hover {
     animation-play-state: running;
 }
 
-/* Animations */
-@keyframes eyeMovement {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(90deg); }
-    100% { transform: rotate(0deg); }
-}
-
 /* Navigation */
 header > div.wrapper nav {
     margin: auto 0 auto auto;
@@ -76,7 +74,7 @@ header > div.wrapper nav a::after {
     height: 3.5px; width: 100%;
     transform: scaleX(0);
     transform-origin: center;
-    background-color: #87cc0f;
+    background-color: var(--design);;
     transition: all 0.15s ease-in-out;
 }
 
@@ -189,7 +187,7 @@ div.mobile-menu > nav a {
 }
 
 div.mobile-menu > nav a.active {
-    background-color: #87cc0f;
+    background-color: var(--design);;
 }
 
 @media (min-width: 600px) {
@@ -202,7 +200,7 @@ div.weblog-banner {
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 500px;
-    border-bottom: #87cc0f solid 3px;
+    border-bottom: var(--design); solid 3px;
     color: white;
 }
 
@@ -238,8 +236,8 @@ div.page.dark {
     color: white;
 }
 
-div.page.dimmed { background-color: rgba(0, 0, 0, 0.075); }
-div.page.accent { background-color: rgba(0, 0, 0, 0.075); }
+div.page.dimmed { background-color: var(--dimmed); }
+div.page.accent { background-color: var(--dimmed); }
 
 div.page > div.content {
     max-width: var(--pageWidth);
@@ -350,7 +348,7 @@ details.dropdown-extra summary img {
 
 details.dropdown-extra > div {
     padding: 24px;
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: var(--dimmed);
     font-weight: 300; font-size: 95%;
     line-height: 1.5;
     overflow-y: auto; max-height: 300px;
@@ -442,7 +440,7 @@ div.tester-packages > div.package {
 
 div.tester-packages > div.package div.ribbon {
     padding: 0.7em;
-    background-color: #87cc0f;
+    background-color: var(--design);;
     text-align: center;
 }
 
@@ -518,7 +516,7 @@ div.project-list > div.project-item:hover > div.hover-to-reveal { display: block
     width: 100%; height: 50%;
     transform: rotate(-1.8deg);
     z-index: -1;
-    background-color: #87cc0f; 
+    background-color: var(--design);; 
 }
 
 :is(h2).page-title { font-weight: lighter; }
@@ -534,7 +532,7 @@ div.aboutme-container {
 }
 
 div.aboutme-container > * { 
-    background-color: rgba(0, 0, 0, 0.075);
+    background-color: var(--dimmed);
 }
 
 div.aboutme-container > div { 
@@ -581,10 +579,11 @@ div.aboutme-container > div {
     vertical-align: middle;
 }
 
-.greenify { color: #87cc0f; }
+.greenify { color: var(--design);; }
 .center { text-align: center; }
 .normalize { font-weight: normal; }
 .spaced { line-height: 1.5; }
+.uppercase { text-transform: uppercase; }
 
 .iconify > span { vertical-align: middle; }
 .iconify > img { vertical-align: middle; margin-right: 10px; max-width: 30px; }
@@ -597,7 +596,7 @@ img.icon-round {
 a.learn-more {
     display: inline-block;
     margin-top: 8px;
-    color: #375306;
+    color: var(--textDesign);
     text-decoration: none;
 }
 
@@ -605,7 +604,7 @@ a.learn-more:hover { text-decoration: underline; }
 a.link:hover { text-decoration: underline; }
 
 a.link {
-    color: #375306;
+    color: var(--textDesign);
     text-decoration: none;
 }
 
@@ -633,17 +632,17 @@ img.wavey-bottom {
 
 /* Unordered list style */
 ul.tv { list-style-image: url("https://img.icons8.com/material/14/null/retro-tv.png"); }
-ul.tv > li.watching { color: #375306; list-style-image: url("https://img.icons8.com/material/14/375306/retro-tv.png"); }
+ul.tv > li.watching { color: var(--textDesign); list-style-image: url("https://img.icons8.com/material/14/375306/retro-tv.png"); }
 
 ul.movie { list-style-image: url("https://img.icons8.com/material/14/null/movie-projector.png"); }
-ul.movie > li.watching { color: #375306; list-style-image: url("https://img.icons8.com/material/14/375306/movie-projector.png"); }
+ul.movie > li.watching { color: var(--textDesign); list-style-image: url("https://img.icons8.com/material/14/375306/movie-projector.png"); }
 
 /* Quick Button */
 :is(a, button).quick-button {
     display: inline-block;
     margin-right: 0.5em; margin-top: 0.5em;
     padding: 1em 2em;
-    background-color: #87cc0f;
+    background-color: var(--design);;
     color: black;
     text-decoration: none;
     border-radius: 8px;
@@ -667,7 +666,7 @@ ul.movie > li.watching { color: #375306; list-style-image: url("https://img.icon
 span.tag {
     display: inline-block;
     padding: 2px 8px;
-    background: rgba(0, 0, 0, 0.075);
+    background: var(--dimmed);
     vertical-align: middle;
     border-radius: 6px;
     border: dashed 1px rgba(0, 0, 0, 0.25);
@@ -699,7 +698,7 @@ div.copyright {
     color: white;
     margin: 10px; bottom: 0;
     backdrop-filter: blur(10px);
-    background-color: #375306;
+    background-color: var(--textDesign);
     transition: all 0.4s ease-in-out;
 }
 

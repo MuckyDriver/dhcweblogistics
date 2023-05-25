@@ -12,12 +12,25 @@ for (i = 0; i < countTimeElements.length; i++) {
     const countTimeElement = countTimeElements[i];
     const lastEpochTimestamp = countTimeElement.getAttribute('data-epoch');
     const durationType = countTimeElement.getAttribute('data-duration');
+    const suffix = countTimeElement.getAttribute('data-suffix')
 
     if (lastEpochTimestamp && durationType) {
         let currentEpoch = (Date.now() / 1000);
         let epochDifference = (lastEpochTimestamp - currentEpoch);
-        let timeLeftUntilEpoch = (epochDifference / durationTypeCalculation[durationType]);
+        let timeLeftUntilEpoch = Math.round( (epochDifference / durationTypeCalculation[durationType]) );
+        let suffixData = "";
 
-        countTimeElement.innerHTML = Math.round(timeLeftUntilEpoch);
+        // If suffix attribute is present then we add the suffixData using the durationType.
+        if (suffix != undefined) {
+            suffixData = (timeLeftUntilEpoch != 1) && (" " + durationType + "s") || (" " + durationType)
+        }
+
+        // If time has lapsed then it needs to be altered to be no less than 0.
+        if (timeLeftUntilEpoch < 0) { 
+            timeLeftUntilEpoch = 0; 
+        }
+
+        // Adding the information to the webpage.
+        countTimeElement.innerHTML = timeLeftUntilEpoch + suffixData;
     }
 }
