@@ -697,5 +697,7 @@ dialog#post-popup-element > div.header {
 }
 
 dialog#post-popup-element > div.header > .last { margin-left: auto; }
-dialog#post-popup-element > div.header #post-dialog-close { cursor: pointer; }
-dialog#post-popup-element > div.header > button { border: none; background: transparent; display: flex; padding: 0; }
+dialog#post-popup-element > div.header #post-dialog-close { 
+    cursor: pointer; 
+    border: none; background: transparent; display: flex; padding: 0; 
+}
