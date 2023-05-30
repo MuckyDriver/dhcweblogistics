@@ -51,7 +51,6 @@ for (let i = 0; i < navElements.length; i++) {
     const navElement = navElements[i];
     const buttonElements = navElement.getElementsByTagName('button');
 
-
     for (let i = 0; i < buttonElements.length; i++) {
         const button = buttonElements[i];
         const reference = button.getAttribute('data-reference');
@@ -59,6 +58,11 @@ for (let i = 0; i < navElements.length; i++) {
         function action() {
             resetButtonStyling(); button.classList.add('active')
             togglePage(reference);
+        }
+
+        // If the link has window data such as a reference to a page then go to that page.
+        if (window.location.hash.split("#")[1] == reference) {
+            action();
         }
 
         button.addEventListener("click", () => { action() })
