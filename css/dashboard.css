@@ -1,3 +1,5 @@
+@import "styles.css";
+
 /* Dashboard Section */
 div.dashboard {
     display: grid;
@@ -115,7 +117,7 @@ div.dashboard > div.pages > div.dash-page {
 div.tag-group {
     padding: 0.5em;
     border-radius: 8px;
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--dimmed);
     margin-top: 1em;
 }
 
@@ -150,7 +152,6 @@ div.dash-page :is(h1, h2, h3, h4).remove-top {
 div.gap-top { margin-top: 1.2em; }
 
 /* Media - Responsiveness */
-
 @media (max-width: 600px) {
     div.dashboard {
         display: block;
