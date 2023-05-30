@@ -16,7 +16,7 @@ body.flexify {
 
 :root {
     --pageWidth: 1100px;
-    --dimmed: rgba(0, 0, 0, 0.06);
+    --dimmed: rgba(0, 0, 0, 0.05);
     --textDesign: #375306; /* #375306 */
     --design: #87cc0f; /* #87cc0f */
 }

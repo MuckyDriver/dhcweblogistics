@@ -18,7 +18,7 @@ div.dashboard > div {
 
 /* Dashboard Menu */
 div.dashboard > div.dashboard-menu {
-    background-color: rgba(0, 0, 0, 0.05);
+    background-color: var(--dimmed);
     min-width: 200px;
     position: relative;
 }
