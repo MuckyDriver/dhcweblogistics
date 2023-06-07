@@ -37,6 +37,34 @@ header > div.wrapper {
     margin: auto;
 }
 
+header > div.wrapper > div.icon-container {
+    display: flex;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+header > div.wrapper > div.icon-container::before {
+    content: "Claaz Technologies";
+    font-weight: lighter;
+    width: max-content;
+    position: absolute;
+    align-self: center;
+    background: var(--dimmed);
+    padding: 1em; padding-left: 60px;
+    border-radius: inherit;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 0.5s 0.2s ease-in-out transform, 0.5s ease-in-out opacity;
+}
+
+header > div.wrapper > div.icon-container:hover::before {
+    transform: translateX(0%);
+    opacity: 1;
+    transition: 0.5s ease-in-out transform, 0.5s 0.15s ease-in-out opacity;
+}
+
 header > div.wrapper img.icon {
     max-width: 50px;
     align-self: center;

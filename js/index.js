@@ -77,3 +77,23 @@ if (weblogBanner && weblogOverlay) {
     weblogBanner.style.backgroundImage = "url(" + weblogImages[randomNumber] + ")";
     weblogOverlay.style.backgroundColor = "rgba(0, 0, 0, " + weblogOverlayTransparency[randomNumber] + ")";
 }
+
+// Icon to Claaz Technologies
+const iconClaaz = document.getElementById('icon-claaz')
+const claazLink = "https://claaz-technologies.org" + "#transition";
+
+iconClaaz.addEventListener('click', (event) => {
+    // Ensuring people cannot scroll.
+    document.body.style.overflow = 'hidden';
+
+    // Creating the transition block and prepending it onto the content of the page.
+    let transitionBlock = document.createElement('div');
+    transitionBlock.classList.add("huge-blackground");
+    document.body.prepend(transitionBlock);
+    
+    // The transition should automatically enable :)
+    setTimeout(() => { transitionBlock.classList.add("visible") }, 300)
+
+    // After the transition it will hop to the right URL.
+    setTimeout(() => { window.location.assign(claazLink) }, 2000)
+})
