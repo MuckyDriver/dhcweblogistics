@@ -35,13 +35,13 @@ header > div.wrapper {
     grid-template-columns: auto max-content;
     max-width: var(--pageWidth);
     margin: auto;
+    overflow: hidden;
 }
 
 header > div.wrapper > div.icon-container {
-    display: flex;
+    display: flex; justify-self: start;
     position: relative;
     border-radius: 50px;
-    overflow: hidden;
     cursor: pointer;
 }
 
@@ -76,7 +76,7 @@ header > div.wrapper img.icon {
     animation-play-state: paused;
 }
 
-header > div.wrapper img.icon:hover {
+header > div.wrapper > div.icon-container:hover img.icon {
     animation-play-state: running;
 }
 
