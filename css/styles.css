@@ -228,6 +228,7 @@ div.weblog-banner {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: black;
     min-height: 500px;
     border-bottom: var(--design) solid 3px;
     color: white;
