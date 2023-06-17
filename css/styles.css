@@ -269,7 +269,7 @@ div.page.dark {
 div.page.sticky {
     position: sticky;
     top: 75px;
-    backdrop-filter: blur(8px) brightness(1.25);
+    backdrop-filter: blur(10px) brightness(2);
     z-index: 99;
 }
 
