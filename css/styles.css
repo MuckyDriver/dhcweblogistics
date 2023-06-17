@@ -266,6 +266,13 @@ div.page.dark {
     color: white;
 }
 
+div.page.sticky {
+    position: sticky;
+    top: 75px;
+    backdrop-filter: blur(8px) brightness(1.25);
+    z-index: 99;
+}
+
 div.page.dimmed { background-color: var(--dimmed); }
 div.page.accent { background-color: var(--dimmed); }
 
