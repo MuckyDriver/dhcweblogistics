@@ -28,6 +28,9 @@ header {
     padding: 12px 24px;
     position: sticky; top: 0;
     z-index: 100;
+
+    /* Alpha */
+    box-shadow: 0 0 1rem var(--dimmed);
 }
 
 header > div.wrapper {
@@ -43,26 +46,6 @@ header > div.wrapper > div.icon-container {
     position: relative;
     border-radius: 50px;
     cursor: pointer;
-}
-
-header > div.wrapper > div.icon-container::before {
-    content: "Claaz Technologies";
-    font-weight: lighter;
-    width: max-content;
-    position: absolute;
-    align-self: center;
-    background: var(--dimmed);
-    padding: 1em; padding-left: 60px;
-    border-radius: inherit;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: 0.5s 0.2s ease-in-out transform, 0.5s ease-in-out opacity;
-}
-
-header > div.wrapper > div.icon-container:hover::before {
-    transform: translateX(0%);
-    opacity: 1;
-    transition: 0.5s ease-in-out transform, 0.5s 0.15s ease-in-out opacity;
 }
 
 header > div.wrapper img.icon {
@@ -232,6 +215,10 @@ div.weblog-banner {
     min-height: 500px;
     border-bottom: var(--design) solid 3px;
     color: white;
+}
+
+div.weblog-banner.short {
+    min-height: 300px;
 }
 
 div.weblog-banner > div {
@@ -591,7 +578,7 @@ div.aboutme-container > div {
     text-align: center;
 }
 
-img.icon-round { border-radius: 12px; }
+img.icon-round { border-radius: 12px; cursor: pointer; }
 
 /* Span, i, h1, h2, h3, h4, p Stuff */
 :is(span, i, h1, h2, h3, h4, p, ul, ol, li).light {
