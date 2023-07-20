@@ -183,7 +183,7 @@ div.mobile-menu::after {
     z-index: -1;
     background-image: url(../img/backgrounds/ttten.png);
     background-size: cover;
-    opacity: 0.75;
+    opacity: 0.425;
 }
 
 div.mobile-menu.open {
