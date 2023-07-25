@@ -1,0 +1,68 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=REM&display=swap');
+
+/* Basic Components */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: "REM", sans-serif;
+}
+
+/* Variables */
+:root {
+    --primaryColor: #87cc0f;
+    --pageBackground: #eee;
+    --pageWidth: 1100px;
+    --padding: 2em;
+    --borderRadius: 5px;
+}
+
+/* Header */
+header {
+    padding: var(--padding);
+}
+
+header > div {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+
+header > div img {
+    border-radius: var(--borderRadius);
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    margin: auto 0 auto auto;
+}
+
+header nav > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    border-radius: var(--borderRadius);
+    padding: 0.5em 1em;
+}
+
+header nav > a:hover {
+    background-color: var(--pageBackground);
+}
+
+header nav > a[data-active] { 
+    background-color: var(--primaryColor);
+}
+
+/* Content */
+div.wrapper {
+    margin: auto;
+    max-width: var(--pageWidth);
+}
+
+div.content {
+    padding: var(--padding);
+    background-color: var(--pageBackground);
+}
+
+/* Footer */

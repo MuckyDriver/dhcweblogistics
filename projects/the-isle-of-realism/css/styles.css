@@ -2,6 +2,9 @@
 
 /* Generic */
 
+html { scrollbar-width: none; }
+html::-webkit-scrollbar { width: 0px; }
+
 * { box-sizing: border-box; }
 body { 
     margin: 0; 
