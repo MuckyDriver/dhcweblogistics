@@ -19,7 +19,7 @@ const footerContent = `
         <div><div class="foot-head">More</div>
             <div class="link-list">
                  <div class="valign"><img class="prefix" alt="aboutme" src="img/icon/material/male_user.png"><a class="link grey" href="about-me">About Me</a></div>
-                 <div class="valign"><img class="prefix" alt="puzzle" src="img/icon/material/puzzle.png"><a class="link grey" href="game-tester">Game Tester</a></div>
+                 <div class="valign"><img class="prefix" alt="puzzle" src="img/icon/material/puzzle.png"><a class="link grey" href="tester">Game Tester</a></div>
             </div>
         </div>
     </div>
