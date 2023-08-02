@@ -62,11 +62,74 @@
             </div>
         </header>
 
-        <div class="page"><!-- Container includes main parts of the website content (images, information, buttons etc)... -->
+        <div class="page bluey"><!-- Container includes main parts of the website content (images, information, buttons etc)... -->
             <!-- The content container below is for the main heading / title of the page -->
             <div class="content">
                 <h1 class="page-title">OTHER</h1>
+                <p class="light spaced">
+                    A page that includes all the other pages you may have a look at. Take a look at the different content included in this website..
+                </p>
             </div>
         </div>
+
+        <div class="page">
+
+            <!-- A list of buttons to many pages around DHCWeblogistics -->
+            <div class="content">
+                <div class="button-list">
+                    <a href="about-me.html">About Me</a>
+                    <a href="game-tester.html">Game Tester</a>
+                    <a href="policy.html">Terms and Policies</a>
+                </div>
+
+                <style>
+                    div.button-list {
+                        display: flex;
+                        flex-wrap: wrap;
+                        gap: 1.5em;
+                    }
+
+                    div.button-list > a {
+                        background-color: white;
+                        border-bottom: var(--design) 4px solid;
+                        box-shadow: 0 .1rem .25rem rgba(0, 0, 0, 0.3);
+                        color: black;
+                        border-radius: 8px;
+                        padding: 1em 2em;
+                        transition: all 0.2s ease-in-out;
+                    }
+
+                    div.button-list > a:hover {
+                        border-bottom-color: grey;
+                        color: rgba(0, 0, 0, 0.75);
+                        text-decoration: none;
+                    }
+
+                    @media (max-width: 500px) {
+                        div.button-list {
+                            flex-direction: column;
+                            padding: 1em 0em;
+                        }
+
+                        div.button-list > a {
+                            border-bottom: none;
+                            padding: 1em;
+                            border-left: var(--design) 4px solid;
+                        }
+
+                        div.button-list > a:hover { 
+                            border-left-color: grey;
+                        }
+                    }
+                </style>
+            </div>
+        </div>
+
+        <img alt="shape" class="wavey-footer" src="img/svg/ssshape.svg">
+        <style>
+            img.wavey-footer {
+                margin-top: auto;
+            }
+        </style>
     </body>
 </html>

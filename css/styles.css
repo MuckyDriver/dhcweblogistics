@@ -119,6 +119,10 @@ footer {
     padding: 1em 24px;
 }
 
+footer.green {
+    margin-top: 0px;
+}
+
 footer > div.content { 
     max-width: var(--pageWidth);
     margin: auto;
@@ -478,60 +482,6 @@ div.project-list > div.project-item > div.hover-to-reveal {
 }
 
 div.project-list > div.project-item:hover > div.hover-to-reveal { display: block; }
-
-/* Game Testing Packages */
-div.tester-packages {
-    display: flex;
-    justify-content: center;
-    margin: 1em 0px;
-    gap: 2em;
-}
-
-div.tester-packages > div.package {
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 3px 0.8rem rgba(0, 0, 0, 0.2);
-    position: relative;
-    overflow: hidden;
-}
-
-div.tester-packages > div.package div.ribbon {
-    padding: 0.7em;
-    background-color: var(--design);;
-    text-align: center;
-}
-
-div.tester-packages > div.package > div {
-    padding: 1.5em;
-    border-bottom: solid 1px rgba(0, 0, 0, 0.125);
-}
-
-div.tester-packages > div.package > div.features { border-bottom: none; }
-div.tester-packages > div.package > div.features > div {
-    display: flex; gap: 0.5em;
-    align-items: center;
-    margin: 0.2em 0;
-}
-
-div.tester-packages > div.package > div span.caption {
-    font-size: small; font-weight: lighter; font-style: italic;
-}
-
-div.tester-packages > div.package > div span { display: block; text-align: center; }
-div.tester-packages > div.package > div.features span { display: inline-block; text-align: start; }
-
-div.tester-packages div.pricing span.price, span.heading {
-    font-size: x-large;
-    margin-bottom: 0.325em;
-}
-
-div.tester-packages div.pricing span.price::before {
-    content: "£";
-}
-
-@media (max-width: 600px) {
-    div.tester-packages { font-size: 0.9em; flex-direction: column; align-items: center; }
-}
 
 /* Page Title */
 :is(h1, h2).page-title {
