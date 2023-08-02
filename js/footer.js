@@ -28,17 +28,10 @@ const footerContent = `
     </div>
 `;
 
-const alterList = {
-    "other.html": "green"
-}
 
 window.onload = function() {
     const item = document.createElement('footer');
     item.innerHTML = footerContent;
-
-    if (alterList[ window.location.pathname.substring( window.location.pathname.lastIndexOf("/")+1 ) ]) {
-        item.classList.add("green")
-    }
 
     document.body.appendChild(item)
 }
