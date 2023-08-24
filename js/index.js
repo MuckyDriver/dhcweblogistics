@@ -21,7 +21,7 @@ mobileMenuCloseBtn.addEventListener('click', toggleMobileMenu) // Event is fired
 const projectList = document.getElementById('project-list');
 const projectUrls = {
     [3]: "https://www.roblox.com/games/12633113230/",
-    [4]: "https://muckydriver.net/",
+    [4]: "https://muckydriver.github.io",
     [5]: "https://www.roblox.com/games/12468321078/",
     [24]: "./projects/the-isle-of-realism/",
     [404]: "./projects/error-404-console/"
