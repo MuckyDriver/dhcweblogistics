@@ -47,6 +47,7 @@ header nav {
 header nav > div.anchor {
     height: 32px;
     position: relative;
+    cursor: pointer;
 }
 
 header nav > div.anchor div.tooltip {
