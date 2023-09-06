@@ -21,6 +21,7 @@ function getImage(index) {
     aTag.appendChild(downloadImage)
 
     // Linked A Tag
+    aTag.classList.add('cat')
     aTag.download = prefix + index;
     aTag.href = ("cattoes/" + fileName + suffix)
     aTag.appendChild(newImage)
