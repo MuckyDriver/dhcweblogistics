@@ -58,7 +58,7 @@ a {
     padding: 4em;
     text-align: center;
     font-size: large;
-    background: linear-gradient(black -75%, rgba(0, 105, 255, 0.075) 25%);
+    background: linear-gradient(black -150%, rgba(0, 105, 255, 0.075) 25%);
 }
 
 .message h1 {
