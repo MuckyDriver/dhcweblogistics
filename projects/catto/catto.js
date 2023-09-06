@@ -1,6 +1,6 @@
 let prefix = "catto";
 let suffix = ".JPG";
-let max = 92
+let max = 98
 
 function getImage(index) {
     index += 1
