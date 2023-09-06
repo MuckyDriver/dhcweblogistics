@@ -3,7 +3,7 @@ const doggoBtn = document.getElementById('doggos')
 
 // Constants and Variables
 let suffix = ".JPG";
-let max = { ["cattoes"]: 98, ["doggos"]: 10 }
+let max = { ["cattoes"]: 101, ["doggos"]: 10 }
 
 // Titles
 let titles = { ["cattoes"]: "🐱 The Ultimate Catto Gallery 🐱", ["doggos"]: "🐶 The Ultimate Doggo Gallery 🐶" }
