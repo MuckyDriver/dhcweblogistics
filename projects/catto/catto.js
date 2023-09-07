@@ -3,7 +3,7 @@ const doggoBtn = document.getElementById('doggos')
 
 // Constants and Variables
 let suffix = ".JPG";
-let max = { ["cattoes"]: 101, ["doggos"]: 10 }
+let max = { ["cattoes"]: 113, ["doggos"]: 10 }
 
 // Titles
 let titles = { ["cattoes"]: "🐱 The Ultimate Catto Gallery 🐱", ["doggos"]: "🐶 The Ultimate Doggo Gallery 🐶" }
@@ -26,7 +26,7 @@ function getImage(index, folder) {
     newImage.classList.add('catto');
 
     // Download Image
-    downloadImage.src = "download.png"
+    downloadImage.src = "../images/download.png"
     downloadImage.classList.add('download')
     aTag.appendChild(downloadImage)
 
