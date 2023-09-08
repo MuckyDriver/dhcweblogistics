@@ -2,11 +2,12 @@
 
 /* HEHEHARHAR */
 #projects {
+    position: relative;
     display: block;
     width: auto;
     padding: 1em;
     margin: auto;
-    color: black;
+    color: white;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
@@ -14,9 +15,20 @@
     letter-spacing: 1.25px;
 }
 
-#projects:hover {
+#projects::before, #projects::after {
+    content: " ";
+    position: absolute;
     background-color: white;
+    width: calc(100% - 2em); height: 2px;
+    transform: translateX(-50%) scaleX(0%);
+    transition: transform 0.2s ease-in-out;
 }
+
+#projects::after { left: 50%; bottom: 0.65em; transform-origin: left; }
+#projects:hover::after { transform: translateX(-50%) scaleX(100%); }
+
+#projects::before { left: 50%; top: 0.5em; transform-origin: right; }
+#projects:hover::before { transform: translateX(-50%) scaleX(100%); }
 
 /* Main */
 
@@ -26,6 +38,8 @@ body {
     margin: 0;
     font-family: 'Grandstander', cursive;
     overflow-x: hidden;
+    background-color: rgb(20, 20, 20);
+    color: white;
 }
 
 /* Header */
@@ -35,6 +49,7 @@ header {
     align-items: center;
     gap: 1em;
     padding: 1em 4em;
+    background-color: black;
 }
 
 header nav {
@@ -50,13 +65,17 @@ header nav > div.anchor {
     cursor: pointer;
 }
 
+header nav > div.anchor img { 
+    filter: invert(1);
+}
+
 header nav > div.anchor div.tooltip {
     display: inline-block;
     pointer-events: none;
     position: absolute;
     opacity: 0;
     bottom: 0%; left: 50%;
-    transform: translate(-50%, calc(100% + 8px));
+    transform: translate(-50%, calc(100% + 32px));
     padding: 0.5em 1em;
     background-color: black;
     color: white;
@@ -106,7 +125,6 @@ a.cat {
 
 .message h1 {
     text-transform: uppercase;
-    color: black;
 }
 
 .message p {
