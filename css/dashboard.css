@@ -6,7 +6,7 @@ div.dashboard {
     grid-template-columns: max-content auto;
     gap: 1em;
     margin: 2em auto;
-    max-width: 1100px;
+    max-width: var(--pageWidth);
     align-items: start;
 }
 
@@ -62,7 +62,7 @@ div.dashboard > div.dashboard-menu > nav > button::before {
     position: absolute;
     height: 50%; width: 0%;
     bottom: 0; left: 0;
-    background-color: #87cc0f;
+    background-color: var(--design);
     transform: rotate(-1deg);
     z-index: -1;
     transition: all 0.25s ease-in-out;
@@ -150,6 +150,65 @@ div.dash-page :is(h1, h2, h3, h4).remove-top {
 }
 
 div.gap-top { margin-top: 1.2em; }
+
+/* Table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    table {
+        font-size: small;
+    }
+
+    table :is(tr, td) {
+        padding: 0.33em;
+    }
+}
+
+table progress { 
+    width: 100%;
+}
+
+@keyframes loadprogress {
+    100% { width: 100%; }
+}
+
+table progress[value] {
+    appearance: none;
+    background: linear-gradient(to right, transparent -20%, var(--dimmed));
+    border: none;
+    border-radius: 8px;
+}
+
+table progress[value]::-webkit-progress-value {
+    background: linear-gradient(to right, transparent -20%, var(--design));
+    border-radius: 12px;
+}
+
+table progress[value]::-moz-progress-bar {
+    background: linear-gradient(to right, transparent -20%, var(--design));
+    border-radius: 12px;
+}
+
+table progress[value]::-webkit-progress-bar {
+    border-radius: 12px;
+    background: linear-gradient(to right, transparent -20%, var(--dimmed));
+}
+
+table > thead {
+    background-color: var(--dimmed);
+}
+
+table :is(tr, td) {
+    border: #ccc solid 1px;
+    padding: 1em;
+}
+
+table > :not(thead) td {
+    font-weight: lighter;
+}
 
 /* Media - Responsiveness */
 @media (max-width: 600px) {
