@@ -4,7 +4,7 @@ const footerContent = `
         <div><div class="foot-head">Useful links</div>
             <div class="link-list">
                 <div class="valign"><img class="prefix" alt="processor" src="img/icon/material/processor.png"><a class="link grey" href="https://claaz-technologies.org">Claaz Technologies</a></div>
-                <div class="valign"><img class="prefix" alt="trello roadmap" src="img/icon/material/trello.png"><a class="link grey" href="https://trello.com/b/Tzf6Bw97" target="_blank">Website Roadmap (Trello)</a></div>
+                <div class="valign"><img class="prefix" alt="trello roadmap" src="img/icon/material/trello.png"><a class="link grey" href="https://trello.com/b/qkA2xTOS/dhcweblog-2024" target="_blank">Website Roadmap (Trello)</a></div>
                 <div class="valign"><img class="prefix" alt="terms" src="img/icon/material/terms.png"><a class="link grey" href="policy">Terms and Policies</a></div>
             </div>
         </div>
