@@ -9,6 +9,17 @@ body.flexify {
     min-height: 100vh;
 }
 
+body::before {
+    content: "You are viewing the legacy version of this website which will not receive any updates.";
+    padding: 1em;
+    display: block;
+    background: black;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
 * {
     font-family: 'Rubik', Calibri;
     box-sizing: border-box;
